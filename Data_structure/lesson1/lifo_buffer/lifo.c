@@ -9,7 +9,7 @@
 
 ENUM_BUFFER_Status lifo_init(LIFO_BUFFER_t* lifo_buf,unsigned int* buff,unsigned int length){
 	//check lifo null
-	if(!lifo_buf||!lifo_buf->head||!lifo_buf->base)
+	if(buff=='\0')
 		return lifo_null;
 	lifo_buf->base=buff;
 	lifo_buf->head=buff;
