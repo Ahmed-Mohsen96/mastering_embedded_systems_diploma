@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Atmel Studio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "lcd_kepad", "lcd_kepad\lcd_kepad.cproj", "{28EB13E9-619C-4646-B847-A61DF78FB201}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28EB13E9-619C-4646-B847-A61DF78FB201}.Debug|AVR.ActiveCfg = Debug|AVR
+		{28EB13E9-619C-4646-B847-A61DF78FB201}.Debug|AVR.Build.0 = Debug|AVR
+		{28EB13E9-619C-4646-B847-A61DF78FB201}.Release|AVR.ActiveCfg = Release|AVR
+		{28EB13E9-619C-4646-B847-A61DF78FB201}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
