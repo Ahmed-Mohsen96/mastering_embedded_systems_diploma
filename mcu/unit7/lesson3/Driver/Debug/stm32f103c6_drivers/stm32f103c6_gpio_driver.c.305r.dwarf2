@@ -1,0 +1,3084 @@
+
+;; Function GETPOSITION_CRLH (GETPOSITION_CRLH, funcdef_no=3, decl_uid=5636, cgraph_uid=3, symbol_order=3)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 231
+Creating trace 2 : start at code_label 25
+Creating trace 3 : start at code_label 34
+Creating trace 4 : start at code_label 47
+Creating trace 5 : start at code_label 56
+Creating trace 6 : start at code_label 63
+Creating trace 7 : start at code_label 68
+Creating trace 8 : start at code_label 73
+Creating trace 9 : start at code_label 78
+Creating trace 10 : start at code_label 83
+Creating trace 11 : start at code_label 88
+Creating trace 12 : start at code_label 93
+Creating trace 13 : start at code_label 98
+Creating trace 14 : start at code_label 103
+Creating trace 15 : start at code_label 108
+Creating trace 16 : start at code_label 113
+Creating trace 17 : start at code_label 118
+Creating trace 18 : start at code_label 123
+Creating trace 19 : start at code_label 128
+Creating trace 20 : start at code_label 133
+Creating trace 21 : start at code_label 138
+Creating trace 22 : start at code_label 143
+Creating trace 23 : start at code_label 146
+Creating trace 24 : start at note 232
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 231
+   saw edge from trace 1 to 13 (via jump_insn 10)
+	push trace 13 to worklist
+   saw edge from trace 1 to 3 (via jump_insn 12)
+	push trace 3 to worklist
+   saw edge from trace 1 to 9 (via jump_insn 14)
+	push trace 9 to worklist
+   saw edge from trace 1 to 2 (via jump_insn 16)
+	push trace 2 to worklist
+   saw edge from trace 1 to 7 (via jump_insn 18)
+	push trace 7 to worklist
+   saw edge from trace 1 to 8 (via jump_insn 20)
+	push trace 8 to worklist
+   saw edge from trace 1 to 6 (via jump_insn 22)
+	push trace 6 to worklist
+   saw edge from trace 1 to 22 (via jump_insn 180)
+	push trace 22 to worklist
+Processing trace 22 : start at code_label 143
+   saw edge from trace 22 to 23 (via fallthru 0)
+	push trace 23 to worklist
+Processing trace 23 : start at code_label 146
+   saw edge from trace 23 to 24 (via fallthru 0)
+	push trace 24 to worklist
+Processing trace 24 : start at note 232
+Processing trace 6 : start at code_label 63
+   saw edge from trace 6 to 23 (via jump_insn 194)
+Processing trace 8 : start at code_label 73
+   saw edge from trace 8 to 23 (via jump_insn 198)
+Processing trace 7 : start at code_label 68
+   saw edge from trace 7 to 23 (via jump_insn 196)
+Processing trace 2 : start at code_label 25
+   saw edge from trace 2 to 11 (via jump_insn 27)
+	push trace 11 to worklist
+   saw edge from trace 2 to 12 (via jump_insn 29)
+	push trace 12 to worklist
+   saw edge from trace 2 to 10 (via jump_insn 31)
+	push trace 10 to worklist
+   saw edge from trace 2 to 22 (via jump_insn 183)
+Processing trace 10 : start at code_label 83
+   saw edge from trace 10 to 23 (via jump_insn 202)
+Processing trace 12 : start at code_label 93
+   saw edge from trace 12 to 23 (via jump_insn 206)
+Processing trace 11 : start at code_label 88
+   saw edge from trace 11 to 23 (via jump_insn 204)
+Processing trace 9 : start at code_label 78
+   saw edge from trace 9 to 23 (via jump_insn 200)
+Processing trace 3 : start at code_label 34
+   saw edge from trace 3 to 17 (via jump_insn 36)
+	push trace 17 to worklist
+   saw edge from trace 3 to 4 (via jump_insn 38)
+	push trace 4 to worklist
+   saw edge from trace 3 to 15 (via jump_insn 40)
+	push trace 15 to worklist
+   saw edge from trace 3 to 16 (via jump_insn 42)
+	push trace 16 to worklist
+   saw edge from trace 3 to 14 (via jump_insn 44)
+	push trace 14 to worklist
+   saw edge from trace 3 to 22 (via jump_insn 186)
+Processing trace 14 : start at code_label 103
+   saw edge from trace 14 to 23 (via jump_insn 210)
+Processing trace 16 : start at code_label 113
+   saw edge from trace 16 to 23 (via jump_insn 214)
+Processing trace 15 : start at code_label 108
+   saw edge from trace 15 to 23 (via jump_insn 212)
+Processing trace 4 : start at code_label 47
+   saw edge from trace 4 to 19 (via jump_insn 49)
+	push trace 19 to worklist
+   saw edge from trace 4 to 5 (via jump_insn 51)
+	push trace 5 to worklist
+   saw edge from trace 4 to 18 (via jump_insn 53)
+	push trace 18 to worklist
+   saw edge from trace 4 to 22 (via jump_insn 189)
+Processing trace 18 : start at code_label 123
+   saw edge from trace 18 to 23 (via jump_insn 218)
+Processing trace 5 : start at code_label 56
+   saw edge from trace 5 to 20 (via jump_insn 58)
+	push trace 20 to worklist
+   saw edge from trace 5 to 21 (via jump_insn 60)
+	push trace 21 to worklist
+   saw edge from trace 5 to 22 (via jump_insn 192)
+Processing trace 21 : start at code_label 138
+   saw edge from trace 21 to 23 (via jump_insn 224)
+Processing trace 20 : start at code_label 133
+   saw edge from trace 20 to 23 (via jump_insn 222)
+Processing trace 19 : start at code_label 128
+   saw edge from trace 19 to 23 (via jump_insn 220)
+Processing trace 17 : start at code_label 118
+   saw edge from trace 17 to 23 (via jump_insn 216)
+Processing trace 13 : start at code_label 98
+   saw edge from trace 13 to 23 (via jump_insn 208)
+
+
+GETPOSITION_CRLH
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 3 [r3] 7 [r7] 13 [sp] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={20d,22u} r7={4d,50u} r12={1d} r13={5d,53u} r14={1d,1u} r100={20d,20u} r102={1d,1u} 
+;;    total ref usage 206{56d,150u,0e} in 93{93 regular + 0 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 227 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 227 6 240 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [2  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":11 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [2  S4 A32])
+                    (reg/f:SI 7 r7))
+            ])
+        (nil)))
+(note 240 227 241 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(note 241 240 228 2
+	.cfi_offset 7, -4
+	 NOTE_INSN_CFI)
+(insn/f 228 241 242 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -12 [0xfffffffffffffff4]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":11 4 {*arm_addsi3}
+     (nil))
+(note 242 228 229 2
+	.cfi_def_cfa_offset 16
+	 NOTE_INSN_CFI)
+(insn 229 242 230 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":11 304 {stack_tie}
+     (nil))
+(insn/f 230 229 243 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":11 4 {*arm_addsi3}
+     (nil))
+(note 243 230 231 2
+	.cfi_def_cfa_register 7
+	 NOTE_INSN_CFI)
+(note 231 243 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 231 4 2 (set (reg:SI 3 r3 [113])
+        (reg:SI 0 r0 [ pinnumber ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":11 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 4 2 5 2 (set (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [1 pinnumber+0 S2 A16])
+        (reg:HI 3 r3 [114])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":11 880 {*thumb2_movhi_insn}
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 9 2 (set (reg:SI 3 r3 [orig:110 _1 ] [110])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 6 [0x6])) [1 pinnumber+0 S2 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 905 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 9 8 10 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 128 [0x80]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 10 9 155 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 98)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 98)
+(note 155 10 11 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 11 155 12 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 128 [0x80]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 12 11 156 3 (set (pc)
+        (if_then_else (gt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 34)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 34)
+(note 156 12 13 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 13 156 14 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 8 [0x8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 14 13 157 4 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 78)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 78)
+(note 157 14 15 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 15 157 16 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 8 [0x8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 16 15 158 5 (set (pc)
+        (if_then_else (gt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 25)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 25)
+(note 158 16 17 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 17 158 18 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 2 [0x2]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 18 17 159 6 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 68)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 68)
+(note 159 18 19 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 19 159 20 7 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 4 [0x4]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 20 19 160 7 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 73)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 73)
+(note 160 20 21 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 21 160 22 8 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 1 [0x1]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 22 21 179 8 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 63)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 63)
+(note 179 22 180 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 180 179 181 9 (set (pc)
+        (label_ref 143)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 214 {*arm_jump}
+     (nil)
+ -> 143)
+(barrier 181 180 25)
+(code_label 25 181 162 10 6 (nil) [1 uses])
+(note 162 25 26 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 26 162 27 10 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 32 [0x20]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 27 26 163 10 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 88)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 88)
+(note 163 27 28 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 28 163 29 11 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 64 [0x40]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 29 28 164 11 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 93)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 93)
+(note 164 29 30 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 30 164 31 12 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 16 [0x10]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 31 30 182 12 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 83)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 83)
+(note 182 31 183 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 183 182 184 13 (set (pc)
+        (label_ref 143)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 214 {*arm_jump}
+     (nil)
+ -> 143)
+(barrier 184 183 34)
+(code_label 34 184 166 14 4 (nil) [1 uses])
+(note 166 34 35 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 35 166 36 14 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 2048 [0x800]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 36 35 167 14 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 118)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 118)
+(note 167 36 37 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 37 167 38 15 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 2048 [0x800]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 38 37 168 15 (set (pc)
+        (if_then_else (gt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 47)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 47)
+(note 168 38 39 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 39 168 40 16 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 512 [0x200]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 40 39 169 16 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 108)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 108)
+(note 169 40 41 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 41 169 42 17 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 1024 [0x400]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 42 41 170 17 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 113)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 113)
+(note 170 42 43 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 43 170 44 18 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 256 [0x100]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 44 43 185 18 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 103)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 103)
+(note 185 44 186 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 186 185 187 19 (set (pc)
+        (label_ref 143)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 214 {*arm_jump}
+     (nil)
+ -> 143)
+(barrier 187 186 47)
+(code_label 47 187 172 20 14 (nil) [1 uses])
+(note 172 47 48 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 48 172 49 20 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 8192 [0x2000]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 49 48 173 20 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 128)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 128)
+(note 173 49 50 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 50 173 51 21 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 8192 [0x2000]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 51 50 174 21 (set (pc)
+        (if_then_else (gt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 56)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 56)
+(note 174 51 52 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 52 174 53 22 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 4096 [0x1000]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 53 52 188 22 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 123)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 123)
+(note 188 53 189 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 189 188 190 23 (set (pc)
+        (label_ref 143)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 214 {*arm_jump}
+     (nil)
+ -> 143)
+(barrier 190 189 56)
+(code_label 56 190 176 24 19 (nil) [1 uses])
+(note 176 56 57 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 57 176 58 24 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 16384 [0x4000]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 58 57 177 24 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 133)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 133)
+(note 177 58 59 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 59 177 60 25 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 32768 [0x8000]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 60 59 191 25 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 138)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 204 {arm_cond_branch}
+     (nil)
+ -> 138)
+(note 191 60 192 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 192 191 193 26 (set (pc)
+        (label_ref 143)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":12 214 {*arm_jump}
+     (nil)
+ -> 143)
+(barrier 193 192 63)
+(code_label 63 193 64 27 9 (nil) [1 uses])
+(note 64 63 65 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 65 64 194 27 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":15 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 194 65 195 27 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":15 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 195 194 68)
+(code_label 68 195 69 28 7 (nil) [1 uses])
+(note 69 68 70 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 70 69 196 28 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":18 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 196 70 197 28 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":18 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 197 196 73)
+(code_label 73 197 74 29 8 (nil) [1 uses])
+(note 74 73 75 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 75 74 198 29 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 8 [0x8]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":21 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 198 75 199 29 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":21 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 199 198 78)
+(code_label 78 199 79 30 5 (nil) [1 uses])
+(note 79 78 80 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 80 79 200 30 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 12 [0xc]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":24 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 200 80 201 30 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":24 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 201 200 83)
+(code_label 83 201 84 31 12 (nil) [1 uses])
+(note 84 83 85 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 85 84 202 31 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 16 [0x10]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":27 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 202 85 203 31 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":27 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 203 202 88)
+(code_label 88 203 89 32 10 (nil) [1 uses])
+(note 89 88 90 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 90 89 204 32 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 20 [0x14]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":30 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 204 90 205 32 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":30 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 205 204 93)
+(code_label 93 205 94 33 11 (nil) [1 uses])
+(note 94 93 95 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 95 94 206 33 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 24 [0x18]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":33 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 206 95 207 33 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":33 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 207 206 98)
+(code_label 98 207 99 34 3 (nil) [1 uses])
+(note 99 98 100 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 100 99 208 34 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 28 [0x1c]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":36 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 208 100 209 34 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":36 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 209 208 103)
+(code_label 103 209 104 35 17 (nil) [1 uses])
+(note 104 103 105 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 105 104 210 35 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":39 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 210 105 211 35 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":39 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 211 210 108)
+(code_label 108 211 109 36 15 (nil) [1 uses])
+(note 109 108 110 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 110 109 212 36 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":42 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 212 110 213 36 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":42 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 213 212 113)
+(code_label 113 213 114 37 16 (nil) [1 uses])
+(note 114 113 115 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 115 114 214 37 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 8 [0x8]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":45 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 214 115 215 37 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":45 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 215 214 118)
+(code_label 118 215 119 38 13 (nil) [1 uses])
+(note 119 118 120 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 120 119 216 38 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 12 [0xc]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":48 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 216 120 217 38 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":48 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 217 216 123)
+(code_label 123 217 124 39 20 (nil) [1 uses])
+(note 124 123 125 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 125 124 218 39 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 16 [0x10]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":51 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 218 125 219 39 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":51 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 219 218 128)
+(code_label 128 219 129 40 18 (nil) [1 uses])
+(note 129 128 130 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(insn 130 129 220 40 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 20 [0x14]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":54 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 220 130 221 40 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":54 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 221 220 133)
+(code_label 133 221 134 41 21 (nil) [1 uses])
+(note 134 133 135 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 135 134 222 41 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 24 [0x18]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":57 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 222 135 223 41 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":57 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 223 222 138)
+(code_label 138 223 139 42 22 (nil) [1 uses])
+(note 139 138 140 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 140 139 224 42 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 28 [0x1c]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":60 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 224 140 225 42 (set (pc)
+        (label_ref 146)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":60 214 {*arm_jump}
+     (nil)
+ -> 146)
+(barrier 225 224 143)
+(code_label 143 225 144 43 2 (nil) [5 uses])
+(note 144 143 145 43 [bb 43] NOTE_INSN_BASIC_BLOCK)
+(insn 145 144 146 43 (parallel [
+            (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":65 916 {*thumb2_movsi_shortim}
+     (nil))
+(code_label 146 145 147 44 23 (nil) [16 uses])
+(note 147 146 152 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(insn 152 147 153 44 (set (reg/i:SI 0 r0)
+        (reg:SI 3 r3 [orig:112 <retval> ] [112])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":66 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 153 152 232 44 (use (reg/i:SI 0 r0)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":66 -1
+     (nil))
+(note 232 153 233 44 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 233 232 244 44 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":66 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])))
+        (nil)))
+(note 244 233 234 44
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(insn 234 244 235 44 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":66 230 {blockage}
+     (nil))
+(insn/f 235 234 245 44 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":66 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(note 245 235 236 44
+	.cfi_def_cfa_register 13
+	 NOTE_INSN_CFI)
+(insn 236 245 237 44 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":66 322 {force_register_use}
+     (nil))
+(insn/f 237 236 246 44 (set (reg/f:SI 7 r7)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [2  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":66 877 {*thumb2_pop_single}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+            (nil))))
+(note 246 237 247 44
+	.cfi_restore 7
+	 NOTE_INSN_CFI)
+(note 247 246 238 44
+	.cfi_def_cfa_offset 0
+	 NOTE_INSN_CFI)
+(jump_insn 238 247 239 44 (simple_return) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":66 909 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 239 238 226)
+(note 226 239 0 NOTE_INSN_DELETED)
+
+;; Function MCAL_GPIO_Init (MCAL_GPIO_Init, funcdef_no=4, decl_uid=5614, cgraph_uid=4, symbol_order=4)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 193
+Creating trace 2 : start at code_label 20
+Creating trace 3 : start at code_label 24
+Creating trace 4 : start at code_label 62
+Creating trace 5 : start at code_label 81
+Creating trace 6 : start at code_label 92
+Creating trace 7 : start at code_label 110
+Creating trace 8 : start at code_label 126
+Creating trace 9 : start at code_label 146
+Creating trace 10 : start at code_label 158
+Creating trace 11 : start at note 194
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 193
+   saw edge from trace 1 to 2 (via jump_insn 15)
+	push trace 2 to worklist
+   saw edge from trace 1 to 3 (via jump_insn 178)
+	push trace 3 to worklist
+Processing trace 3 : start at code_label 24
+   saw edge from trace 3 to 4 (via jump_insn 46)
+	push trace 4 to worklist
+   saw edge from trace 3 to 4 (via jump_insn 51)
+   saw edge from trace 3 to 4 (via jump_insn 56)
+   saw edge from trace 3 to 5 (via jump_insn 61)
+	push trace 5 to worklist
+   saw edge from trace 3 to 4 (via fallthru 0)
+Processing trace 5 : start at code_label 81
+   saw edge from trace 5 to 6 (via jump_insn 86)
+	push trace 6 to worklist
+   saw edge from trace 5 to 7 (via jump_insn 91)
+	push trace 7 to worklist
+   saw edge from trace 5 to 6 (via fallthru 0)
+Processing trace 7 : start at code_label 110
+   saw edge from trace 7 to 8 (via jump_insn 115)
+	push trace 8 to worklist
+   saw edge from trace 7 to 10 (via jump_insn 184)
+	push trace 10 to worklist
+Processing trace 10 : start at code_label 158
+   saw edge from trace 10 to 11 (via fallthru 0)
+	push trace 11 to worklist
+Processing trace 11 : start at note 194
+Processing trace 8 : start at code_label 126
+   saw edge from trace 8 to 9 (via jump_insn 134)
+	push trace 9 to worklist
+   saw edge from trace 8 to 10 (via jump_insn 186)
+Processing trace 9 : start at code_label 146
+   saw edge from trace 9 to 10 (via fallthru 0)
+Processing trace 6 : start at code_label 92
+   saw edge from trace 6 to 10 (via jump_insn 182)
+Processing trace 4 : start at code_label 62
+   saw edge from trace 4 to 10 (via jump_insn 180)
+Processing trace 2 : start at code_label 20
+   saw edge from trace 2 to 3 (via fallthru 0)
+
+
+MCAL_GPIO_Init
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 4 [r4] 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={5d,5u} r1={3d,1u} r2={17d,14u} r3={73d,69u} r4={3d,3u} r7={4d,60u} r12={5d} r13={5d,33u} r14={3d,2u} r15={3d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r32={2d} r33={2d} r34={2d} r35={2d} r36={2d} r37={2d} r38={2d} r39={2d} r40={2d} r41={2d} r42={2d} r43={2d} r44={2d} r45={2d} r46={2d} r47={2d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={11d,9u} r101={2d} r102={1d,1u} 
+;;    total ref usage 500{303d,197u,0e} in 135{133 regular + 2 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 189 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 189 5 201 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -12 [0xfffffffffffffff4]))) [2  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg/f:SI 7 r7))
+            (use (reg:SI 14 lr))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":76 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -12 [0xfffffffffffffff4])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [2  S4 A32])
+                    (reg:SI 4 r4))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [2  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 8 [0x8])) [2  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(note 201 189 202 2
+	.cfi_def_cfa_offset 12
+	 NOTE_INSN_CFI)
+(note 202 201 203 2
+	.cfi_offset 4, -12
+	 NOTE_INSN_CFI)
+(note 203 202 204 2
+	.cfi_offset 7, -8
+	 NOTE_INSN_CFI)
+(note 204 203 190 2
+	.cfi_offset 14, -4
+	 NOTE_INSN_CFI)
+(insn/f 190 204 205 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -20 [0xffffffffffffffec]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":76 4 {*arm_addsi3}
+     (nil))
+(note 205 190 191 2
+	.cfi_def_cfa_offset 32
+	 NOTE_INSN_CFI)
+(insn 191 205 192 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":76 304 {stack_tie}
+     (nil))
+(insn/f 192 191 206 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":76 4 {*arm_addsi3}
+     (nil))
+(note 206 192 193 2
+	.cfi_def_cfa_register 7
+	 NOTE_INSN_CFI)
+(note 193 206 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 193 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])
+        (reg:SI 0 r0 [ GPIOX ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":76 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 3 2 4 2 (set (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])
+        (reg:SI 1 r1 [ PINConfig ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":76 878 {*thumb2_movsi_insn}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(insn 7 4 8 2 (parallel [
+            (set (reg:SI 3 r3 [165])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":80 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 8 7 9 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [3 configregister+0 S4 A32])
+        (reg:SI 3 r3 [165])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":80 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 9 8 11 2 (parallel [
+            (set (reg:SI 3 r3 [166])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":81 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 11 9 12 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 15 [0xf])) [0 pin_config+0 S1 A8])
+        (reg:QI 3 r3 [167])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":81 192 {*arm_movqi_insn}
+     (nil))
+(insn 12 11 13 2 (set (reg/f:SI 3 r3 [168])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":83 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 3 r3 [orig:110 _1 ] [110])
+        (zero_extend:SI (mem:HI (reg/f:SI 3 r3 [168]) [1 PINConfig_59(D)->GPIO_pin_number+0 S2 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":83 905 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 14 13 15 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:110 _1 ] [110])
+            (const_int 7 [0x7]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":83 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 20)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":83 204 {arm_cond_branch}
+     (nil)
+ -> 20)
+(note 16 15 17 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 17 16 178 3 (set (reg/f:SI 3 r3 [orig:162 iftmp.0_54 ] [162])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":83 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 178 17 179 3 (set (pc)
+        (label_ref 24)) 214 {*arm_jump}
+     (nil)
+ -> 24)
+(barrier 179 178 20)
+(code_label 20 179 21 4 25 (nil) [1 uses])
+(note 21 20 22 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 4 (set (reg:SI 3 r3 [169])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":83 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 23 22 24 4 (parallel [
+            (set (reg/f:SI 3 r3 [orig:162 iftmp.0_54 ] [162])
+                (plus:SI (reg:SI 3 r3 [169])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":83 917 {*thumb2_addsi_short}
+     (nil))
+(code_label 24 23 25 5 26 (nil) [1 uses])
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 5 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [3 configregister+0 S4 A32])
+        (reg/f:SI 3 r3 [orig:162 iftmp.0_54 ] [162])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":83 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 27 26 28 5 (set (reg/f:SI 3 r3 [170])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 28 27 29 5 (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+        (zero_extend:SI (mem:HI (reg/f:SI 3 r3 [170]) [1 PINConfig_59(D)->GPIO_pin_number+0 S2 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 905 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 29 28 30 5 (set (reg:SI 0 r0)
+        (reg:SI 3 r3 [orig:111 _2 ] [111])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 30 29 31 5 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("GETPOSITION_CRLH") [flags 0x3]  <function_decl 0000000005abbb00 GETPOSITION_CRLH>) [0 GETPOSITION_CRLH S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 220 {*call_value_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:HI (use (reg:SI 0 r0))
+            (nil))))
+(insn 31 30 33 5 (set (reg:SI 3 r3 [171])
+        (reg:SI 0 r0)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 33 31 34 5 (set (reg:SI 2 r2 [orig:113 _4 ] [113])
+        (reg:SI 3 r3 [orig:112 _3 ] [112])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 34 33 35 5 (parallel [
+            (set (reg:SI 3 r3 [172])
+                (const_int 15 [0xf]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 35 34 36 5 (parallel [
+            (set (reg:SI 3 r3 [orig:114 _5 ] [114])
+                (ashift:SI (reg:SI 3 r3 [172])
+                    (reg:SI 2 r2 [orig:113 _4 ] [113])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 913 {*thumb2_shiftsi3_short}
+     (nil))
+(insn 36 35 37 5 (parallel [
+            (set (reg:SI 2 r2 [orig:163 _65 ] [163])
+                (not:SI (reg:SI 3 r3 [orig:114 _5 ] [114])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 926 {*thumb2_one_cmplsi2_short}
+     (nil))
+(insn 37 36 38 5 (set (reg/f:SI 3 r3 [173])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [3 configregister+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 38 37 40 5 (set (reg:SI 3 r3 [orig:115 _6 ] [115])
+        (mem/v:SI (reg/f:SI 3 r3 [173]) [7 *configregister_63+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 40 38 41 5 (parallel [
+            (set (reg:SI 2 r2 [orig:117 _8 ] [117])
+                (and:SI (reg:SI 2 r2 [orig:116 _7 ] [116])
+                    (reg:SI 3 r3 [orig:115 _6 ] [115])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 912 {*thumb2_alusi3_short}
+     (nil))
+(insn 41 40 42 5 (set (reg/f:SI 3 r3 [174])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [3 configregister+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 42 41 43 5 (set (mem/v:SI (reg/f:SI 3 r3 [174]) [7 *configregister_63+0 S4 A32])
+        (reg:SI 2 r2 [orig:117 _8 ] [117])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":85 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 43 42 44 5 (set (reg/f:SI 3 r3 [175])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 44 43 45 5 (set (reg:SI 3 r3 [orig:118 _9 ] [118])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [175])
+                    (const_int 2 [0x2])) [0 PINConfig_59(D)->GPIO_mode+0 S1 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 45 44 46 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:118 _9 ] [118])
+            (const_int 7 [0x7]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 46 45 47 5 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 62)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 204 {arm_cond_branch}
+     (nil)
+ -> 62)
+(note 47 46 48 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 6 (set (reg/f:SI 3 r3 [176])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 49 48 50 6 (set (reg:SI 3 r3 [orig:119 _10 ] [119])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [176])
+                    (const_int 2 [0x2])) [0 PINConfig_59(D)->GPIO_mode+0 S1 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 50 49 51 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:119 _10 ] [119])
+            (const_int 6 [0x6]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 51 50 52 6 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 62)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 204 {arm_cond_branch}
+     (nil)
+ -> 62)
+(note 52 51 53 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 53 52 54 7 (set (reg/f:SI 3 r3 [177])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 54 53 55 7 (set (reg:SI 3 r3 [orig:120 _11 ] [120])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [177])
+                    (const_int 2 [0x2])) [0 PINConfig_59(D)->GPIO_mode+0 S1 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 55 54 56 7 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:120 _11 ] [120])
+            (const_int 5 [0x5]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 56 55 57 7 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 62)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 204 {arm_cond_branch}
+     (nil)
+ -> 62)
+(note 57 56 58 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 58 57 59 8 (set (reg/f:SI 3 r3 [178])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 59 58 60 8 (set (reg:SI 3 r3 [orig:121 _12 ] [121])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [178])
+                    (const_int 2 [0x2])) [0 PINConfig_59(D)->GPIO_mode+0 S1 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 60 59 61 8 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:121 _12 ] [121])
+            (const_int 4 [0x4]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 61 60 62 8 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 81)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":92 204 {arm_cond_branch}
+     (nil)
+ -> 81)
+(code_label 62 61 63 9 27 (nil) [3 uses])
+(note 63 62 64 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 64 63 65 9 (set (reg/f:SI 3 r3 [179])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 65 64 67 9 (set (reg:SI 3 r3 [orig:122 _13 ] [122])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [179])
+                    (const_int 2 [0x2])) [0 PINConfig_59(D)->GPIO_mode+0 S1 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 67 65 68 9 (parallel [
+            (set (reg:SI 3 r3 [orig:124 _15 ] [124])
+                (plus:SI (reg:SI 3 r3 [orig:123 _14 ] [123])
+                    (const_int -4 [0xfffffffffffffffc])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 917 {*thumb2_addsi_short}
+     (nil))
+(insn 68 67 69 9 (parallel [
+            (set (reg:SI 3 r3 [orig:125 _16 ] [125])
+                (ashift:SI (reg:SI 3 r3 [orig:124 _15 ] [124])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 913 {*thumb2_shiftsi3_short}
+     (nil))
+(insn 69 68 70 9 (set (reg:SI 2 r2 [orig:126 _17 ] [126])
+        (sign_extend:SI (reg:QI 3 r3 [orig:125 _16 ] [125]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 904 {*thumb2_extendqisi_v6}
+     (nil))
+(insn 70 69 71 9 (set (reg/f:SI 3 r3 [180])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 71 70 72 9 (set (reg:SI 3 r3 [orig:127 _18 ] [127])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [180])
+                    (const_int 3 [0x3])) [0 PINConfig_59(D)->GPIO_speed+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 72 71 73 9 (set (reg:SI 3 r3 [orig:128 _19 ] [128])
+        (sign_extend:SI (reg:QI 3 r3 [orig:127 _18 ] [127]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 904 {*thumb2_extendqisi_v6}
+     (nil))
+(insn 73 72 74 9 (parallel [
+            (set (reg:SI 3 r3 [181])
+                (ior:SI (reg:SI 3 r3 [orig:128 _19 ] [128])
+                    (reg:SI 2 r2 [orig:126 _17 ] [126])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 912 {*thumb2_alusi3_short}
+     (nil))
+(insn 74 73 75 9 (set (reg:SI 3 r3 [orig:129 _20 ] [129])
+        (sign_extend:SI (reg:QI 3 r3 [181]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 904 {*thumb2_extendqisi_v6}
+     (nil))
+(insn 75 74 76 9 (set (reg:SI 3 r3 [orig:130 _21 ] [130])
+        (zero_extend:SI (reg:QI 3 r3 [orig:129 _20 ] [129]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 76 75 78 9 (set (reg:SI 3 r3 [182])
+        (and:SI (reg:SI 3 r3 [orig:130 _21 ] [130])
+            (const_int 15 [0xf]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 82 {*arm_andsi3_insn}
+     (nil))
+(insn 78 76 180 9 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 15 [0xf])) [0 pin_config+0 S1 A8])
+        (reg:QI 3 r3 [183])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 192 {*arm_movqi_insn}
+     (nil))
+(jump_insn 180 78 181 9 (set (pc)
+        (label_ref 158)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":95 214 {*arm_jump}
+     (nil)
+ -> 158)
+(barrier 181 180 81)
+(code_label 81 181 82 10 28 (nil) [1 uses])
+(note 82 81 83 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 83 82 84 10 (set (reg/f:SI 3 r3 [184])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":99 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 84 83 85 10 (set (reg:SI 3 r3 [orig:131 _22 ] [131])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [184])
+                    (const_int 2 [0x2])) [0 PINConfig_59(D)->GPIO_mode+0 S1 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":99 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 85 84 86 10 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:131 _22 ] [131])
+            (const_int 1 [0x1]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":99 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 86 85 87 10 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 92)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":99 204 {arm_cond_branch}
+     (nil)
+ -> 92)
+(note 87 86 88 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 89 11 (set (reg/f:SI 3 r3 [185])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":99 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 89 88 90 11 (set (reg:SI 3 r3 [orig:132 _23 ] [132])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [185])
+                    (const_int 2 [0x2])) [0 PINConfig_59(D)->GPIO_mode+0 S1 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":99 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 90 89 91 11 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:132 _23 ] [132])
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":99 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 91 90 92 11 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 110)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":99 204 {arm_cond_branch}
+     (nil)
+ -> 110)
+(code_label 92 91 93 12 30 (nil) [1 uses])
+(note 93 92 94 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 94 93 95 12 (set (reg/f:SI 3 r3 [186])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 95 94 97 12 (set (reg:SI 3 r3 [orig:133 _24 ] [133])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [186])
+                    (const_int 2 [0x2])) [0 PINConfig_59(D)->GPIO_mode+0 S1 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 97 95 98 12 (parallel [
+            (set (reg:SI 3 r3 [orig:135 _26 ] [135])
+                (ashift:SI (reg:SI 3 r3 [orig:134 _25 ] [134])
+                    (const_int 2 [0x2])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 913 {*thumb2_shiftsi3_short}
+     (nil))
+(insn 98 97 99 12 (set (reg:SI 2 r2 [orig:136 _27 ] [136])
+        (sign_extend:SI (reg:QI 3 r3 [orig:135 _26 ] [135]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 904 {*thumb2_extendqisi_v6}
+     (nil))
+(insn 99 98 100 12 (set (reg/f:SI 3 r3 [187])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 100 99 101 12 (set (reg:SI 3 r3 [orig:137 _28 ] [137])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [187])
+                    (const_int 3 [0x3])) [0 PINConfig_59(D)->GPIO_speed+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 101 100 102 12 (set (reg:SI 3 r3 [orig:138 _29 ] [138])
+        (sign_extend:SI (reg:QI 3 r3 [orig:137 _28 ] [137]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 904 {*thumb2_extendqisi_v6}
+     (nil))
+(insn 102 101 103 12 (parallel [
+            (set (reg:SI 3 r3 [188])
+                (ior:SI (reg:SI 3 r3 [orig:138 _29 ] [138])
+                    (reg:SI 2 r2 [orig:136 _27 ] [136])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 912 {*thumb2_alusi3_short}
+     (nil))
+(insn 103 102 104 12 (set (reg:SI 3 r3 [orig:139 _30 ] [139])
+        (sign_extend:SI (reg:QI 3 r3 [188]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 904 {*thumb2_extendqisi_v6}
+     (nil))
+(insn 104 103 105 12 (set (reg:SI 3 r3 [orig:140 _31 ] [140])
+        (zero_extend:SI (reg:QI 3 r3 [orig:139 _30 ] [139]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 105 104 107 12 (set (reg:SI 3 r3 [189])
+        (and:SI (reg:SI 3 r3 [orig:140 _31 ] [140])
+            (const_int 15 [0xf]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 82 {*arm_andsi3_insn}
+     (nil))
+(insn 107 105 182 12 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 15 [0xf])) [0 pin_config+0 S1 A8])
+        (reg:QI 3 r3 [190])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 192 {*arm_movqi_insn}
+     (nil))
+(jump_insn 182 107 183 12 (set (pc)
+        (label_ref 158)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":102 214 {*arm_jump}
+     (nil)
+ -> 158)
+(barrier 183 182 110)
+(code_label 110 183 111 13 31 (nil) [1 uses])
+(note 111 110 112 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 112 111 113 13 (set (reg/f:SI 3 r3 [191])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":104 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 113 112 114 13 (set (reg:SI 3 r3 [orig:141 _32 ] [141])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [191])
+                    (const_int 2 [0x2])) [0 PINConfig_59(D)->GPIO_mode+0 S1 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":104 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 114 113 115 13 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:141 _32 ] [141])
+            (const_int 8 [0x8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":104 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 115 114 116 13 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 126)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":104 204 {arm_cond_branch}
+     (nil)
+ -> 126)
+(note 116 115 117 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 117 116 118 14 (set (reg/f:SI 3 r3 [192])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":107 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 118 117 119 14 (set (reg:SI 3 r3 [orig:142 _33 ] [142])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [192])
+                    (const_int 3 [0x3])) [0 PINConfig_59(D)->GPIO_speed+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":107 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 119 118 120 14 (set (reg:SI 3 r3 [193])
+        (ior:SI (reg:SI 3 r3 [orig:142 _33 ] [142])
+            (const_int 32 [0x20]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":107 105 {*iorsi3_insn}
+     (nil))
+(insn 120 119 121 14 (set (reg:SI 3 r3 [orig:143 _34 ] [143])
+        (zero_extend:SI (reg:QI 3 r3 [193]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":107 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 121 120 123 14 (set (reg:SI 3 r3 [194])
+        (and:SI (reg:SI 3 r3 [orig:143 _34 ] [143])
+            (const_int 15 [0xf]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":107 82 {*arm_andsi3_insn}
+     (nil))
+(insn 123 121 184 14 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 15 [0xf])) [0 pin_config+0 S1 A8])
+        (reg:QI 3 r3 [195])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":107 192 {*arm_movqi_insn}
+     (nil))
+(jump_insn 184 123 185 14 (set (pc)
+        (label_ref 158)) 214 {*arm_jump}
+     (nil)
+ -> 158)
+(barrier 185 184 126)
+(code_label 126 185 127 15 32 (nil) [1 uses])
+(note 127 126 128 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 128 127 130 15 (parallel [
+            (set (reg:SI 3 r3 [196])
+                (const_int 8 [0x8]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":113 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 130 128 131 15 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 15 [0xf])) [0 pin_config+0 S1 A8])
+        (reg:QI 3 r3 [197])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":113 192 {*arm_movqi_insn}
+     (nil))
+(insn 131 130 132 15 (set (reg/f:SI 3 r3 [198])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":114 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 132 131 133 15 (set (reg:SI 3 r3 [orig:144 _35 ] [144])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 3 r3 [198])
+                    (const_int 2 [0x2])) [0 PINConfig_59(D)->GPIO_mode+0 S1 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":114 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 133 132 134 15 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:144 _35 ] [144])
+            (const_int 2 [0x2]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":114 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 134 133 135 15 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 146)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":114 204 {arm_cond_branch}
+     (nil)
+ -> 146)
+(note 135 134 136 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 136 135 137 16 (set (reg/f:SI 3 r3 [199])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":117 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 137 136 138 16 (set (reg:SI 3 r3 [orig:145 _36 ] [145])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [199])
+                (const_int 12 [0xc])) [7 GPIOX_60(D)->ODR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":117 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 138 137 139 16 (set (reg/f:SI 2 r2 [200])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":117 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 139 138 141 16 (set (reg:SI 2 r2 [orig:146 _37 ] [146])
+        (zero_extend:SI (mem:HI (reg/f:SI 2 r2 [200]) [1 PINConfig_59(D)->GPIO_pin_number+0 S2 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":117 905 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 141 139 142 16 (parallel [
+            (set (reg:SI 2 r2 [orig:148 _39 ] [148])
+                (ior:SI (reg:SI 2 r2 [orig:147 _38 ] [147])
+                    (reg:SI 3 r3 [orig:145 _36 ] [145])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":117 912 {*thumb2_alusi3_short}
+     (nil))
+(insn 142 141 143 16 (set (reg/f:SI 3 r3 [201])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":117 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 143 142 186 16 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [201])
+                (const_int 12 [0xc])) [7 GPIOX_60(D)->ODR+0 S4 A32])
+        (reg:SI 2 r2 [orig:148 _39 ] [148])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":117 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 186 143 187 16 (set (pc)
+        (label_ref 158)) 214 {*arm_jump}
+     (nil)
+ -> 158)
+(barrier 187 186 146)
+(code_label 146 187 147 17 33 (nil) [1 uses])
+(note 147 146 148 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 148 147 149 17 (set (reg/f:SI 3 r3 [202])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":121 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 149 148 150 17 (set (reg:SI 3 r3 [orig:149 _40 ] [149])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [202])
+                (const_int 12 [0xc])) [7 GPIOX_60(D)->ODR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":121 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 150 149 151 17 (set (reg/f:SI 2 r2 [203])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":121 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 151 150 153 17 (set (reg:SI 2 r2 [orig:150 _41 ] [150])
+        (zero_extend:SI (mem:HI (reg/f:SI 2 r2 [203]) [1 PINConfig_59(D)->GPIO_pin_number+0 S2 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":121 905 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 153 151 155 17 (parallel [
+            (set (reg:SI 2 r2 [orig:152 _43 ] [152])
+                (not:SI (reg:SI 2 r2 [orig:151 _42 ] [151])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":121 926 {*thumb2_one_cmplsi2_short}
+     (nil))
+(insn 155 153 156 17 (parallel [
+            (set (reg:SI 2 r2 [orig:154 _45 ] [154])
+                (and:SI (reg:SI 2 r2 [orig:153 _44 ] [153])
+                    (reg:SI 3 r3 [orig:149 _40 ] [149])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":121 912 {*thumb2_alusi3_short}
+     (nil))
+(insn 156 155 157 17 (set (reg/f:SI 3 r3 [204])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":121 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 157 156 158 17 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [204])
+                (const_int 12 [0xc])) [7 GPIOX_60(D)->ODR+0 S4 A32])
+        (reg:SI 2 r2 [orig:154 _45 ] [154])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":121 878 {*thumb2_movsi_insn}
+     (nil))
+(code_label 158 157 159 18 29 (nil) [4 uses])
+(note 159 158 160 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 160 159 161 18 (set (reg:SI 4 r4 [orig:155 _46 ] [155])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 15 [0xf])) [0 pin_config+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 161 160 162 18 (set (reg/f:SI 3 r3 [205])
+        (mem/f/c:SI (reg/f:SI 7 r7) [5 PINConfig+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 162 161 163 18 (set (reg:SI 3 r3 [orig:156 _47 ] [156])
+        (zero_extend:SI (mem:HI (reg/f:SI 3 r3 [205]) [1 PINConfig_59(D)->GPIO_pin_number+0 S2 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 905 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 163 162 164 18 (set (reg:SI 0 r0)
+        (reg:SI 3 r3 [orig:156 _47 ] [156])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 164 163 165 18 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("GETPOSITION_CRLH") [flags 0x3]  <function_decl 0000000005abbb00 GETPOSITION_CRLH>) [0 GETPOSITION_CRLH S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 220 {*call_value_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:HI (use (reg:SI 0 r0))
+            (nil))))
+(insn 165 164 168 18 (set (reg:SI 3 r3 [206])
+        (reg:SI 0 r0)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 168 165 169 18 (set (reg:SI 2 r2 [orig:164 _74 ] [164])
+        (ashift:SI (reg:SI 4 r4 [orig:155 _46 ] [155])
+            (reg:SI 3 r3 [orig:158 _49 ] [158]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 132 {*arm_shiftsi3}
+     (nil))
+(insn 169 168 170 18 (set (reg/f:SI 3 r3 [207])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [3 configregister+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 170 169 172 18 (set (reg:SI 3 r3 [orig:159 _50 ] [159])
+        (mem/v:SI (reg/f:SI 3 r3 [207]) [7 *configregister_63+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 172 170 173 18 (parallel [
+            (set (reg:SI 2 r2 [orig:161 _52 ] [161])
+                (ior:SI (reg:SI 2 r2 [orig:160 _51 ] [160])
+                    (reg:SI 3 r3 [orig:159 _50 ] [159])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 912 {*thumb2_alusi3_short}
+     (nil))
+(insn 173 172 174 18 (set (reg/f:SI 3 r3 [208])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [3 configregister+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 174 173 177 18 (set (mem/v:SI (reg/f:SI 3 r3 [208]) [7 *configregister_63+0 S4 A32])
+        (reg:SI 2 r2 [orig:161 _52 ] [161])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":128 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 177 174 194 18 (const_int 0 [0]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":132 236 {nop}
+     (nil))
+(note 194 177 195 18 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 195 194 207 18 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":132 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 20 [0x14])))
+        (nil)))
+(note 207 195 196 18
+	.cfi_def_cfa_offset 12
+	 NOTE_INSN_CFI)
+(insn 196 207 197 18 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":132 230 {blockage}
+     (nil))
+(insn/f 197 196 208 18 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":132 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(note 208 197 198 18
+	.cfi_def_cfa_register 13
+	 NOTE_INSN_CFI)
+(insn 198 208 199 18 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":132 322 {force_register_use}
+     (nil))
+(jump_insn 199 198 200 18 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 12 [0xc])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [2  S4 A32]))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [2  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [2  S4 A32]))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":132 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (nil)))
+ -> return)
+(barrier 200 199 188)
+(note 188 200 0 NOTE_INSN_DELETED)
+
+;; Function MCAL_GPIO_DEInit (MCAL_GPIO_DEInit, funcdef_no=5, decl_uid=5616, cgraph_uid=5, symbol_order=5)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 144
+Creating trace 2 : start at code_label 23
+Creating trace 3 : start at code_label 42
+Creating trace 4 : start at code_label 61
+Creating trace 5 : start at code_label 80
+Creating trace 6 : start at code_label 112
+Creating trace 7 : start at note 145
+Creating trace 8 : start at code_label 178
+Creating trace 9 : start at code_label 180
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 144
+   saw edge from trace 1 to 2 (via jump_insn 9)
+	push trace 2 to worklist
+   saw edge from trace 1 to 6 (via jump_insn 101)
+	push trace 6 to worklist
+Processing trace 6 : start at code_label 112
+   saw edge from trace 6 to 7 (via fallthru 0)
+	push trace 7 to worklist
+Processing trace 7 : start at note 145
+Processing trace 2 : start at code_label 23
+   saw edge from trace 2 to 3 (via jump_insn 28)
+	push trace 3 to worklist
+   saw edge from trace 2 to 6 (via jump_insn 103)
+Processing trace 3 : start at code_label 42
+   saw edge from trace 3 to 4 (via jump_insn 47)
+	push trace 4 to worklist
+   saw edge from trace 3 to 6 (via jump_insn 105)
+Processing trace 4 : start at code_label 61
+   saw edge from trace 4 to 5 (via jump_insn 66)
+	push trace 5 to worklist
+   saw edge from trace 4 to 6 (via jump_insn 107)
+Processing trace 5 : start at code_label 80
+   saw edge from trace 5 to 6 (via jump_insn 85)
+   saw edge from trace 5 to 6 (via fallthru 0)
+
+
+MCAL_GPIO_DEInit
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 100 [cc]
+;;  ref usage 	r0={1d,1u} r1={1d} r2={16d,15u} r3={36d,35u} r7={4d,22u} r12={1d} r13={5d,21u} r14={1d,1u} r100={5d,5u} r102={1d,1u} 
+;;    total ref usage 172{71d,101u,0e} in 86{86 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 140 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 140 4 189 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [2  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":141 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [2  S4 A32])
+                    (reg/f:SI 7 r7))
+            ])
+        (nil)))
+(note 189 140 190 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(note 190 189 141 2
+	.cfi_offset 7, -4
+	 NOTE_INSN_CFI)
+(insn/f 141 190 191 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -12 [0xfffffffffffffff4]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":141 4 {*arm_addsi3}
+     (nil))
+(note 191 141 142 2
+	.cfi_def_cfa_offset 16
+	 NOTE_INSN_CFI)
+(insn 142 191 143 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":141 304 {stack_tie}
+     (nil))
+(insn/f 143 142 192 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":141 4 {*arm_addsi3}
+     (nil))
+(note 192 143 144 2
+	.cfi_def_cfa_register 7
+	 NOTE_INSN_CFI)
+(note 144 192 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 144 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])
+        (reg:SI 0 r0 [ GPIOX ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":141 878 {*thumb2_movsi_insn}
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 3 r3 [150])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":153 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 2 r2 [151])
+        (mem:SI (label_ref 180) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":153 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 8 7 9 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [150])
+            (reg:SI 2 r2 [151]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":153 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 9 8 10 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 23)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":153 204 {arm_cond_branch}
+     (nil)
+ -> 23)
+(note 10 9 11 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 3 (set (reg/f:SI 3 r3 [orig:110 _1 ] [110])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":155 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 12 11 13 3 (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:110 _1 ] [110])
+                (const_int 12 [0xc])) [7 _1->APB2RSTR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":155 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 13 12 14 3 (set (reg/f:SI 2 r2 [orig:112 _3 ] [112])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":155 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 14 13 15 3 (set (reg:SI 3 r3 [orig:113 _4 ] [113])
+        (ior:SI (reg:SI 3 r3 [orig:111 _2 ] [111])
+            (const_int 4 [0x4]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":155 105 {*iorsi3_insn}
+     (nil))
+(insn 15 14 16 3 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:112 _3 ] [112])
+                (const_int 12 [0xc])) [7 _3->APB2RSTR+0 S4 A32])
+        (reg:SI 3 r3 [orig:113 _4 ] [113])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":155 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 16 15 17 3 (set (reg/f:SI 3 r3 [orig:114 _5 ] [114])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":156 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 17 16 18 3 (set (reg:SI 3 r3 [orig:115 _6 ] [115])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:114 _5 ] [114])
+                (const_int 12 [0xc])) [7 _5->APB2RSTR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":156 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 18 17 19 3 (set (reg/f:SI 2 r2 [orig:116 _7 ] [116])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":156 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 19 18 20 3 (set (reg:SI 3 r3 [orig:117 _8 ] [117])
+        (and:SI (reg:SI 3 r3 [orig:115 _6 ] [115])
+            (const_int -5 [0xfffffffffffffffb]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":156 82 {*arm_andsi3_insn}
+     (nil))
+(insn 20 19 101 3 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:116 _7 ] [116])
+                (const_int 12 [0xc])) [7 _7->APB2RSTR+0 S4 A32])
+        (reg:SI 3 r3 [orig:117 _8 ] [117])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":156 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 101 20 102 3 (set (pc)
+        (label_ref:SI 112)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":184 214 {*arm_jump}
+     (nil)
+ -> 112)
+(barrier 102 101 23)
+(code_label 23 102 24 4 35 (nil) [1 uses])
+(note 24 23 25 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 25 24 26 4 (set (reg:SI 3 r3 [152])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":158 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 2 r2 [153])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":158 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 27 26 28 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [152])
+            (reg:SI 2 r2 [153]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":158 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 28 27 29 4 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":158 204 {arm_cond_branch}
+     (nil)
+ -> 42)
+(note 29 28 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 5 (set (reg/f:SI 3 r3 [orig:118 _9 ] [118])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":160 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 31 30 32 5 (set (reg:SI 3 r3 [orig:119 _10 ] [119])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:118 _9 ] [118])
+                (const_int 12 [0xc])) [7 _9->APB2RSTR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":160 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 32 31 33 5 (set (reg/f:SI 2 r2 [orig:120 _11 ] [120])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":160 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 33 32 34 5 (set (reg:SI 3 r3 [orig:121 _12 ] [121])
+        (ior:SI (reg:SI 3 r3 [orig:119 _10 ] [119])
+            (const_int 8 [0x8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":160 105 {*iorsi3_insn}
+     (nil))
+(insn 34 33 35 5 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:120 _11 ] [120])
+                (const_int 12 [0xc])) [7 _11->APB2RSTR+0 S4 A32])
+        (reg:SI 3 r3 [orig:121 _12 ] [121])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":160 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 35 34 36 5 (set (reg/f:SI 3 r3 [orig:122 _13 ] [122])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":161 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 36 35 37 5 (set (reg:SI 3 r3 [orig:123 _14 ] [123])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:122 _13 ] [122])
+                (const_int 12 [0xc])) [7 _13->APB2RSTR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":161 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 37 36 38 5 (set (reg/f:SI 2 r2 [orig:124 _15 ] [124])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":161 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 38 37 39 5 (set (reg:SI 3 r3 [orig:125 _16 ] [125])
+        (and:SI (reg:SI 3 r3 [orig:123 _14 ] [123])
+            (const_int -9 [0xfffffffffffffff7]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":161 82 {*arm_andsi3_insn}
+     (nil))
+(insn 39 38 103 5 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:124 _15 ] [124])
+                (const_int 12 [0xc])) [7 _15->APB2RSTR+0 S4 A32])
+        (reg:SI 3 r3 [orig:125 _16 ] [125])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":161 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 103 39 104 5 (set (pc)
+        (label_ref:SI 112)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":184 214 {*arm_jump}
+     (nil)
+ -> 112)
+(barrier 104 103 42)
+(code_label 42 104 43 6 37 (nil) [1 uses])
+(note 43 42 44 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 44 43 45 6 (set (reg:SI 3 r3 [154])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":163 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 45 44 46 6 (set (reg:SI 2 r2 [155])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 12 [0xc]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":163 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 46 45 47 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [154])
+            (reg:SI 2 r2 [155]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":163 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 47 46 48 6 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 61)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":163 204 {arm_cond_branch}
+     (nil)
+ -> 61)
+(note 48 47 49 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 49 48 50 7 (set (reg/f:SI 3 r3 [orig:126 _17 ] [126])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":165 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 50 49 51 7 (set (reg:SI 3 r3 [orig:127 _18 ] [127])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:126 _17 ] [126])
+                (const_int 12 [0xc])) [7 _17->APB2RSTR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":165 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 51 50 52 7 (set (reg/f:SI 2 r2 [orig:128 _19 ] [128])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":165 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 52 51 53 7 (set (reg:SI 3 r3 [orig:129 _20 ] [129])
+        (ior:SI (reg:SI 3 r3 [orig:127 _18 ] [127])
+            (const_int 16 [0x10]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":165 105 {*iorsi3_insn}
+     (nil))
+(insn 53 52 54 7 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:128 _19 ] [128])
+                (const_int 12 [0xc])) [7 _19->APB2RSTR+0 S4 A32])
+        (reg:SI 3 r3 [orig:129 _20 ] [129])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":165 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 54 53 55 7 (set (reg/f:SI 3 r3 [orig:130 _21 ] [130])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":166 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 55 54 56 7 (set (reg:SI 3 r3 [orig:131 _22 ] [131])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:130 _21 ] [130])
+                (const_int 12 [0xc])) [7 _21->APB2RSTR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":166 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 56 55 57 7 (set (reg/f:SI 2 r2 [orig:132 _23 ] [132])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":166 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 57 56 58 7 (set (reg:SI 3 r3 [orig:133 _24 ] [133])
+        (and:SI (reg:SI 3 r3 [orig:131 _22 ] [131])
+            (const_int -17 [0xffffffffffffffef]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":166 82 {*arm_andsi3_insn}
+     (nil))
+(insn 58 57 105 7 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:132 _23 ] [132])
+                (const_int 12 [0xc])) [7 _23->APB2RSTR+0 S4 A32])
+        (reg:SI 3 r3 [orig:133 _24 ] [133])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":166 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 105 58 106 7 (set (pc)
+        (label_ref:SI 112)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":184 214 {*arm_jump}
+     (nil)
+ -> 112)
+(barrier 106 105 61)
+(code_label 61 106 62 8 38 (nil) [1 uses])
+(note 62 61 63 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 63 62 64 8 (set (reg:SI 3 r3 [156])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":169 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 64 63 65 8 (set (reg:SI 2 r2 [157])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 16 [0x10]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":169 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 65 64 66 8 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [156])
+            (reg:SI 2 r2 [157]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":169 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 66 65 67 8 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 80)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":169 204 {arm_cond_branch}
+     (nil)
+ -> 80)
+(note 67 66 68 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 68 67 69 9 (set (reg/f:SI 3 r3 [orig:134 _25 ] [134])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":171 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 69 68 70 9 (set (reg:SI 3 r3 [orig:135 _26 ] [135])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:134 _25 ] [134])
+                (const_int 12 [0xc])) [7 _25->APB2RSTR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":171 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 70 69 71 9 (set (reg/f:SI 2 r2 [orig:136 _27 ] [136])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":171 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 71 70 72 9 (set (reg:SI 3 r3 [orig:137 _28 ] [137])
+        (ior:SI (reg:SI 3 r3 [orig:135 _26 ] [135])
+            (const_int 32 [0x20]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":171 105 {*iorsi3_insn}
+     (nil))
+(insn 72 71 73 9 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:136 _27 ] [136])
+                (const_int 12 [0xc])) [7 _27->APB2RSTR+0 S4 A32])
+        (reg:SI 3 r3 [orig:137 _28 ] [137])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":171 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 73 72 74 9 (set (reg/f:SI 3 r3 [orig:138 _29 ] [138])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":172 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 74 73 75 9 (set (reg:SI 3 r3 [orig:139 _30 ] [139])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:138 _29 ] [138])
+                (const_int 12 [0xc])) [7 _29->APB2RSTR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":172 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 75 74 76 9 (set (reg/f:SI 2 r2 [orig:140 _31 ] [140])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":172 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 76 75 77 9 (set (reg:SI 3 r3 [orig:141 _32 ] [141])
+        (and:SI (reg:SI 3 r3 [orig:139 _30 ] [139])
+            (const_int -33 [0xffffffffffffffdf]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":172 82 {*arm_andsi3_insn}
+     (nil))
+(insn 77 76 107 9 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:140 _31 ] [140])
+                (const_int 12 [0xc])) [7 _31->APB2RSTR+0 S4 A32])
+        (reg:SI 3 r3 [orig:141 _32 ] [141])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":172 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 107 77 108 9 (set (pc)
+        (label_ref:SI 112)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":184 214 {*arm_jump}
+     (nil)
+ -> 112)
+(barrier 108 107 80)
+(code_label 80 108 81 10 39 (nil) [1 uses])
+(note 81 80 82 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 82 81 83 10 (set (reg:SI 3 r3 [158])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":175 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 83 82 84 10 (set (reg:SI 2 r2 [159])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 20 [0x14]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":175 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 84 83 85 10 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [158])
+            (reg:SI 2 r2 [159]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":175 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 85 84 86 10 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 112)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":175 204 {arm_cond_branch}
+     (nil)
+ -> 112)
+(note 86 85 87 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 87 86 88 11 (set (reg/f:SI 3 r3 [orig:142 _33 ] [142])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":177 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 88 87 89 11 (set (reg:SI 3 r3 [orig:143 _34 ] [143])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:142 _33 ] [142])
+                (const_int 12 [0xc])) [7 _33->APB2RSTR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":177 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 89 88 90 11 (set (reg/f:SI 2 r2 [orig:144 _35 ] [144])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":177 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 90 89 91 11 (set (reg:SI 3 r3 [orig:145 _36 ] [145])
+        (ior:SI (reg:SI 3 r3 [orig:143 _34 ] [143])
+            (const_int 64 [0x40]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":177 105 {*iorsi3_insn}
+     (nil))
+(insn 91 90 92 11 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:144 _35 ] [144])
+                (const_int 12 [0xc])) [7 _35->APB2RSTR+0 S4 A32])
+        (reg:SI 3 r3 [orig:145 _36 ] [145])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":177 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 92 91 93 11 (set (reg/f:SI 3 r3 [orig:146 _37 ] [146])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":178 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 93 92 94 11 (set (reg:SI 3 r3 [orig:147 _38 ] [147])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:146 _37 ] [146])
+                (const_int 12 [0xc])) [7 _37->APB2RSTR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":178 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 94 93 95 11 (set (reg/f:SI 2 r2 [orig:148 _39 ] [148])
+        (mem:SI (const:SI (plus:SI (label_ref 180)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":178 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 95 94 96 11 (set (reg:SI 3 r3 [orig:149 _40 ] [149])
+        (and:SI (reg:SI 3 r3 [orig:147 _38 ] [147])
+            (const_int -65 [0xffffffffffffffbf]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":178 82 {*arm_andsi3_insn}
+     (nil))
+(insn 96 95 112 11 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:148 _39 ] [148])
+                (const_int 12 [0xc])) [7 _39->APB2RSTR+0 S4 A32])
+        (reg:SI 3 r3 [orig:149 _40 ] [149])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":178 878 {*thumb2_movsi_insn}
+     (nil))
+(code_label 112 96 111 12 40 (nil) [5 uses])
+(note 111 112 113 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 113 111 145 12 (const_int 0 [0]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":184 236 {nop}
+     (nil))
+(note 145 113 146 12 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 146 145 193 12 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":184 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])))
+        (nil)))
+(note 193 146 147 12
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(insn 147 193 148 12 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":184 230 {blockage}
+     (nil))
+(insn/f 148 147 194 12 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":184 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(note 194 148 149 12
+	.cfi_def_cfa_register 13
+	 NOTE_INSN_CFI)
+(insn 149 194 150 12 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":184 322 {force_register_use}
+     (nil))
+(insn/f 150 149 195 12 (set (reg/f:SI 7 r7)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [2  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":184 877 {*thumb2_pop_single}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+            (nil))))
+(note 195 150 196 12
+	.cfi_restore 7
+	 NOTE_INSN_CFI)
+(note 196 195 151 12
+	.cfi_def_cfa_offset 0
+	 NOTE_INSN_CFI)
+(jump_insn 151 196 152 12 (simple_return) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":184 909 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 152 151 178)
+(code_label 178 152 179 42 (nil) [0 uses])
+(insn 179 178 180 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 310 {align_4}
+     (nil))
+(code_label 180 179 181 41 (nil) [0 uses])
+(insn 181 180 182 (unspec_volatile [
+            (const_int 1073809408 [0x40010800])
+        ] VUNSPEC_POOL_4) 315 {consttable_4}
+     (nil))
+(insn 182 181 183 (unspec_volatile [
+            (const_int 1073876992 [0x40021000])
+        ] VUNSPEC_POOL_4) 315 {consttable_4}
+     (nil))
+(insn 183 182 184 (unspec_volatile [
+            (const_int 1073810432 [0x40010c00])
+        ] VUNSPEC_POOL_4) 315 {consttable_4}
+     (nil))
+(insn 184 183 185 (unspec_volatile [
+            (const_int 1073811456 [0x40011000])
+        ] VUNSPEC_POOL_4) 315 {consttable_4}
+     (nil))
+(insn 185 184 186 (unspec_volatile [
+            (const_int 67113984 [0x4001400])
+        ] VUNSPEC_POOL_4) 315 {consttable_4}
+     (nil))
+(insn 186 185 187 (unspec_volatile [
+            (const_int 1073813504 [0x40011800])
+        ] VUNSPEC_POOL_4) 315 {consttable_4}
+     (nil))
+(insn 187 186 188 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 312 {consttable_end}
+     (nil))
+(barrier 188 187 139)
+(note 139 188 0 NOTE_INSN_DELETED)
+
+;; Function MCAL_GPIO_READ_PIN (MCAL_GPIO_READ_PIN, funcdef_no=6, decl_uid=5619, cgraph_uid=6, symbol_order=6)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 45
+Creating trace 2 : start at code_label 21
+Creating trace 3 : start at code_label 26
+Creating trace 4 : start at note 46
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 45
+   saw edge from trace 1 to 2 (via jump_insn 14)
+	push trace 2 to worklist
+   saw edge from trace 1 to 3 (via jump_insn 38)
+	push trace 3 to worklist
+Processing trace 3 : start at code_label 26
+   saw edge from trace 3 to 4 (via fallthru 0)
+	push trace 4 to worklist
+Processing trace 4 : start at note 46
+Processing trace 2 : start at code_label 21
+   saw edge from trace 2 to 3 (via fallthru 0)
+
+
+MCAL_GPIO_READ_PIN
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d,1u} r2={2d,1u} r3={8d,7u} r7={4d,16u} r12={1d} r13={5d,14u} r14={1d,1u} r100={1d,1u} r102={1d,1u} 
+;;    total ref usage 71{26d,45u,0e} in 27{27 regular + 0 call} insns.
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 41 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 41 7 54 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [2  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":193 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [2  S4 A32])
+                    (reg/f:SI 7 r7))
+            ])
+        (nil)))
+(note 54 41 55 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(note 55 54 42 2
+	.cfi_offset 7, -4
+	 NOTE_INSN_CFI)
+(insn/f 42 55 56 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -20 [0xffffffffffffffec]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":193 4 {*arm_addsi3}
+     (nil))
+(note 56 42 43 2
+	.cfi_def_cfa_offset 24
+	 NOTE_INSN_CFI)
+(insn 43 56 44 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":193 304 {stack_tie}
+     (nil))
+(insn/f 44 43 57 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":193 4 {*arm_addsi3}
+     (nil))
+(note 57 44 45 2
+	.cfi_def_cfa_register 7
+	 NOTE_INSN_CFI)
+(note 45 57 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 45 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])
+        (reg:SI 0 r0 [ GPIOX ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":193 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 3 2 5 2 (set (reg:SI 3 r3 [115])
+        (reg:SI 1 r1 [ pinconfiq ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":193 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 5 3 6 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 3 [0x3])) [0 pinconfiq+0 S1 A8])
+        (reg:QI 3 r3 [116])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":193 192 {*arm_movqi_insn}
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg/f:SI 3 r3 [117])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":196 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 2 r2 [orig:110 _1 ] [110])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [117])
+                (const_int 8 [0x8])) [7 GPIOX_6(D)->IDR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":196 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 3 [0x3])) [0 pinconfiq+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":196 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 12 11 13 2 (parallel [
+            (set (reg:SI 3 r3 [orig:112 _3 ] [112])
+                (and:SI (reg:SI 3 r3 [orig:111 _2 ] [111])
+                    (reg:SI 2 r2 [orig:110 _1 ] [110])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":196 912 {*thumb2_alusi3_short}
+     (nil))
+(insn 13 12 14 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:112 _3 ] [112])
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":196 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":196 204 {arm_cond_branch}
+     (nil)
+ -> 21)
+(note 15 14 16 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 18 3 (parallel [
+            (set (reg:SI 3 r3 [118])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":197 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 18 16 38 3 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 15 [0xf])) [0 bitstatus+0 S1 A8])
+        (reg:QI 3 r3 [119])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":197 192 {*arm_movqi_insn}
+     (nil))
+(jump_insn 38 18 39 3 (set (pc)
+        (label_ref 26)) 214 {*arm_jump}
+     (nil)
+ -> 26)
+(barrier 39 38 21)
+(code_label 21 39 22 4 44 (nil) [1 uses])
+(note 22 21 23 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 25 4 (parallel [
+            (set (reg:SI 3 r3 [120])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":201 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 25 23 26 4 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 15 [0xf])) [0 bitstatus+0 S1 A8])
+        (reg:QI 3 r3 [121])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":201 192 {*arm_movqi_insn}
+     (nil))
+(code_label 26 25 27 5 45 (nil) [1 uses])
+(note 27 26 28 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 28 27 35 5 (set (reg:SI 3 r3 [orig:113 _10 ] [113])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 15 [0xf])) [0 bitstatus+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":204 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 35 28 36 5 (set (reg/i:SI 0 r0)
+        (reg:SI 3 r3 [orig:114 <retval> ] [114])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":207 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 36 35 46 5 (use (reg/i:SI 0 r0)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":207 -1
+     (nil))
+(note 46 36 47 5 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 47 46 58 5 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":207 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 20 [0x14])))
+        (nil)))
+(note 58 47 48 5
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(insn 48 58 49 5 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":207 230 {blockage}
+     (nil))
+(insn/f 49 48 59 5 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":207 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(note 59 49 50 5
+	.cfi_def_cfa_register 13
+	 NOTE_INSN_CFI)
+(insn 50 59 51 5 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":207 322 {force_register_use}
+     (nil))
+(insn/f 51 50 60 5 (set (reg/f:SI 7 r7)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [2  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":207 877 {*thumb2_pop_single}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+            (nil))))
+(note 60 51 61 5
+	.cfi_restore 7
+	 NOTE_INSN_CFI)
+(note 61 60 52 5
+	.cfi_def_cfa_offset 0
+	 NOTE_INSN_CFI)
+(jump_insn 52 61 53 5 (simple_return) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":207 909 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 53 52 40)
+(note 40 53 0 NOTE_INSN_DELETED)
+
+;; Function MCAL_GPIO_READ_PORT (MCAL_GPIO_READ_PORT, funcdef_no=7, decl_uid=5621, cgraph_uid=7, symbol_order=7)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 25
+Creating trace 2 : start at note 26
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 25
+   saw edge from trace 1 to 2 (via fallthru 0)
+	push trace 2 to worklist
+Processing trace 2 : start at note 26
+
+
+MCAL_GPIO_READ_PORT
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 3 [r3] 7 [r7] 13 [sp]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={4d,3u} r7={4d,10u} r12={1d} r13={5d,11u} r14={1d,1u} r102={1d,1u} 
+;;    total ref usage 49{20d,29u,0e} in 17{17 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 21 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 21 4 34 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [2  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":215 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [2  S4 A32])
+                    (reg/f:SI 7 r7))
+            ])
+        (nil)))
+(note 34 21 35 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(note 35 34 22 2
+	.cfi_offset 7, -4
+	 NOTE_INSN_CFI)
+(insn/f 22 35 36 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -20 [0xffffffffffffffec]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":215 4 {*arm_addsi3}
+     (nil))
+(note 36 22 23 2
+	.cfi_def_cfa_offset 24
+	 NOTE_INSN_CFI)
+(insn 23 36 24 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":215 304 {stack_tie}
+     (nil))
+(insn/f 24 23 37 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":215 4 {*arm_addsi3}
+     (nil))
+(note 37 24 25 2
+	.cfi_def_cfa_register 7
+	 NOTE_INSN_CFI)
+(note 25 37 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 25 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])
+        (reg:SI 0 r0 [ GPIOX ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":215 878 {*thumb2_movsi_insn}
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg/f:SI 3 r3 [113])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":219 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 7 6 9 2 (set (reg:SI 3 r3 [orig:110 _1 ] [110])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [113])
+                (const_int 8 [0x8])) [7 GPIOX_3(D)->IDR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":219 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 9 7 10 2 (set (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                (const_int 14 [0xe])) [1 port_value+0 S2 A16])
+        (reg:HI 3 r3 [114])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":219 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 10 9 17 2 (set (reg:SI 3 r3 [orig:111 _5 ] [111])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 14 [0xe])) [1 port_value+0 S2 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":220 905 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 17 10 18 2 (set (reg/i:SI 0 r0)
+        (reg:SI 3 r3 [orig:112 <retval> ] [112])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":225 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 18 17 26 2 (use (reg/i:SI 0 r0)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":225 -1
+     (nil))
+(note 26 18 27 2 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 27 26 38 2 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":225 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 20 [0x14])))
+        (nil)))
+(note 38 27 28 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(insn 28 38 29 2 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":225 230 {blockage}
+     (nil))
+(insn/f 29 28 39 2 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":225 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(note 39 29 30 2
+	.cfi_def_cfa_register 13
+	 NOTE_INSN_CFI)
+(insn 30 39 31 2 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":225 322 {force_register_use}
+     (nil))
+(insn/f 31 30 40 2 (set (reg/f:SI 7 r7)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [2  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":225 877 {*thumb2_pop_single}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+            (nil))))
+(note 40 31 41 2
+	.cfi_restore 7
+	 NOTE_INSN_CFI)
+(note 41 40 32 2
+	.cfi_def_cfa_offset 0
+	 NOTE_INSN_CFI)
+(jump_insn 32 41 33 2 (simple_return) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":225 909 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 33 32 20)
+(note 20 33 0 NOTE_INSN_DELETED)
+
+;; Function MCAL_GPIO_WRITE_PIN (MCAL_GPIO_WRITE_PIN, funcdef_no=8, decl_uid=5625, cgraph_uid=8, symbol_order=8)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 40
+Creating trace 2 : start at code_label 21
+Creating trace 3 : start at code_label 34
+Creating trace 4 : start at note 41
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 40
+   saw edge from trace 1 to 2 (via jump_insn 14)
+	push trace 2 to worklist
+   saw edge from trace 1 to 3 (via jump_insn 30)
+	push trace 3 to worklist
+Processing trace 3 : start at code_label 34
+   saw edge from trace 3 to 4 (via fallthru 0)
+	push trace 4 to worklist
+Processing trace 4 : start at note 41
+Processing trace 2 : start at code_label 21
+   saw edge from trace 2 to 3 (via fallthru 0)
+
+
+MCAL_GPIO_WRITE_PIN
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 100 [cc]
+;;  ref usage 	r0={1d,1u} r1={1d,1u} r2={3d,3u} r3={6d,5u} r7={4d,17u} r12={1d} r13={5d,14u} r14={1d,1u} r100={1d,1u} r102={1d,1u} 
+;;    total ref usage 68{24d,44u,0e} in 26{26 regular + 0 call} insns.
+(note 1 0 10 NOTE_INSN_DELETED)
+(note 10 1 36 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 36 10 49 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [2  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":234 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [2  S4 A32])
+                    (reg/f:SI 7 r7))
+            ])
+        (nil)))
+(note 49 36 50 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(note 50 49 37 2
+	.cfi_offset 7, -4
+	 NOTE_INSN_CFI)
+(insn/f 37 50 51 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -12 [0xfffffffffffffff4]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":234 4 {*arm_addsi3}
+     (nil))
+(note 51 37 38 2
+	.cfi_def_cfa_offset 16
+	 NOTE_INSN_CFI)
+(insn 38 51 39 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":234 304 {stack_tie}
+     (nil))
+(insn/f 39 38 52 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":234 4 {*arm_addsi3}
+     (nil))
+(note 52 39 40 2
+	.cfi_def_cfa_register 7
+	 NOTE_INSN_CFI)
+(note 40 52 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 40 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])
+        (reg:SI 0 r0 [ GPIOX ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":234 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 3 2 5 2 (set (reg:SI 3 r3 [112])
+        (reg:SI 1 r1 [ pinconfiq ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":234 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 5 3 7 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 3 [0x3])) [0 pinconfiq+0 S1 A8])
+        (reg:QI 3 r3 [113])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":234 192 {*arm_movqi_insn}
+     (nil))
+(insn 7 5 8 2 (set (reg:QI 3 r3 [115])
+        (reg:QI 2 r2 [114])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":234 192 {*arm_movqi_insn}
+     (nil))
+(insn 8 7 9 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 2 [0x2])) [0 value+0 S1 A8])
+        (reg:QI 3 r3 [115])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":234 192 {*arm_movqi_insn}
+     (nil))
+(note 9 8 12 2 NOTE_INSN_FUNCTION_BEG)
+(insn 12 9 13 2 (set (reg:SI 3 r3 [116])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 2 [0x2])) [0 value+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":236 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 13 12 14 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [116])
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":236 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":236 204 {arm_cond_branch}
+     (nil)
+ -> 21)
+(note 15 14 16 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 3 (set (reg:SI 2 r2 [orig:110 _1 ] [110])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 3 [0x3])) [0 pinconfiq+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":239 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 17 16 18 3 (set (reg/f:SI 3 r3 [117])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":239 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 18 17 30 3 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [117])
+                (const_int 16 [0x10])) [7 GPIOX_7(D)->BSRR+0 S4 A32])
+        (reg:SI 2 r2 [orig:110 _1 ] [110])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":239 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 30 18 31 3 (set (pc)
+        (label_ref:SI 34)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":247 214 {*arm_jump}
+     (nil)
+ -> 34)
+(barrier 31 30 21)
+(code_label 21 31 22 4 50 (nil) [1 uses])
+(note 22 21 23 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 23 22 24 4 (set (reg:SI 2 r2 [orig:111 _2 ] [111])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 3 [0x3])) [0 pinconfiq+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":243 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 24 23 25 4 (set (reg/f:SI 3 r3 [118])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":243 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 25 24 34 4 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [118])
+                (const_int 20 [0x14])) [7 GPIOX_7(D)->BRR+0 S4 A32])
+        (reg:SI 2 r2 [orig:111 _2 ] [111])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":243 878 {*thumb2_movsi_insn}
+     (nil))
+(code_label 34 25 32 5 52 (nil) [1 uses])
+(note 32 34 33 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 33 32 41 5 (const_int 0 [0]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":247 236 {nop}
+     (nil))
+(note 41 33 42 5 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 42 41 53 5 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":247 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])))
+        (nil)))
+(note 53 42 43 5
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(insn 43 53 44 5 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":247 230 {blockage}
+     (nil))
+(insn/f 44 43 54 5 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":247 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(note 54 44 45 5
+	.cfi_def_cfa_register 13
+	 NOTE_INSN_CFI)
+(insn 45 54 46 5 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":247 322 {force_register_use}
+     (nil))
+(insn/f 46 45 55 5 (set (reg/f:SI 7 r7)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [2  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":247 877 {*thumb2_pop_single}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+            (nil))))
+(note 55 46 56 5
+	.cfi_restore 7
+	 NOTE_INSN_CFI)
+(note 56 55 47 5
+	.cfi_def_cfa_offset 0
+	 NOTE_INSN_CFI)
+(jump_insn 47 56 48 5 (simple_return) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":247 909 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 48 47 35)
+(note 35 48 0 NOTE_INSN_DELETED)
+
+;; Function MCAL_GPIO_WRITE_PORT (MCAL_GPIO_WRITE_PORT, funcdef_no=9, decl_uid=5628, cgraph_uid=9, symbol_order=9)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 20
+Creating trace 2 : start at note 21
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 20
+   saw edge from trace 1 to 2 (via fallthru 0)
+	push trace 2 to worklist
+Processing trace 2 : start at note 21
+
+
+MCAL_GPIO_WRITE_PORT
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp]
+;;  ref usage 	r0={1d,1u} r1={1d,1u} r2={2d,1u} r3={3d,2u} r7={4d,10u} r12={1d} r13={5d,11u} r14={1d,1u} r102={1d,1u} 
+;;    total ref usage 47{19d,28u,0e} in 17{17 regular + 0 call} insns.
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 16 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 16 7 29 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [2  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":255 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [2  S4 A32])
+                    (reg/f:SI 7 r7))
+            ])
+        (nil)))
+(note 29 16 30 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(note 30 29 17 2
+	.cfi_offset 7, -4
+	 NOTE_INSN_CFI)
+(insn/f 17 30 31 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -12 [0xfffffffffffffff4]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":255 4 {*arm_addsi3}
+     (nil))
+(note 31 17 18 2
+	.cfi_def_cfa_offset 16
+	 NOTE_INSN_CFI)
+(insn 18 31 19 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":255 304 {stack_tie}
+     (nil))
+(insn/f 19 18 32 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":255 4 {*arm_addsi3}
+     (nil))
+(note 32 19 20 2
+	.cfi_def_cfa_register 7
+	 NOTE_INSN_CFI)
+(note 20 32 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 20 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])
+        (reg:SI 0 r0 [ GPIOX ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":255 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 3 2 5 2 (set (reg:SI 3 r3 [111])
+        (reg:SI 1 r1 [ value ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":255 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 5 3 6 2 (set (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                (const_int 2 [0x2])) [1 value+0 S2 A16])
+        (reg:HI 3 r3 [112])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":255 880 {*thumb2_movhi_insn}
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:SI 2 r2 [orig:110 _1 ] [110])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 2 [0x2])) [1 value+0 S2 A16]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":257 905 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 3 r3 [113])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":257 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 11 10 14 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [113])
+                (const_int 12 [0xc])) [7 GPIOX_4(D)->ODR+0 S4 A32])
+        (reg:SI 2 r2 [orig:110 _1 ] [110])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":257 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 14 11 21 2 (const_int 0 [0]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":259 236 {nop}
+     (nil))
+(note 21 14 22 2 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 22 21 33 2 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":259 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])))
+        (nil)))
+(note 33 22 23 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(insn 23 33 24 2 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":259 230 {blockage}
+     (nil))
+(insn/f 24 23 34 2 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":259 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(note 34 24 25 2
+	.cfi_def_cfa_register 13
+	 NOTE_INSN_CFI)
+(insn 25 34 26 2 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":259 322 {force_register_use}
+     (nil))
+(insn/f 26 25 35 2 (set (reg/f:SI 7 r7)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [2  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":259 877 {*thumb2_pop_single}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+            (nil))))
+(note 35 26 36 2
+	.cfi_restore 7
+	 NOTE_INSN_CFI)
+(note 36 35 27 2
+	.cfi_def_cfa_offset 0
+	 NOTE_INSN_CFI)
+(jump_insn 27 36 28 2 (simple_return) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":259 909 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 28 27 15)
+(note 15 28 0 NOTE_INSN_DELETED)
+
+;; Function MCAL_GPIO_TOGGLE_PIN (MCAL_GPIO_TOGGLE_PIN, funcdef_no=10, decl_uid=5631, cgraph_uid=10, symbol_order=10)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 20
+Creating trace 2 : start at note 21
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 20
+   saw edge from trace 1 to 2 (via fallthru 0)
+	push trace 2 to worklist
+Processing trace 2 : start at note 21
+
+
+MCAL_GPIO_TOGGLE_PIN
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp]
+;;  ref usage 	r0={1d,1u} r1={1d,1u} r2={2d,1u} r3={3d,2u} r7={4d,10u} r12={1d} r13={5d,11u} r14={1d,1u} r102={1d,1u} 
+;;    total ref usage 47{19d,28u,0e} in 17{17 regular + 0 call} insns.
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 16 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 16 7 29 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [2  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":268 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [2  S4 A32])
+                    (reg/f:SI 7 r7))
+            ])
+        (nil)))
+(note 29 16 30 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(note 30 29 17 2
+	.cfi_offset 7, -4
+	 NOTE_INSN_CFI)
+(insn/f 17 30 31 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -12 [0xfffffffffffffff4]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":268 4 {*arm_addsi3}
+     (nil))
+(note 31 17 18 2
+	.cfi_def_cfa_offset 16
+	 NOTE_INSN_CFI)
+(insn 18 31 19 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":268 304 {stack_tie}
+     (nil))
+(insn/f 19 18 32 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":268 4 {*arm_addsi3}
+     (nil))
+(note 32 19 20 2
+	.cfi_def_cfa_register 7
+	 NOTE_INSN_CFI)
+(note 20 32 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 20 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])
+        (reg:SI 0 r0 [ GPIOX ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":268 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 3 2 5 2 (set (reg:SI 3 r3 [111])
+        (reg:SI 1 r1 [ pinconfiq ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":268 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 5 3 6 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 3 [0x3])) [0 pinconfiq+0 S1 A8])
+        (reg:QI 3 r3 [112])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":268 192 {*arm_movqi_insn}
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:SI 2 r2 [orig:110 _1 ] [110])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 3 [0x3])) [0 pinconfiq+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":271 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 3 r3 [113])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":271 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 11 10 14 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [113])
+                (const_int 12 [0xc])) [7 GPIOX_4(D)->ODR+0 S4 A32])
+        (reg:SI 2 r2 [orig:110 _1 ] [110])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":271 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 14 11 21 2 (const_int 0 [0]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":273 236 {nop}
+     (nil))
+(note 21 14 22 2 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 22 21 33 2 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 12 [0xc])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":273 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])))
+        (nil)))
+(note 33 22 23 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(insn 23 33 24 2 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":273 230 {blockage}
+     (nil))
+(insn/f 24 23 34 2 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":273 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(note 34 24 25 2
+	.cfi_def_cfa_register 13
+	 NOTE_INSN_CFI)
+(insn 25 34 26 2 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":273 322 {force_register_use}
+     (nil))
+(insn/f 26 25 35 2 (set (reg/f:SI 7 r7)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [2  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":273 877 {*thumb2_pop_single}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+            (nil))))
+(note 35 26 36 2
+	.cfi_restore 7
+	 NOTE_INSN_CFI)
+(note 36 35 27 2
+	.cfi_def_cfa_offset 0
+	 NOTE_INSN_CFI)
+(jump_insn 27 36 28 2 (simple_return) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":273 909 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 28 27 15)
+(note 15 28 0 NOTE_INSN_DELETED)
+
+;; Function MCAL_GPIO_LOCK_PIN (MCAL_GPIO_LOCK_PIN, funcdef_no=11, decl_uid=5634, cgraph_uid=11, symbol_order=11)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 45
+Creating trace 2 : start at note 46
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 45
+   saw edge from trace 1 to 2 (via fallthru 0)
+	push trace 2 to worklist
+Processing trace 2 : start at note 46
+
+
+MCAL_GPIO_LOCK_PIN
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp]
+;;  ref usage 	r0={2d,3u} r1={1d,1u} r2={5d,4u} r3={13d,11u} r7={4d,21u} r12={1d} r13={5d,11u} r14={1d,1u} r102={1d,1u} 
+;;    total ref usage 86{33d,53u,0e} in 36{36 regular + 0 call} insns.
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 41 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 41 7 54 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [2  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":282 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [2  S4 A32])
+                    (reg/f:SI 7 r7))
+            ])
+        (nil)))
+(note 54 41 55 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(note 55 54 42 2
+	.cfi_offset 7, -4
+	 NOTE_INSN_CFI)
+(insn/f 42 55 56 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -20 [0xffffffffffffffec]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":282 4 {*arm_addsi3}
+     (nil))
+(note 56 42 43 2
+	.cfi_def_cfa_offset 24
+	 NOTE_INSN_CFI)
+(insn 43 56 44 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":282 304 {stack_tie}
+     (nil))
+(insn/f 44 43 57 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":282 4 {*arm_addsi3}
+     (nil))
+(note 57 44 45 2
+	.cfi_def_cfa_register 7
+	 NOTE_INSN_CFI)
+(note 45 57 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 45 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])
+        (reg:SI 0 r0 [ GPIOX ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":282 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 3 2 5 2 (set (reg:SI 3 r3 [120])
+        (reg:SI 1 r1 [ pinconfiq ])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":282 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 5 3 6 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 3 [0x3])) [0 pinconfiq+0 S1 A8])
+        (reg:QI 3 r3 [121])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":282 192 {*arm_movqi_insn}
+     (nil))
+(note 6 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(insn 9 6 10 2 (set (reg:SI 3 r3 [122])
+        (const_int 65536 [0x10000])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":285 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 10 9 11 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [7 temp+0 S4 A32])
+        (reg:SI 3 r3 [122])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":285 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 2 r2 [orig:110 _1 ] [110])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 3 [0x3])) [0 pinconfiq+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":287 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 3 r3 [orig:111 temp.1_2 ] [111])
+        (mem/v/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [7 temp+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":287 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 13 12 14 2 (parallel [
+            (set (reg:SI 3 r3 [orig:112 _3 ] [112])
+                (ior:SI (reg:SI 3 r3 [orig:111 temp.1_2 ] [111])
+                    (reg:SI 2 r2 [orig:110 _1 ] [110])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":287 912 {*thumb2_alusi3_short}
+     (nil))
+(insn 14 13 15 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [7 temp+0 S4 A32])
+        (reg:SI 3 r3 [orig:112 _3 ] [112])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":287 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 2 r2 [orig:113 temp.2_4 ] [113])
+        (mem/v/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [7 temp+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":289 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 16 15 17 2 (set (reg/f:SI 3 r3 [123])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":289 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 17 16 18 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [123])
+                (const_int 24 [0x18])) [7 GPIOX_12(D)->LCKR+0 S4 A32])
+        (reg:SI 2 r2 [orig:113 temp.2_4 ] [113])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":289 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 2 r2 [orig:114 _5 ] [114])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 3 [0x3])) [0 pinconfiq+0 S1 A8]))) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":291 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 19 18 20 2 (set (reg/f:SI 3 r3 [124])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":291 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 20 19 21 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [124])
+                (const_int 24 [0x18])) [7 GPIOX_12(D)->LCKR+0 S4 A32])
+        (reg:SI 2 r2 [orig:114 _5 ] [114])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":291 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 2 r2 [orig:115 temp.3_6 ] [115])
+        (mem/v/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [7 temp+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":294 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 22 21 23 2 (set (reg/f:SI 3 r3 [125])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":294 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 23 22 24 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [125])
+                (const_int 24 [0x18])) [7 GPIOX_12(D)->LCKR+0 S4 A32])
+        (reg:SI 2 r2 [orig:115 temp.3_6 ] [115])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":294 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 24 23 25 2 (set (reg/f:SI 3 r3 [126])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":296 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 3 r3 [orig:116 _7 ] [116])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [126])
+                (const_int 24 [0x18])) [7 GPIOX_12(D)->LCKR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":296 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 26 25 27 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [7 temp+0 S4 A32])
+        (reg:SI 3 r3 [orig:116 _7 ] [116])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":296 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 27 26 28 2 (set (reg/f:SI 3 r3 [127])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [4 GPIOX+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":298 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 28 27 30 2 (set (reg:SI 3 r3 [orig:117 vol.4_17 ] [117])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [127])
+                (const_int 24 [0x18])) [7 GPIOX_12(D)->LCKR+0 S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":298 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 30 28 37 2 (parallel [
+            (set (reg:SI 3 r3 [orig:118 _18 ] [118])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":303 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 37 30 38 2 (set (reg/i:SI 0 r0)
+        (reg:SI 3 r3 [orig:119 <retval> ] [119])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":307 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 38 37 46 2 (use (reg/i:SI 0 r0)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":307 -1
+     (nil))
+(note 46 38 47 2 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 47 46 58 2 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 100 cc))
+        ]) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":307 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 20 [0x14])))
+        (nil)))
+(note 58 47 48 2
+	.cfi_def_cfa_offset 4
+	 NOTE_INSN_CFI)
+(insn 48 58 49 2 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":307 230 {blockage}
+     (nil))
+(insn/f 49 48 59 2 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":307 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(note 59 49 50 2
+	.cfi_def_cfa_register 13
+	 NOTE_INSN_CFI)
+(insn 50 59 51 2 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":307 322 {force_register_use}
+     (nil))
+(insn/f 51 50 60 2 (set (reg/f:SI 7 r7)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [2  S4 A32])) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":307 877 {*thumb2_pop_single}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+            (nil))))
+(note 60 51 61 2
+	.cfi_restore 7
+	 NOTE_INSN_CFI)
+(note 61 60 52 2
+	.cfi_def_cfa_offset 0
+	 NOTE_INSN_CFI)
+(jump_insn 52 61 53 2 (simple_return) "../stm32f103c6_drivers/stm32f103c6_gpio_driver.c":307 909 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 53 52 40)
+(note 40 53 0 NOTE_INSN_DELETED)
