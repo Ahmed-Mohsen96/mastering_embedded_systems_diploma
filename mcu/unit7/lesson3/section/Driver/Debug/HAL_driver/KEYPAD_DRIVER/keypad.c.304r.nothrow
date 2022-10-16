@@ -1,0 +1,1776 @@
+
+;; Function delay_mss (delay_mss, funcdef_no=3, decl_uid=5640, cgraph_uid=3, symbol_order=5)
+
+
+
+delay_mss
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 100 [cc]
+;;  ref usage 	r0={1d,1u} r1={1d} r2={2d,1u} r3={9d,8u} r7={4d,22u} r12={1d} r13={5d,17u} r14={1d,1u} r100={2d,2u} r102={1d,1u} 
+;;    total ref usage 80{27d,53u,0e} in 31{31 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 45 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 45 4 46 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [3  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":13 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                    (reg/f:SI 7 r7))
+            ])
+        (nil)))
+(insn/f 46 45 47 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -20 [0xffffffffffffffec]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":13 4 {*arm_addsi3}
+     (nil))
+(insn 47 46 48 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":13 304 {stack_tie}
+     (nil))
+(insn/f 48 47 49 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":13 4 {*arm_addsi3}
+     (nil))
+(note 49 48 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 49 3 2 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [2 time+0 S4 A32])
+        (reg:SI 0 r0 [ time ])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":13 878 {*thumb2_movsi_insn}
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (parallel [
+            (set (reg:SI 3 r3 [110])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":15 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 7 6 40 2 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [2 i+0 S4 A32])
+        (reg:SI 3 r3 [110])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":15 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 40 7 41 2 (set (pc)
+        (label_ref 29)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":15 214 {*arm_jump}
+     (nil)
+ -> 29)
+(barrier 41 40 31)
+(code_label 31 41 10 3 5 (nil) [1 uses])
+(note 10 31 11 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 3 (parallel [
+            (set (reg:SI 3 r3 [111])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":16 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 12 11 42 3 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [2 j+0 S4 A32])
+        (reg:SI 3 r3 [111])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":16 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 42 12 43 3 (set (pc)
+        (label_ref 19)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":16 214 {*arm_jump}
+     (nil)
+ -> 19)
+(barrier 43 42 21)
+(code_label 21 43 15 4 4 (nil) [1 uses])
+(note 15 21 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (set (reg:SI 3 r3 [113])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [2 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":16 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 17 16 18 4 (parallel [
+            (set (reg:SI 3 r3 [112])
+                (plus:SI (reg:SI 3 r3 [113])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":16 917 {*thumb2_addsi_short}
+     (nil))
+(insn 18 17 19 4 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [2 j+0 S4 A32])
+        (reg:SI 3 r3 [112])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":16 878 {*thumb2_movsi_insn}
+     (nil))
+(code_label 19 18 20 5 3 (nil) [1 uses])
+(note 20 19 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 22 20 23 5 (set (reg:SI 3 r3 [114])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [2 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":16 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 23 22 24 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [114])
+            (const_int 254 [0xfe]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":16 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 24 23 25 5 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":16 204 {arm_cond_branch}
+     (nil)
+ -> 21)
+(note 25 24 26 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 6 (set (reg:SI 3 r3 [116])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [2 i+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":15 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 27 26 28 6 (parallel [
+            (set (reg:SI 3 r3 [115])
+                (plus:SI (reg:SI 3 r3 [116])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":15 917 {*thumb2_addsi_short}
+     (nil))
+(insn 28 27 29 6 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [2 i+0 S4 A32])
+        (reg:SI 3 r3 [115])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":15 878 {*thumb2_movsi_insn}
+     (nil))
+(code_label 29 28 30 7 2 (nil) [1 uses])
+(note 30 29 32 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 32 30 33 7 (set (reg:SI 2 r2 [117])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [2 i+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":15 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 33 32 34 7 (set (reg:SI 3 r3 [118])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [2 time+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":15 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 34 33 35 7 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 2 r2 [117])
+            (reg:SI 3 r3 [118]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":15 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 35 34 36 7 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 31)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":15 204 {arm_cond_branch}
+     (nil)
+ -> 31)
+(note 36 35 39 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 39 36 50 8 (const_int 0 [0]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":18 236 {nop}
+     (nil))
+(note 50 39 51 8 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 51 50 52 8 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":18 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 20 [0x14])))
+        (nil)))
+(insn 52 51 53 8 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../HAL_driver/KEYPAD_DRIVER/keypad.c":18 230 {blockage}
+     (nil))
+(insn/f 53 52 54 8 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":18 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(insn 54 53 55 8 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../HAL_driver/KEYPAD_DRIVER/keypad.c":18 322 {force_register_use}
+     (nil))
+(insn/f 55 54 56 8 (set (reg/f:SI 7 r7)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [3  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":18 877 {*thumb2_pop_single}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+            (nil))))
+(jump_insn 56 55 57 8 (simple_return) "../HAL_driver/KEYPAD_DRIVER/keypad.c":18 909 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 57 56 44)
+(note 44 57 0 NOTE_INSN_DELETED)
+
+;; Function Keypad_init (Keypad_init, funcdef_no=4, decl_uid=5635, cgraph_uid=4, symbol_order=6)
+
+
+
+Keypad_init
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={19d,9u} r1={19d,9u} r2={10d} r3={42d,32u} r7={4d,38u} r12={19d} r13={5d,23u} r14={10d,2u} r15={10d} r16={9d} r17={9d} r18={9d} r19={9d} r20={9d} r21={9d} r22={9d} r23={9d} r24={9d} r25={9d} r26={9d} r27={9d} r28={9d} r29={9d} r30={9d} r31={9d} r32={9d} r33={9d} r34={9d} r35={9d} r36={9d} r37={9d} r38={9d} r39={9d} r40={9d} r41={9d} r42={9d} r43={9d} r44={9d} r45={9d} r46={9d} r47={9d} r48={9d} r49={9d} r50={9d} r51={9d} r52={9d} r53={9d} r54={9d} r55={9d} r56={9d} r57={9d} r58={9d} r59={9d} r60={9d} r61={9d} r62={9d} r63={9d} r64={9d} r65={9d} r66={9d} r67={9d} r68={9d} r69={9d} r70={9d} r71={9d} r72={9d} r73={9d} r74={9d} r75={9d} r76={9d} r77={9d} r78={9d} r79={9d} r80={9d} r81={9d} r82={9d} r83={9d} r84={9d} r85={9d} r86={9d} r87={9d} r88={9d} r89={9d} r90={9d} r91={9d} r92={9d} r93={9d} r94={9d} r95={9d} r96={9d} r97={9d} r98={9d} r99={9d} r100={9d} r101={9d} r102={1d,1u} 
+;;    total ref usage 1027{913d,114u,0e} in 93{84 regular + 9 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 125 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 125 3 126 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [3  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":20 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [3  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 126 125 127 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -8 [0xfffffffffffffff8]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":20 4 {*arm_addsi3}
+     (nil))
+(insn 127 126 128 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":20 304 {stack_tie}
+     (nil))
+(insn/f 128 127 129 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":20 4 {*arm_addsi3}
+     (nil))
+(note 129 128 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 129 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 7 2 (parallel [
+            (set (reg:SI 3 r3 [111])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":26 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 7 5 8 2 (set (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 pincfg.GPIO_pin_number+0 S2 A32])
+        (reg:HI 3 r3 [110])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":26 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 8 7 10 2 (parallel [
+            (set (reg:SI 3 r3 [112])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":27 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 10 8 11 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 3 r3 [113])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":27 192 {*arm_movqi_insn}
+     (nil))
+(insn 11 10 13 2 (parallel [
+            (set (reg:SI 3 r3 [114])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":28 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 13 11 14 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 7 [0x7])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 3 r3 [115])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":28 192 {*arm_movqi_insn}
+     (nil))
+(insn 14 13 15 2 (parallel [
+            (set (reg:SI 3 r3 [116])
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":29 917 {*thumb2_addsi_short}
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [116])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":29 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 148) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":29 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 17 16 18 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000598e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":29 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 18 17 20 2 (parallel [
+            (set (reg:SI 3 r3 [118])
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":31 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 20 18 21 2 (set (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 pincfg.GPIO_pin_number+0 S2 A32])
+        (reg:HI 3 r3 [117])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":31 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 21 20 23 2 (parallel [
+            (set (reg:SI 3 r3 [119])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":32 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 23 21 24 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 3 r3 [120])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":32 192 {*arm_movqi_insn}
+     (nil))
+(insn 24 23 26 2 (parallel [
+            (set (reg:SI 3 r3 [121])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":33 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 26 24 27 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 7 [0x7])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 3 r3 [122])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":33 192 {*arm_movqi_insn}
+     (nil))
+(insn 27 26 28 2 (parallel [
+            (set (reg:SI 3 r3 [123])
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":34 917 {*thumb2_addsi_short}
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [123])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":34 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 29 28 30 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 148) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":34 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 30 29 31 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000598e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":34 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 31 30 33 2 (parallel [
+            (set (reg:SI 3 r3 [125])
+                (const_int 8 [0x8]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":36 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 33 31 34 2 (set (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 pincfg.GPIO_pin_number+0 S2 A32])
+        (reg:HI 3 r3 [124])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":36 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 34 33 36 2 (parallel [
+            (set (reg:SI 3 r3 [126])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":37 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 36 34 37 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 3 r3 [127])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":37 192 {*arm_movqi_insn}
+     (nil))
+(insn 37 36 39 2 (parallel [
+            (set (reg:SI 3 r3 [128])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":38 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 39 37 40 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 7 [0x7])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 3 r3 [129])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":38 192 {*arm_movqi_insn}
+     (nil))
+(insn 40 39 41 2 (parallel [
+            (set (reg:SI 3 r3 [130])
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":39 917 {*thumb2_addsi_short}
+     (nil))
+(insn 41 40 42 2 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [130])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":39 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 42 41 43 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 148) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":39 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 43 42 44 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000598e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":39 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 44 43 46 2 (parallel [
+            (set (reg:SI 3 r3 [132])
+                (const_int 16 [0x10]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":41 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 46 44 47 2 (set (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 pincfg.GPIO_pin_number+0 S2 A32])
+        (reg:HI 3 r3 [131])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":41 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 47 46 49 2 (parallel [
+            (set (reg:SI 3 r3 [133])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":42 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 49 47 50 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 3 r3 [134])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":42 192 {*arm_movqi_insn}
+     (nil))
+(insn 50 49 52 2 (parallel [
+            (set (reg:SI 3 r3 [135])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":43 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 52 50 53 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 7 [0x7])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 3 r3 [136])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":43 192 {*arm_movqi_insn}
+     (nil))
+(insn 53 52 54 2 (parallel [
+            (set (reg:SI 3 r3 [137])
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":44 917 {*thumb2_addsi_short}
+     (nil))
+(insn 54 53 55 2 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [137])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":44 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 55 54 56 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 148) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":44 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 56 55 57 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000598e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":44 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 57 56 59 2 (parallel [
+            (set (reg:SI 3 r3 [139])
+                (const_int 32 [0x20]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":46 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 59 57 60 2 (set (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 pincfg.GPIO_pin_number+0 S2 A32])
+        (reg:HI 3 r3 [138])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":46 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 60 59 62 2 (parallel [
+            (set (reg:SI 3 r3 [140])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":47 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 62 60 63 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 3 r3 [141])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":47 192 {*arm_movqi_insn}
+     (nil))
+(insn 63 62 65 2 (parallel [
+            (set (reg:SI 3 r3 [142])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":48 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 65 63 66 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 7 [0x7])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 3 r3 [143])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":48 192 {*arm_movqi_insn}
+     (nil))
+(insn 66 65 67 2 (parallel [
+            (set (reg:SI 3 r3 [144])
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":49 917 {*thumb2_addsi_short}
+     (nil))
+(insn 67 66 68 2 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [144])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":49 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 68 67 69 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 148) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":49 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 69 68 70 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000598e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":49 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 70 69 72 2 (parallel [
+            (set (reg:SI 3 r3 [146])
+                (const_int 64 [0x40]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":51 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 72 70 73 2 (set (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 pincfg.GPIO_pin_number+0 S2 A32])
+        (reg:HI 3 r3 [145])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":51 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 73 72 75 2 (parallel [
+            (set (reg:SI 3 r3 [147])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":52 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 75 73 76 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 3 r3 [148])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":52 192 {*arm_movqi_insn}
+     (nil))
+(insn 76 75 78 2 (parallel [
+            (set (reg:SI 3 r3 [149])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":53 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 78 76 79 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 7 [0x7])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 3 r3 [150])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":53 192 {*arm_movqi_insn}
+     (nil))
+(insn 79 78 80 2 (parallel [
+            (set (reg:SI 3 r3 [151])
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":54 917 {*thumb2_addsi_short}
+     (nil))
+(insn 80 79 81 2 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [151])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":54 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 81 80 82 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 148) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":54 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 82 81 83 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000598e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":54 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 83 82 85 2 (parallel [
+            (set (reg:SI 3 r3 [153])
+                (const_int 128 [0x80]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":56 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 85 83 86 2 (set (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 pincfg.GPIO_pin_number+0 S2 A32])
+        (reg:HI 3 r3 [152])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":56 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 86 85 88 2 (parallel [
+            (set (reg:SI 3 r3 [154])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":57 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 88 86 89 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 3 r3 [155])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":57 192 {*arm_movqi_insn}
+     (nil))
+(insn 89 88 91 2 (parallel [
+            (set (reg:SI 3 r3 [156])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":58 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 91 89 92 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 7 [0x7])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 3 r3 [157])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":58 192 {*arm_movqi_insn}
+     (nil))
+(insn 92 91 93 2 (parallel [
+            (set (reg:SI 3 r3 [158])
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":59 917 {*thumb2_addsi_short}
+     (nil))
+(insn 93 92 94 2 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [158])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":59 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 94 93 95 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 148) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":59 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 95 94 96 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000598e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":59 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 96 95 98 2 (set (reg:SI 3 r3 [160])
+        (const_int 256 [0x100])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":61 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 98 96 99 2 (set (mem/c:HI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 pincfg.GPIO_pin_number+0 S2 A32])
+        (reg:HI 3 r3 [159])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":61 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 99 98 101 2 (parallel [
+            (set (reg:SI 3 r3 [161])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":62 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 101 99 102 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 3 r3 [162])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":62 192 {*arm_movqi_insn}
+     (nil))
+(insn 102 101 104 2 (parallel [
+            (set (reg:SI 3 r3 [163])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":63 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 104 102 105 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 7 [0x7])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 3 r3 [164])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":63 192 {*arm_movqi_insn}
+     (nil))
+(insn 105 104 106 2 (parallel [
+            (set (reg:SI 3 r3 [165])
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":64 917 {*thumb2_addsi_short}
+     (nil))
+(insn 106 105 107 2 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [165])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":64 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 107 106 108 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 148) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":64 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 108 107 109 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000598e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":64 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 109 108 110 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 255 [0xff]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":65 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 110 109 111 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 148) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":65 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 111 110 114 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PORT") [flags 0x41]  <function_decl 000000000598e800 MCAL_GPIO_WRITE_PORT>) [0 MCAL_GPIO_WRITE_PORT S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":65 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:HI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 114 111 130 2 (const_int 0 [0]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":67 236 {nop}
+     (nil))
+(note 130 114 131 2 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 131 130 132 2 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":67 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])))
+        (nil)))
+(insn 132 131 133 2 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../HAL_driver/KEYPAD_DRIVER/keypad.c":67 230 {blockage}
+     (nil))
+(insn/f 133 132 134 2 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":67 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(insn 134 133 135 2 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../HAL_driver/KEYPAD_DRIVER/keypad.c":67 322 {force_register_use}
+     (nil))
+(jump_insn 135 134 136 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":67 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (nil))
+ -> return)
+(barrier 136 135 146)
+(code_label 146 136 147 8 (nil) [0 uses])
+(insn 147 146 148 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 310 {align_4}
+     (nil))
+(code_label 148 147 149 7 (nil) [0 uses])
+(insn 149 148 150 (unspec_volatile [
+            (const_int 1073810432 [0x40010c00])
+        ] VUNSPEC_POOL_4) 315 {consttable_4}
+     (nil))
+(insn 150 149 151 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 312 {consttable_end}
+     (nil))
+(barrier 151 150 124)
+(note 124 151 0 NOTE_INSN_DELETED)
+
+;; Function Keypad_getkey (Keypad_getkey, funcdef_no=5, decl_uid=5636, cgraph_uid=5, symbol_order=7)
+
+
+
+Keypad_getkey
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={16d,11u} r1={15d,7u} r2={17d,8u} r3={73d,50u} r7={4d,81u} r12={15d} r13={5d,68u} r14={8d,2u} r15={8d} r16={7d} r17={7d} r18={7d} r19={7d} r20={7d} r21={7d} r22={7d} r23={7d} r24={7d} r25={7d} r26={7d} r27={7d} r28={7d} r29={7d} r30={7d} r31={7d} r32={7d} r33={7d} r34={7d} r35={7d} r36={7d} r37={7d} r38={7d} r39={7d} r40={7d} r41={7d} r42={7d} r43={7d} r44={7d} r45={7d} r46={7d} r47={7d} r48={7d} r49={7d} r50={7d} r51={7d} r52={7d} r53={7d} r54={7d} r55={7d} r56={7d} r57={7d} r58={7d} r59={7d} r60={7d} r61={7d} r62={7d} r63={7d} r64={7d} r65={7d} r66={7d} r67={7d} r68={7d} r69={7d} r70={7d} r71={7d} r72={7d} r73={7d} r74={7d} r75={7d} r76={7d} r77={7d} r78={7d} r79={7d} r80={7d} r81={7d} r82={7d} r83={7d} r84={7d} r85={7d} r86={7d} r87={7d} r88={7d} r89={7d} r90={7d} r91={7d} r92={7d} r93={7d} r94={7d} r95={7d} r96={7d} r97={7d} r98={7d} r99={7d} r100={28d,20u} r101={7d} r102={1d,1u} 
+;;    total ref usage 1033{785d,248u,0e} in 176{169 regular + 7 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 336 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 336 3 337 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [3  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":69 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [3  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 337 336 338 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -8 [0xfffffffffffffff8]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":69 4 {*arm_addsi3}
+     (nil))
+(insn 338 337 339 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":69 304 {stack_tie}
+     (nil))
+(insn/f 339 338 340 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":69 4 {*arm_addsi3}
+     (nil))
+(note 340 339 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 340 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (parallel [
+            (set (reg:SI 3 r3 [128])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":71 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 6 5 272 2 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [1 i+0 S4 A32])
+        (reg:SI 3 r3 [128])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":71 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 272 6 273 2 (set (pc)
+        (label_ref 255)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":71 214 {*arm_jump}
+     (nil)
+ -> 255)
+(barrier 273 272 257)
+(code_label 257 273 9 3 37 (nil) [1 uses])
+(note 9 257 10 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 10 9 11 3 (set (reg/f:SI 3 r3 [129])
+        (mem:SI (label_ref 357) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":75 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 11 10 12 3 (set (reg:SI 3 r3 [orig:110 _1 ] [110])
+        (mem/c:SI (reg/f:SI 3 r3 [129]) [1 Key_padCol+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":75 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 12 11 13 3 (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+        (zero_extend:SI (reg:QI 3 r3 [orig:110 _1 ] [110]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":75 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 13 12 14 3 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":75 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 14 13 15 3 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [orig:111 _2 ] [111])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":75 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 15 14 16 3 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 357)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":75 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 16 15 17 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000598e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":75 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 17 16 18 3 (set (reg/f:SI 3 r3 [130])
+        (mem:SI (label_ref 357) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":76 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 18 17 19 3 (set (reg:SI 3 r3 [orig:112 _3 ] [112])
+        (mem/c:SI (plus:SI (reg/f:SI 3 r3 [130])
+                (const_int 4 [0x4])) [1 Key_padCol+4 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":76 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 19 18 20 3 (set (reg:SI 3 r3 [orig:113 _4 ] [113])
+        (zero_extend:SI (reg:QI 3 r3 [orig:112 _3 ] [112]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":76 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 20 19 21 3 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":76 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 21 20 22 3 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [orig:113 _4 ] [113])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":76 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 22 21 23 3 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 357)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":76 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 23 22 24 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000598e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":76 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 24 23 25 3 (set (reg/f:SI 3 r3 [131])
+        (mem:SI (label_ref 357) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":77 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 25 24 26 3 (set (reg:SI 3 r3 [orig:114 _5 ] [114])
+        (mem/c:SI (plus:SI (reg/f:SI 3 r3 [131])
+                (const_int 8 [0x8])) [1 Key_padCol+8 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":77 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 26 25 27 3 (set (reg:SI 3 r3 [orig:115 _6 ] [115])
+        (zero_extend:SI (reg:QI 3 r3 [orig:114 _5 ] [114]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":77 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 27 26 28 3 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":77 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 28 27 29 3 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [orig:115 _6 ] [115])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":77 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 29 28 30 3 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 357)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":77 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 30 29 31 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000598e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":77 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 31 30 32 3 (set (reg/f:SI 3 r3 [132])
+        (mem:SI (label_ref 357) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":78 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 32 31 33 3 (set (reg:SI 3 r3 [orig:116 _7 ] [116])
+        (mem/c:SI (plus:SI (reg/f:SI 3 r3 [132])
+                (const_int 12 [0xc])) [1 Key_padCol+12 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":78 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 33 32 34 3 (set (reg:SI 3 r3 [orig:117 _8 ] [117])
+        (zero_extend:SI (reg:QI 3 r3 [orig:116 _7 ] [116]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":78 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 34 33 35 3 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":78 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 35 34 36 3 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [orig:117 _8 ] [117])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":78 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 36 35 37 3 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 357)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":78 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 37 36 38 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000598e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":78 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 38 37 39 3 (set (reg/f:SI 2 r2 [133])
+        (mem:SI (label_ref 357) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":79 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 39 38 40 3 (set (reg:SI 3 r3 [134])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [1 i+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":79 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 40 39 41 3 (set (reg:SI 3 r3 [orig:118 _9 ] [118])
+        (mem:SI (plus:SI (mult:SI (reg:SI 3 r3 [134])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 2 r2 [133])) [1 Key_padCol S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":79 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 41 40 42 3 (set (reg:SI 3 r3 [orig:119 _10 ] [119])
+        (zero_extend:SI (reg:QI 3 r3 [orig:118 _9 ] [118]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":79 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 42 41 43 3 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":79 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 43 42 44 3 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [orig:119 _10 ] [119])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":79 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 44 43 45 3 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 357)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":79 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 45 44 46 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000598e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":79 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 46 45 47 3 (parallel [
+            (set (reg:SI 3 r3 [135])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":80 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 47 46 274 3 (set (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])
+        (reg:SI 3 r3 [135])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":80 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 274 47 275 3 (set (pc)
+        (label_ref 245)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":80 214 {*arm_jump}
+     (nil)
+ -> 245)
+(barrier 275 274 247)
+(code_label 247 275 50 4 36 (nil) [1 uses])
+(note 50 247 51 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 51 50 52 4 (set (reg/f:SI 2 r2 [136])
+        (mem:SI (const:SI (plus:SI (label_ref 357)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":81 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 52 51 53 4 (set (reg:SI 3 r3 [137])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":81 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 53 52 54 4 (set (reg:SI 3 r3 [orig:120 _11 ] [120])
+        (mem:SI (plus:SI (mult:SI (reg:SI 3 r3 [137])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 2 r2 [136])) [1 Key_padRow S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":81 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 54 53 55 4 (set (reg:SI 3 r3 [orig:121 _12 ] [121])
+        (zero_extend:SI (reg:QI 3 r3 [orig:120 _11 ] [120]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":81 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 55 54 56 4 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [orig:121 _12 ] [121])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":81 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 56 55 57 4 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 357)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":81 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 57 56 58 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_READ_PIN") [flags 0x41]  <function_decl 000000000598e500 MCAL_GPIO_READ_PIN>) [0 MCAL_GPIO_READ_PIN S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":81 220 {*call_value_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 58 57 60 4 (set (reg:SI 3 r3 [138])
+        (reg:SI 0 r0)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":81 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 60 58 61 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:122 _13 ] [122])
+            (const_int 0 [0]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":81 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 61 60 308 4 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 240)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":81 204 {arm_cond_branch}
+     (nil)
+ -> 240)
+(note 308 61 309 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 309 308 73 5 (const_int 0 [0]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":82 236 {nop}
+     (nil))
+(code_label 73 309 63 6 13 (nil) [1 uses])
+(note 63 73 64 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 64 63 65 6 (set (reg/f:SI 2 r2 [139])
+        (mem:SI (const:SI (plus:SI (label_ref 357)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":82 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 65 64 66 6 (set (reg:SI 3 r3 [140])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":82 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 66 65 67 6 (set (reg:SI 3 r3 [orig:123 _14 ] [123])
+        (mem:SI (plus:SI (mult:SI (reg:SI 3 r3 [140])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 2 r2 [139])) [1 Key_padRow S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":82 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 67 66 68 6 (set (reg:SI 3 r3 [orig:124 _15 ] [124])
+        (zero_extend:SI (reg:QI 3 r3 [orig:123 _14 ] [123]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":82 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 68 67 69 6 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [orig:124 _15 ] [124])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":82 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 69 68 70 6 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 357)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":82 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 70 69 71 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_READ_PIN") [flags 0x41]  <function_decl 000000000598e500 MCAL_GPIO_READ_PIN>) [0 MCAL_GPIO_READ_PIN S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":82 220 {*call_value_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 71 70 74 6 (set (reg:SI 3 r3 [141])
+        (reg:SI 0 r0)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":82 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 74 71 75 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:125 _16 ] [125])
+            (const_int 0 [0]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":82 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 75 74 76 6 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 73)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":82 204 {arm_cond_branch}
+     (nil)
+ -> 73)
+(note 76 75 77 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 77 76 78 7 (set (reg:SI 3 r3 [142])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [1 i+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":84 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 78 77 79 7 (parallel [
+            (set (pc)
+                (if_then_else (leu (reg:SI 3 r3 [142])
+                        (const_int 3 [0x3]))
+                    (mem:SI (plus:SI (mult:SI (reg:SI 3 r3 [142])
+                                (const_int 4 [0x4]))
+                            (label_ref 79)) [0  S4 A32])
+                    (label_ref 240)))
+            (clobber (reg:CC 100 cc))
+            (clobber (reg:SI 2 r2 [166]))
+            (use (label_ref 79))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":84 907 {thumb2_casesi_internal}
+     (insn_list:REG_LABEL_TARGET 240 (nil))
+ -> 79)
+(code_label 79 78 80 15 (nil) [2 uses])
+(jump_table_data 80 79 81 (addr_diff_vec:SI (label_ref:SI 79)
+         [
+            (label_ref:SI 82)
+            (label_ref:SI 122)
+            (label_ref:SI 162)
+            (label_ref:SI 202)
+        ]
+        (const_int 0 [0])
+        (const_int 0 [0])))
+(barrier 81 80 82)
+(code_label 82 81 83 8 14 (nil) [1 uses])
+(note 83 82 84 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 84 83 85 8 (set (reg:SI 3 r3 [143])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":86 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 85 84 86 8 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [143])
+            (const_int 0 [0]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":86 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 86 85 87 8 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 91)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":86 204 {arm_cond_branch}
+     (nil)
+ -> 91)
+(note 87 86 88 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 88 87 276 9 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 55 [0x37]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":87 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 276 88 277 9 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":87 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 277 276 91)
+(code_label 91 277 92 10 19 (nil) [1 uses])
+(note 92 91 93 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 93 92 94 10 (set (reg:SI 3 r3 [144])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":88 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 94 93 95 10 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [144])
+            (const_int 1 [0x1]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":88 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 95 94 96 10 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 100)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":88 204 {arm_cond_branch}
+     (nil)
+ -> 100)
+(note 96 95 97 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 97 96 278 11 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 52 [0x34]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":89 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 278 97 279 11 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":89 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 279 278 100)
+(code_label 100 279 101 12 21 (nil) [1 uses])
+(note 101 100 102 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 102 101 103 12 (set (reg:SI 3 r3 [145])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":90 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 103 102 104 12 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [145])
+            (const_int 2 [0x2]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":90 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 104 103 105 12 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 109)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":90 204 {arm_cond_branch}
+     (nil)
+ -> 109)
+(note 105 104 106 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 106 105 280 13 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 49 [0x31]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":91 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 280 106 281 13 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":91 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 281 280 109)
+(code_label 109 281 110 14 22 (nil) [1 uses])
+(note 110 109 111 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 111 110 112 14 (set (reg:SI 3 r3 [146])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":92 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 112 111 113 14 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [146])
+            (const_int 3 [0x3]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":92 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 113 112 114 14 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 311)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":92 204 {arm_cond_branch}
+     (nil)
+ -> 311)
+(note 114 113 115 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 115 114 282 15 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 63 [0x3f]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":93 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 282 115 283 15 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":93 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 283 282 122)
+(code_label 122 283 123 16 16 (nil) [1 uses])
+(note 123 122 124 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 124 123 125 16 (set (reg:SI 3 r3 [147])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":96 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 125 124 126 16 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [147])
+            (const_int 0 [0]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":96 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 126 125 127 16 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 131)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":96 204 {arm_cond_branch}
+     (nil)
+ -> 131)
+(note 127 126 128 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 128 127 284 17 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 56 [0x38]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":97 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 284 128 285 17 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":97 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 285 284 131)
+(code_label 131 285 132 18 24 (nil) [1 uses])
+(note 132 131 133 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 133 132 134 18 (set (reg:SI 3 r3 [148])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":98 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 134 133 135 18 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [148])
+            (const_int 1 [0x1]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":98 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 135 134 136 18 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 140)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":98 204 {arm_cond_branch}
+     (nil)
+ -> 140)
+(note 136 135 137 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 137 136 286 19 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 53 [0x35]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":99 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 286 137 287 19 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":99 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 287 286 140)
+(code_label 140 287 141 20 25 (nil) [1 uses])
+(note 141 140 142 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 142 141 143 20 (set (reg:SI 3 r3 [149])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":100 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 143 142 144 20 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [149])
+            (const_int 2 [0x2]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":100 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 144 143 145 20 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 149)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":100 204 {arm_cond_branch}
+     (nil)
+ -> 149)
+(note 145 144 146 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 146 145 288 21 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 50 [0x32]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":101 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 288 146 289 21 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":101 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 289 288 149)
+(code_label 149 289 150 22 26 (nil) [1 uses])
+(note 150 149 151 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 151 150 152 22 (set (reg:SI 3 r3 [150])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":102 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 152 151 153 22 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [150])
+            (const_int 3 [0x3]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":102 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 153 152 154 22 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 316)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":102 204 {arm_cond_branch}
+     (nil)
+ -> 316)
+(note 154 153 155 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 155 154 290 23 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 48 [0x30]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":103 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 290 155 291 23 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":103 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 291 290 162)
+(code_label 162 291 163 24 17 (nil) [1 uses])
+(note 163 162 164 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 164 163 165 24 (set (reg:SI 3 r3 [151])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":106 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 165 164 166 24 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [151])
+            (const_int 0 [0]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":106 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 166 165 167 24 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 171)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":106 204 {arm_cond_branch}
+     (nil)
+ -> 171)
+(note 167 166 168 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 168 167 292 25 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 57 [0x39]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":107 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 292 168 293 25 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":107 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 293 292 171)
+(code_label 171 293 172 26 28 (nil) [1 uses])
+(note 172 171 173 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 173 172 174 26 (set (reg:SI 3 r3 [152])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":108 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 174 173 175 26 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [152])
+            (const_int 1 [0x1]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":108 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 175 174 176 26 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 180)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":108 204 {arm_cond_branch}
+     (nil)
+ -> 180)
+(note 176 175 177 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 177 176 294 27 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 54 [0x36]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":109 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 294 177 295 27 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":109 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 295 294 180)
+(code_label 180 295 181 28 29 (nil) [1 uses])
+(note 181 180 182 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 182 181 183 28 (set (reg:SI 3 r3 [153])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":110 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 183 182 184 28 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [153])
+            (const_int 2 [0x2]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":110 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 184 183 185 28 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 189)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":110 204 {arm_cond_branch}
+     (nil)
+ -> 189)
+(note 185 184 186 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 186 185 296 29 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 51 [0x33]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":111 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 296 186 297 29 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":111 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 297 296 189)
+(code_label 189 297 190 30 30 (nil) [1 uses])
+(note 190 189 191 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 191 190 192 30 (set (reg:SI 3 r3 [154])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":112 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 192 191 193 30 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [154])
+            (const_int 3 [0x3]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":112 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 193 192 194 30 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 321)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":112 204 {arm_cond_branch}
+     (nil)
+ -> 321)
+(note 194 193 195 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 195 194 298 31 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 61 [0x3d]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":113 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 298 195 299 31 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":113 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 299 298 202)
+(code_label 202 299 203 32 18 (nil) [1 uses])
+(note 203 202 204 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 204 203 205 32 (set (reg:SI 3 r3 [155])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":116 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 205 204 206 32 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [155])
+            (const_int 0 [0]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":116 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 206 205 207 32 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 211)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":116 204 {arm_cond_branch}
+     (nil)
+ -> 211)
+(note 207 206 208 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 208 207 300 33 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 47 [0x2f]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":117 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 300 208 301 33 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":117 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 301 300 211)
+(code_label 211 301 212 34 32 (nil) [1 uses])
+(note 212 211 213 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 213 212 214 34 (set (reg:SI 3 r3 [156])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":118 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 214 213 215 34 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [156])
+            (const_int 1 [0x1]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":118 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 215 214 216 34 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 220)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":118 204 {arm_cond_branch}
+     (nil)
+ -> 220)
+(note 216 215 217 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 217 216 302 35 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 42 [0x2a]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":119 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 302 217 303 35 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":119 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 303 302 220)
+(code_label 220 303 221 36 33 (nil) [1 uses])
+(note 221 220 222 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 222 221 223 36 (set (reg:SI 3 r3 [157])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":120 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 223 222 224 36 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [157])
+            (const_int 2 [0x2]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":120 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 224 223 225 36 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 229)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":120 204 {arm_cond_branch}
+     (nil)
+ -> 229)
+(note 225 224 226 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(insn 226 225 304 37 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 45 [0x2d]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":121 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 304 226 305 37 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":121 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 305 304 229)
+(code_label 229 305 230 38 34 (nil) [1 uses])
+(note 230 229 231 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 231 230 232 38 (set (reg:SI 3 r3 [158])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":122 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 232 231 233 38 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [158])
+            (const_int 3 [0x3]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":122 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 233 232 234 38 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 326)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":122 204 {arm_cond_branch}
+     (nil)
+ -> 326)
+(note 234 233 235 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(insn 235 234 306 39 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 43 [0x2b]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":123 916 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 306 235 307 39 (set (pc)
+        (label_ref 263)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":123 214 {*arm_jump}
+     (nil)
+ -> 263)
+(barrier 307 306 311)
+(code_label 311 307 310 40 38 (nil) [1 uses])
+(note 310 311 312 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(insn 312 310 313 40 (const_int 0 [0]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":94 236 {nop}
+     (nil))
+(jump_insn 313 312 314 40 (set (pc)
+        (label_ref 240)) 214 {*arm_jump}
+     (nil)
+ -> 240)
+(barrier 314 313 316)
+(code_label 316 314 315 41 39 (nil) [1 uses])
+(note 315 316 317 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(insn 317 315 318 41 (const_int 0 [0]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":104 236 {nop}
+     (nil))
+(jump_insn 318 317 319 41 (set (pc)
+        (label_ref 240)) 214 {*arm_jump}
+     (nil)
+ -> 240)
+(barrier 319 318 321)
+(code_label 321 319 320 42 40 (nil) [1 uses])
+(note 320 321 322 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(insn 322 320 323 42 (const_int 0 [0]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":114 236 {nop}
+     (nil))
+(jump_insn 323 322 324 42 (set (pc)
+        (label_ref 240)) 214 {*arm_jump}
+     (nil)
+ -> 240)
+(barrier 324 323 326)
+(code_label 326 324 325 43 41 (nil) [1 uses])
+(note 325 326 327 43 [bb 43] NOTE_INSN_BASIC_BLOCK)
+(insn 327 325 240 43 (const_int 0 [0]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":124 236 {nop}
+     (nil))
+(code_label 240 327 241 44 12 (nil) [5 uses])
+(note 241 240 242 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(insn 242 241 243 44 (set (reg:SI 3 r3 [160])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":80 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 243 242 244 44 (parallel [
+            (set (reg:SI 3 r3 [159])
+                (plus:SI (reg:SI 3 r3 [160])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":80 917 {*thumb2_addsi_short}
+     (nil))
+(insn 244 243 245 44 (set (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])
+        (reg:SI 3 r3 [159])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":80 878 {*thumb2_movsi_insn}
+     (nil))
+(code_label 245 244 246 45 11 (nil) [1 uses])
+(note 246 245 248 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(insn 248 246 249 45 (set (reg:SI 3 r3 [161])
+        (mem/c:SI (reg/f:SI 7 r7) [1 j+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":80 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 249 248 250 45 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [161])
+            (const_int 3 [0x3]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":80 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 250 249 251 45 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 247)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":80 204 {arm_cond_branch}
+     (nil)
+ -> 247)
+(note 251 250 252 46 [bb 46] NOTE_INSN_BASIC_BLOCK)
+(insn 252 251 253 46 (set (reg:SI 3 r3 [163])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [1 i+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":71 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 253 252 254 46 (parallel [
+            (set (reg:SI 3 r3 [162])
+                (plus:SI (reg:SI 3 r3 [163])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":71 917 {*thumb2_addsi_short}
+     (nil))
+(insn 254 253 255 46 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [1 i+0 S4 A32])
+        (reg:SI 3 r3 [162])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":71 878 {*thumb2_movsi_insn}
+     (nil))
+(code_label 255 254 256 47 10 (nil) [1 uses])
+(note 256 255 258 47 [bb 47] NOTE_INSN_BASIC_BLOCK)
+(insn 258 256 259 47 (set (reg:SI 3 r3 [164])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [1 i+0 S4 A32])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":71 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 259 258 260 47 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [164])
+            (const_int 3 [0x3]))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":71 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 260 259 261 47 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 257)
+            (pc))) "../HAL_driver/KEYPAD_DRIVER/keypad.c":71 204 {arm_cond_branch}
+     (nil)
+ -> 257)
+(note 261 260 262 48 [bb 48] NOTE_INSN_BASIC_BLOCK)
+(insn 262 261 263 48 (parallel [
+            (set (reg:SI 3 r3 [orig:126 _19 ] [126])
+                (const_int 65 [0x41]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":129 916 {*thumb2_movsi_shortim}
+     (nil))
+(code_label 263 262 264 49 20 (nil) [16 uses])
+(note 264 263 269 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+(insn 269 264 270 49 (set (reg/i:SI 0 r0)
+        (reg:SI 3 r3 [orig:127 <retval> ] [127])) "../HAL_driver/KEYPAD_DRIVER/keypad.c":130 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 270 269 341 49 (use (reg/i:SI 0 r0)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":130 -1
+     (nil))
+(note 341 270 342 49 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 342 341 343 49 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":130 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])))
+        (nil)))
+(insn 343 342 344 49 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../HAL_driver/KEYPAD_DRIVER/keypad.c":130 230 {blockage}
+     (nil))
+(insn/f 344 343 345 49 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../HAL_driver/KEYPAD_DRIVER/keypad.c":130 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(insn 345 344 346 49 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../HAL_driver/KEYPAD_DRIVER/keypad.c":130 322 {force_register_use}
+     (nil))
+(jump_insn 346 345 347 49 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+        ]) "../HAL_driver/KEYPAD_DRIVER/keypad.c":130 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (nil))
+ -> return)
+(barrier 347 346 355)
+(code_label 355 347 356 43 (nil) [0 uses])
+(insn 356 355 357 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 310 {align_4}
+     (nil))
+(code_label 357 356 358 42 (nil) [0 uses])
+(insn 358 357 359 (unspec_volatile [
+            (symbol_ref:SI ("Key_padCol") [flags 0x2]  <var_decl 00000000059bd1b0 Key_padCol>)
+        ] VUNSPEC_POOL_4) 315 {consttable_4}
+     (nil))
+(insn 359 358 360 (unspec_volatile [
+            (const_int 1073810432 [0x40010c00])
+        ] VUNSPEC_POOL_4) 315 {consttable_4}
+     (nil))
+(insn 360 359 361 (unspec_volatile [
+            (symbol_ref:SI ("Key_padRow") [flags 0x2]  <var_decl 00000000059bd120 Key_padRow>)
+        ] VUNSPEC_POOL_4) 315 {consttable_4}
+     (nil))
+(insn 361 360 362 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 312 {consttable_end}
+     (nil))
+(barrier 362 361 335)
+(note 335 362 0 NOTE_INSN_DELETED)
