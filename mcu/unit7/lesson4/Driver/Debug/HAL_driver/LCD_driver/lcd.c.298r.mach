@@ -1,0 +1,3753 @@
+
+;; Function wait_ms (wait_ms, funcdef_no=3, decl_uid=5657, cgraph_uid=3, symbol_order=4)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 9 n_edges 10 count 15 (  1.7)
+
+
+wait_ms
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 100 [cc]
+;;  ref usage 	r0={1d,1u} r1={1d} r2={2d,1u} r3={9d,8u} r7={4d,22u} r12={1d} r13={5d,17u} r14={1d,1u} r100={2d,2u} r102={1d,1u} 
+;;    total ref usage 80{27d,53u,0e} in 31{31 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 45 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 45 4 46 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [4  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../HAL_driver/LCD_driver/lcd.c":13 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg/f:SI 7 r7))
+            ])
+        (nil)))
+(insn/f 46 45 47 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -20 [0xffffffffffffffec]))) "../HAL_driver/LCD_driver/lcd.c":13 4 {*arm_addsi3}
+     (nil))
+(insn 47 46 48 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../HAL_driver/LCD_driver/lcd.c":13 304 {stack_tie}
+     (nil))
+(insn/f 48 47 49 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":13 4 {*arm_addsi3}
+     (nil))
+(note 49 48 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 49 3 2 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [3 x+0 S4 A32])
+        (reg:SI 0 r0 [ x ])) "../HAL_driver/LCD_driver/lcd.c":13 878 {*thumb2_movsi_insn}
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (parallel [
+            (set (reg:SI 3 r3 [110])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":15 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 7 6 40 2 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [3 i+0 S4 A32])
+        (reg:SI 3 r3 [110])) "../HAL_driver/LCD_driver/lcd.c":15 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 40 7 41 2 (set (pc)
+        (label_ref 29)) "../HAL_driver/LCD_driver/lcd.c":15 214 {*arm_jump}
+     (nil)
+ -> 29)
+(barrier 41 40 31)
+(code_label 31 41 10 3 5 (nil) [1 uses])
+(note 10 31 11 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 3 (parallel [
+            (set (reg:SI 3 r3 [111])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":16 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 12 11 42 3 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [3 j+0 S4 A32])
+        (reg:SI 3 r3 [111])) "../HAL_driver/LCD_driver/lcd.c":16 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 42 12 43 3 (set (pc)
+        (label_ref 19)) "../HAL_driver/LCD_driver/lcd.c":16 214 {*arm_jump}
+     (nil)
+ -> 19)
+(barrier 43 42 21)
+(code_label 21 43 15 4 4 (nil) [1 uses])
+(note 15 21 16 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 17 4 (set (reg:SI 3 r3 [113])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [3 j+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":16 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 17 16 18 4 (parallel [
+            (set (reg:SI 3 r3 [112])
+                (plus:SI (reg:SI 3 r3 [113])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":16 917 {*thumb2_addsi_short}
+     (nil))
+(insn 18 17 19 4 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [3 j+0 S4 A32])
+        (reg:SI 3 r3 [112])) "../HAL_driver/LCD_driver/lcd.c":16 878 {*thumb2_movsi_insn}
+     (nil))
+(code_label 19 18 20 5 3 (nil) [1 uses])
+(note 20 19 22 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 22 20 23 5 (set (reg:SI 3 r3 [114])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])) [3 j+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":16 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 23 22 24 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [114])
+            (const_int 254 [0xfe]))) "../HAL_driver/LCD_driver/lcd.c":16 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 24 23 25 5 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 21)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":16 204 {arm_cond_branch}
+     (nil)
+ -> 21)
+(note 25 24 26 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 26 25 27 6 (set (reg:SI 3 r3 [116])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [3 i+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":15 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 27 26 28 6 (parallel [
+            (set (reg:SI 3 r3 [115])
+                (plus:SI (reg:SI 3 r3 [116])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":15 917 {*thumb2_addsi_short}
+     (nil))
+(insn 28 27 29 6 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [3 i+0 S4 A32])
+        (reg:SI 3 r3 [115])) "../HAL_driver/LCD_driver/lcd.c":15 878 {*thumb2_movsi_insn}
+     (nil))
+(code_label 29 28 30 7 2 (nil) [1 uses])
+(note 30 29 32 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 32 30 33 7 (set (reg:SI 2 r2 [117])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [3 i+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":15 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 33 32 34 7 (set (reg:SI 3 r3 [118])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [3 x+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":15 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 34 33 35 7 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 2 r2 [117])
+            (reg:SI 3 r3 [118]))) "../HAL_driver/LCD_driver/lcd.c":15 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 35 34 36 7 (set (pc)
+        (if_then_else (lt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 31)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":15 204 {arm_cond_branch}
+     (nil)
+ -> 31)
+(note 36 35 39 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 39 36 50 8 (const_int 0 [0]) "../HAL_driver/LCD_driver/lcd.c":17 236 {nop}
+     (nil))
+(note 50 39 51 8 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 51 50 52 8 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 20 [0x14])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":17 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 20 [0x14])))
+        (nil)))
+(insn 52 51 53 8 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../HAL_driver/LCD_driver/lcd.c":17 230 {blockage}
+     (nil))
+(insn/f 53 52 54 8 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../HAL_driver/LCD_driver/lcd.c":17 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(insn 54 53 55 8 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../HAL_driver/LCD_driver/lcd.c":17 322 {force_register_use}
+     (nil))
+(insn/f 55 54 56 8 (set (reg/f:SI 7 r7)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [4  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":17 877 {*thumb2_pop_single}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+            (nil))))
+(jump_insn 56 55 57 8 (simple_return) "../HAL_driver/LCD_driver/lcd.c":17 909 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 57 56 44)
+(note 44 57 0 NOTE_INSN_DELETED)
+
+;; Function lcd_init (lcd_init, funcdef_no=4, decl_uid=5647, cgraph_uid=4, symbol_order=5)
+
+verify found no changes in insn with uid = 6.
+verify found no changes in insn with uid = 21.
+verify found no changes in insn with uid = 36.
+verify found no changes in insn with uid = 51.
+verify found no changes in insn with uid = 66.
+verify found no changes in insn with uid = 81.
+verify found no changes in insn with uid = 96.
+verify found no changes in insn with uid = 111.
+verify found no changes in insn with uid = 126.
+verify found no changes in insn with uid = 141.
+verify found no changes in insn with uid = 156.
+verify found no changes in insn with uid = 171.
+verify found no changes in insn with uid = 175.
+verify found no changes in insn with uid = 179.
+verify found no changes in insn with uid = 183.
+verify found no changes in insn with uid = 185.
+verify found no changes in insn with uid = 186.
+verify found no changes in insn with uid = 188.
+verify found no changes in insn with uid = 190.
+verify found no changes in insn with uid = 192.
+verify found no changes in insn with uid = 194.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+deleting insn with uid = 9.
+deleting insn with uid = 13.
+deleting insn with uid = 17.
+Splitting with gen_split_86
+deleting insn with uid = 24.
+deleting insn with uid = 28.
+deleting insn with uid = 32.
+Splitting with gen_split_86
+deleting insn with uid = 39.
+deleting insn with uid = 43.
+deleting insn with uid = 47.
+Splitting with gen_split_86
+deleting insn with uid = 54.
+deleting insn with uid = 58.
+deleting insn with uid = 62.
+Splitting with gen_split_86
+deleting insn with uid = 69.
+deleting insn with uid = 73.
+deleting insn with uid = 77.
+Splitting with gen_split_86
+deleting insn with uid = 84.
+deleting insn with uid = 88.
+deleting insn with uid = 92.
+Splitting with gen_split_86
+deleting insn with uid = 99.
+deleting insn with uid = 103.
+deleting insn with uid = 107.
+Splitting with gen_split_86
+deleting insn with uid = 114.
+deleting insn with uid = 118.
+deleting insn with uid = 122.
+Splitting with gen_split_86
+deleting insn with uid = 129.
+deleting insn with uid = 133.
+deleting insn with uid = 137.
+Splitting with gen_split_86
+deleting insn with uid = 144.
+deleting insn with uid = 148.
+deleting insn with uid = 152.
+Splitting with gen_split_86
+deleting insn with uid = 159.
+deleting insn with uid = 163.
+deleting insn with uid = 167.
+Splitting with gen_split_86
+Splitting with gen_split_86
+Splitting with gen_split_86
+Splitting with gen_split_86
+;; SImode fixup for i7; addr 12, range (0,1018): `pincfg'
+;; SImode fixup for i11; addr 24, range (0,1018): `pincfg'
+;; SImode fixup for i15; addr 32, range (0,1018): `pincfg'
+;; SImode fixup for i19; addr 40, range (0,1018): `pincfg'
+;; SImode fixup for i20; addr 44, range (0,1018): 0x40010800
+;; SImode fixup for i22; addr 52, range (0,1018): `pincfg'
+;; SImode fixup for i26; addr 64, range (0,1018): `pincfg'
+;; SImode fixup for i30; addr 72, range (0,1018): `pincfg'
+;; SImode fixup for i34; addr 80, range (0,1018): `pincfg'
+;; SImode fixup for i35; addr 84, range (0,1018): 0x40010800
+;; SImode fixup for i37; addr 92, range (0,1018): `pincfg'
+;; SImode fixup for i41; addr 104, range (0,1018): `pincfg'
+;; SImode fixup for i45; addr 112, range (0,1018): `pincfg'
+;; SImode fixup for i49; addr 120, range (0,1018): `pincfg'
+;; SImode fixup for i50; addr 124, range (0,1018): 0x40010800
+;; SImode fixup for i52; addr 132, range (0,1018): `pincfg'
+;; SImode fixup for i56; addr 142, range (0,1018): `pincfg'
+;; SImode fixup for i60; addr 150, range (0,1018): `pincfg'
+;; SImode fixup for i64; addr 158, range (0,1018): `pincfg'
+;; SImode fixup for i65; addr 162, range (0,1018): 0x40010800
+;; SImode fixup for i67; addr 170, range (0,1018): `pincfg'
+;; SImode fixup for i71; addr 180, range (0,1018): `pincfg'
+;; SImode fixup for i75; addr 188, range (0,1018): `pincfg'
+;; SImode fixup for i79; addr 196, range (0,1018): `pincfg'
+;; SImode fixup for i80; addr 200, range (0,1018): 0x40010800
+;; SImode fixup for i82; addr 208, range (0,1018): `pincfg'
+;; SImode fixup for i86; addr 218, range (0,1018): `pincfg'
+;; SImode fixup for i90; addr 226, range (0,1018): `pincfg'
+;; SImode fixup for i94; addr 234, range (0,1018): `pincfg'
+;; SImode fixup for i95; addr 238, range (0,1018): 0x40010800
+;; SImode fixup for i97; addr 246, range (0,1018): `pincfg'
+;; SImode fixup for i101; addr 256, range (0,1018): `pincfg'
+;; SImode fixup for i105; addr 264, range (0,1018): `pincfg'
+;; SImode fixup for i109; addr 272, range (0,1018): `pincfg'
+;; SImode fixup for i110; addr 276, range (0,1018): 0x40010800
+;; SImode fixup for i112; addr 284, range (0,1018): `pincfg'
+;; SImode fixup for i116; addr 294, range (0,1018): `pincfg'
+;; SImode fixup for i120; addr 302, range (0,1018): `pincfg'
+;; SImode fixup for i124; addr 310, range (0,1018): `pincfg'
+;; SImode fixup for i125; addr 314, range (0,1018): 0x40010800
+;; SImode fixup for i127; addr 322, range (0,1018): `pincfg'
+;; SImode fixup for i131; addr 332, range (0,1018): `pincfg'
+;; SImode fixup for i135; addr 340, range (0,1018): `pincfg'
+;; SImode fixup for i139; addr 348, range (0,1018): `pincfg'
+;; SImode fixup for i140; addr 352, range (0,1018): 0x40010800
+;; SImode fixup for i142; addr 360, range (0,1018): `pincfg'
+;; SImode fixup for i146; addr 370, range (0,1018): `pincfg'
+;; SImode fixup for i150; addr 378, range (0,1018): `pincfg'
+;; SImode fixup for i154; addr 386, range (0,1018): `pincfg'
+;; SImode fixup for i155; addr 390, range (0,1018): 0x40010800
+;; SImode fixup for i157; addr 398, range (0,1018): `pincfg'
+;; SImode fixup for i161; addr 408, range (0,1018): `pincfg'
+;; SImode fixup for i165; addr 416, range (0,1018): `pincfg'
+;; SImode fixup for i169; addr 424, range (0,1018): `pincfg'
+;; SImode fixup for i170; addr 428, range (0,1018): 0x40010800
+;; SImode fixup for i174; addr 440, range (0,1018): 0x40010800
+;; SImode fixup for i178; addr 452, range (0,1018): 0x40010800
+;; SImode fixup for i182; addr 464, range (0,1018): 0x40010800
+;; Emitting minipool after insn 218; address 510; align 4 (bytes)
+;;  Offset 0, min -65536, max 1030 `pincfg'
+;;  Offset 4, min -65536, max 1062 0x40010800
+
+
+lcd_init
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={42d,20u} r1={36d,14u} r2={58d,36u} r3={55d,33u} r7={3d,3u} r12={43d} r13={3d,30u} r14={22d,2u} r15={22d} r16={21d} r17={21d} r18={21d} r19={21d} r20={21d} r21={21d} r22={21d} r23={21d} r24={21d} r25={21d} r26={21d} r27={21d} r28={21d} r29={21d} r30={21d} r31={21d} r32={21d} r33={21d} r34={21d} r35={21d} r36={21d} r37={21d} r38={21d} r39={21d} r40={21d} r41={21d} r42={21d} r43={21d} r44={21d} r45={21d} r46={21d} r47={21d} r48={21d} r49={21d} r50={21d} r51={21d} r52={21d} r53={21d} r54={21d} r55={21d} r56={21d} r57={21d} r58={21d} r59={21d} r60={21d} r61={21d} r62={21d} r63={21d} r64={21d} r65={21d} r66={21d} r67={21d} r68={21d} r69={21d} r70={21d} r71={21d} r72={21d} r73={21d} r74={21d} r75={21d} r76={21d} r77={21d} r78={21d} r79={21d} r80={21d} r81={21d} r82={21d} r83={21d} r84={21d} r85={21d} r86={21d} r87={21d} r88={21d} r89={21d} r90={21d} r91={21d} r92={21d} r93={21d} r94={21d} r95={21d} r96={21d} r97={21d} r98={21d} r99={21d} r100={21d} r101={21d} r102={1d,1u} 
+;;    total ref usage 2230{2091d,139u,0e} in 161{140 regular + 21 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 213 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 213 3 214 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":19 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [4  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 214 213 215 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":19 4 {*arm_addsi3}
+     (nil))
+(note 215 214 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 215 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 20 [0x14]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":20 916 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 6 5 7 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("wait_ms") [flags 0x3]  <function_decl 0000000005982400 wait_ms>) [0 wait_ms S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":20 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 7 6 8 2 (set (reg/f:SI 3 r3 [110])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":23 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 2 r2 [112])
+        (const_int 1024 [0x400])) "../HAL_driver/LCD_driver/lcd.c":23 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 10 8 11 2 (set (mem/c:HI (reg/f:SI 3 r3 [110]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [111])) "../HAL_driver/LCD_driver/lcd.c":23 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 11 10 12 2 (set (reg/f:SI 3 r3 [113])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":24 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 12 11 14 2 (parallel [
+            (set (reg:SI 2 r2 [114])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":24 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 14 12 15 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [113])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [115])) "../HAL_driver/LCD_driver/lcd.c":24 192 {*arm_movqi_insn}
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 3 r3 [116])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":25 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 16 15 18 2 (parallel [
+            (set (reg:SI 2 r2 [117])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":25 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 18 16 19 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [116])
+                (const_int 3 [0x3])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 2 r2 [118])) "../HAL_driver/LCD_driver/lcd.c":25 192 {*arm_movqi_insn}
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":26 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":26 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 21 20 22 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":26 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 22 21 23 2 (set (reg/f:SI 3 r3 [119])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":27 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 23 22 25 2 (set (reg:SI 2 r2 [121])
+        (const_int 256 [0x100])) "../HAL_driver/LCD_driver/lcd.c":27 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 25 23 26 2 (set (mem/c:HI (reg/f:SI 3 r3 [119]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [120])) "../HAL_driver/LCD_driver/lcd.c":27 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 26 25 27 2 (set (reg/f:SI 3 r3 [122])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":28 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 27 26 29 2 (parallel [
+            (set (reg:SI 2 r2 [123])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":28 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 29 27 30 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [122])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [124])) "../HAL_driver/LCD_driver/lcd.c":28 192 {*arm_movqi_insn}
+     (nil))
+(insn 30 29 31 2 (set (reg/f:SI 3 r3 [125])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":29 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 31 30 33 2 (parallel [
+            (set (reg:SI 2 r2 [126])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":29 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 33 31 34 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [125])
+                (const_int 3 [0x3])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 2 r2 [127])) "../HAL_driver/LCD_driver/lcd.c":29 192 {*arm_movqi_insn}
+     (nil))
+(insn 34 33 35 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":30 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 35 34 36 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":30 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 36 35 37 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":30 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 37 36 38 2 (set (reg/f:SI 3 r3 [128])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":31 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 38 37 40 2 (set (reg:SI 2 r2 [130])
+        (const_int 512 [0x200])) "../HAL_driver/LCD_driver/lcd.c":31 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 40 38 41 2 (set (mem/c:HI (reg/f:SI 3 r3 [128]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [129])) "../HAL_driver/LCD_driver/lcd.c":31 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 41 40 42 2 (set (reg/f:SI 3 r3 [131])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":32 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 42 41 44 2 (parallel [
+            (set (reg:SI 2 r2 [132])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":32 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 44 42 45 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [131])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [133])) "../HAL_driver/LCD_driver/lcd.c":32 192 {*arm_movqi_insn}
+     (nil))
+(insn 45 44 46 2 (set (reg/f:SI 3 r3 [134])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":33 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 46 45 48 2 (parallel [
+            (set (reg:SI 2 r2 [135])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":33 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 48 46 49 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [134])
+                (const_int 3 [0x3])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 2 r2 [136])) "../HAL_driver/LCD_driver/lcd.c":33 192 {*arm_movqi_insn}
+     (nil))
+(insn 49 48 50 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":34 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 50 49 51 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":34 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 51 50 52 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":34 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 52 51 53 2 (set (reg/f:SI 3 r3 [137])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":40 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 53 52 55 2 (parallel [
+            (set (reg:SI 2 r2 [139])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":40 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 55 53 56 2 (set (mem/c:HI (reg/f:SI 3 r3 [137]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [138])) "../HAL_driver/LCD_driver/lcd.c":40 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 56 55 57 2 (set (reg/f:SI 3 r3 [140])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":41 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 57 56 59 2 (parallel [
+            (set (reg:SI 2 r2 [141])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":41 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 59 57 60 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [140])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [142])) "../HAL_driver/LCD_driver/lcd.c":41 192 {*arm_movqi_insn}
+     (nil))
+(insn 60 59 61 2 (set (reg/f:SI 3 r3 [143])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":42 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 61 60 63 2 (parallel [
+            (set (reg:SI 2 r2 [144])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":42 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 63 61 64 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [143])
+                (const_int 3 [0x3])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 2 r2 [145])) "../HAL_driver/LCD_driver/lcd.c":42 192 {*arm_movqi_insn}
+     (nil))
+(insn 64 63 65 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":43 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 65 64 66 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":43 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 66 65 67 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":43 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 67 66 68 2 (set (reg/f:SI 3 r3 [146])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":44 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 68 67 70 2 (parallel [
+            (set (reg:SI 2 r2 [148])
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":44 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 70 68 71 2 (set (mem/c:HI (reg/f:SI 3 r3 [146]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [147])) "../HAL_driver/LCD_driver/lcd.c":44 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 71 70 72 2 (set (reg/f:SI 3 r3 [149])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":45 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 72 71 74 2 (parallel [
+            (set (reg:SI 2 r2 [150])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":45 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 74 72 75 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [149])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [151])) "../HAL_driver/LCD_driver/lcd.c":45 192 {*arm_movqi_insn}
+     (nil))
+(insn 75 74 76 2 (set (reg/f:SI 3 r3 [152])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":46 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 76 75 78 2 (parallel [
+            (set (reg:SI 2 r2 [153])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":46 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 78 76 79 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [152])
+                (const_int 3 [0x3])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 2 r2 [154])) "../HAL_driver/LCD_driver/lcd.c":46 192 {*arm_movqi_insn}
+     (nil))
+(insn 79 78 80 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":47 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 80 79 81 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":47 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 81 80 82 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":47 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 82 81 83 2 (set (reg/f:SI 3 r3 [155])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":48 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 83 82 85 2 (parallel [
+            (set (reg:SI 2 r2 [157])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":48 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 85 83 86 2 (set (mem/c:HI (reg/f:SI 3 r3 [155]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [156])) "../HAL_driver/LCD_driver/lcd.c":48 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 86 85 87 2 (set (reg/f:SI 3 r3 [158])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":49 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 87 86 89 2 (parallel [
+            (set (reg:SI 2 r2 [159])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":49 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 89 87 90 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [158])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [160])) "../HAL_driver/LCD_driver/lcd.c":49 192 {*arm_movqi_insn}
+     (nil))
+(insn 90 89 91 2 (set (reg/f:SI 3 r3 [161])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":50 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 91 90 93 2 (parallel [
+            (set (reg:SI 2 r2 [162])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":50 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 93 91 94 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [161])
+                (const_int 3 [0x3])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 2 r2 [163])) "../HAL_driver/LCD_driver/lcd.c":50 192 {*arm_movqi_insn}
+     (nil))
+(insn 94 93 95 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":51 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 95 94 96 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":51 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 96 95 97 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":51 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 97 96 98 2 (set (reg/f:SI 3 r3 [164])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":52 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 98 97 100 2 (parallel [
+            (set (reg:SI 2 r2 [166])
+                (const_int 8 [0x8]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":52 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 100 98 101 2 (set (mem/c:HI (reg/f:SI 3 r3 [164]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [165])) "../HAL_driver/LCD_driver/lcd.c":52 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 101 100 102 2 (set (reg/f:SI 3 r3 [167])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":53 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 102 101 104 2 (parallel [
+            (set (reg:SI 2 r2 [168])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":53 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 104 102 105 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [167])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [169])) "../HAL_driver/LCD_driver/lcd.c":53 192 {*arm_movqi_insn}
+     (nil))
+(insn 105 104 106 2 (set (reg/f:SI 3 r3 [170])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":54 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 106 105 108 2 (parallel [
+            (set (reg:SI 2 r2 [171])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":54 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 108 106 109 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [170])
+                (const_int 3 [0x3])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 2 r2 [172])) "../HAL_driver/LCD_driver/lcd.c":54 192 {*arm_movqi_insn}
+     (nil))
+(insn 109 108 110 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":55 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 110 109 111 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":55 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 111 110 112 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":55 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 112 111 113 2 (set (reg/f:SI 3 r3 [173])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":56 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 113 112 115 2 (parallel [
+            (set (reg:SI 2 r2 [175])
+                (const_int 16 [0x10]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":56 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 115 113 116 2 (set (mem/c:HI (reg/f:SI 3 r3 [173]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [174])) "../HAL_driver/LCD_driver/lcd.c":56 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 116 115 117 2 (set (reg/f:SI 3 r3 [176])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":57 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 117 116 119 2 (parallel [
+            (set (reg:SI 2 r2 [177])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":57 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 119 117 120 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [176])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [178])) "../HAL_driver/LCD_driver/lcd.c":57 192 {*arm_movqi_insn}
+     (nil))
+(insn 120 119 121 2 (set (reg/f:SI 3 r3 [179])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":58 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 121 120 123 2 (parallel [
+            (set (reg:SI 2 r2 [180])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":58 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 123 121 124 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [179])
+                (const_int 3 [0x3])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 2 r2 [181])) "../HAL_driver/LCD_driver/lcd.c":58 192 {*arm_movqi_insn}
+     (nil))
+(insn 124 123 125 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":59 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 125 124 126 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":59 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 126 125 127 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":59 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 127 126 128 2 (set (reg/f:SI 3 r3 [182])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":60 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 128 127 130 2 (parallel [
+            (set (reg:SI 2 r2 [184])
+                (const_int 32 [0x20]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":60 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 130 128 131 2 (set (mem/c:HI (reg/f:SI 3 r3 [182]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [183])) "../HAL_driver/LCD_driver/lcd.c":60 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 131 130 132 2 (set (reg/f:SI 3 r3 [185])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":61 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 132 131 134 2 (parallel [
+            (set (reg:SI 2 r2 [186])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":61 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 134 132 135 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [185])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [187])) "../HAL_driver/LCD_driver/lcd.c":61 192 {*arm_movqi_insn}
+     (nil))
+(insn 135 134 136 2 (set (reg/f:SI 3 r3 [188])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":62 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 136 135 138 2 (parallel [
+            (set (reg:SI 2 r2 [189])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":62 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 138 136 139 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [188])
+                (const_int 3 [0x3])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 2 r2 [190])) "../HAL_driver/LCD_driver/lcd.c":62 192 {*arm_movqi_insn}
+     (nil))
+(insn 139 138 140 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":63 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 140 139 141 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":63 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 141 140 142 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":63 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 142 141 143 2 (set (reg/f:SI 3 r3 [191])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":64 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 143 142 145 2 (parallel [
+            (set (reg:SI 2 r2 [193])
+                (const_int 64 [0x40]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":64 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 145 143 146 2 (set (mem/c:HI (reg/f:SI 3 r3 [191]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [192])) "../HAL_driver/LCD_driver/lcd.c":64 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 146 145 147 2 (set (reg/f:SI 3 r3 [194])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":65 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 147 146 149 2 (parallel [
+            (set (reg:SI 2 r2 [195])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":65 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 149 147 150 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [194])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [196])) "../HAL_driver/LCD_driver/lcd.c":65 192 {*arm_movqi_insn}
+     (nil))
+(insn 150 149 151 2 (set (reg/f:SI 3 r3 [197])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":66 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 151 150 153 2 (parallel [
+            (set (reg:SI 2 r2 [198])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":66 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 153 151 154 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [197])
+                (const_int 3 [0x3])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 2 r2 [199])) "../HAL_driver/LCD_driver/lcd.c":66 192 {*arm_movqi_insn}
+     (nil))
+(insn 154 153 155 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":67 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 155 154 156 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":67 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 156 155 157 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":67 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 157 156 158 2 (set (reg/f:SI 3 r3 [200])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":68 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 158 157 160 2 (parallel [
+            (set (reg:SI 2 r2 [202])
+                (const_int 128 [0x80]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":68 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 160 158 161 2 (set (mem/c:HI (reg/f:SI 3 r3 [200]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [201])) "../HAL_driver/LCD_driver/lcd.c":68 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 161 160 162 2 (set (reg/f:SI 3 r3 [203])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":69 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 162 161 164 2 (parallel [
+            (set (reg:SI 2 r2 [204])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":69 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 164 162 165 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [203])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [205])) "../HAL_driver/LCD_driver/lcd.c":69 192 {*arm_movqi_insn}
+     (nil))
+(insn 165 164 166 2 (set (reg/f:SI 3 r3 [206])
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":70 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 166 165 168 2 (parallel [
+            (set (reg:SI 2 r2 [207])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":70 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 168 166 169 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [206])
+                (const_int 3 [0x3])) [0 pincfg.GPIO_speed+0 S1 A8])
+        (reg:QI 2 r2 [208])) "../HAL_driver/LCD_driver/lcd.c":70 192 {*arm_movqi_insn}
+     (nil))
+(insn 169 168 170 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 235) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":71 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 170 169 171 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":71 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 171 170 172 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":71 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 172 171 173 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":74 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 173 172 174 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":74 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 174 173 175 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":74 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 175 174 176 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":74 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 176 175 177 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":75 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 177 176 178 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":75 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 178 177 179 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":75 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 179 178 180 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":75 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 180 179 181 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":76 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 181 180 182 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":76 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 182 181 183 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 235)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":76 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 183 182 184 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":76 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 184 183 185 2 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 15 [0xf]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":77 916 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 185 184 186 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("wait_ms") [flags 0x3]  <function_decl 0000000005982400 wait_ms>) [0 wait_ms S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":77 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(call_insn 186 185 187 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_clear_screen") [flags 0x3]  <function_decl 0000000005982000 lcd_clear_screen>) [0 lcd_clear_screen S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":78 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 187 186 188 2 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 56 [0x38]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":81 916 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 188 187 189 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_send_command") [flags 0x3]  <function_decl 000000000594ed00 lcd_send_command>) [0 lcd_send_command S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":81 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 189 188 190 2 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 6 [0x6]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":82 916 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 190 189 191 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_send_command") [flags 0x3]  <function_decl 000000000594ed00 lcd_send_command>) [0 lcd_send_command S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":82 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 191 190 192 2 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 128 [0x80]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":83 916 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 192 191 193 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_send_command") [flags 0x3]  <function_decl 000000000594ed00 lcd_send_command>) [0 lcd_send_command S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":83 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 193 192 194 2 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 15 [0xf]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":84 916 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 194 193 197 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_send_command") [flags 0x3]  <function_decl 000000000594ed00 lcd_send_command>) [0 lcd_send_command S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":84 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 197 194 216 2 (const_int 0 [0]) "../HAL_driver/LCD_driver/lcd.c":85 236 {nop}
+     (nil))
+(note 216 197 217 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 217 216 218 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../HAL_driver/LCD_driver/lcd.c":85 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (nil))
+ -> return)
+(barrier 218 217 233)
+(code_label 233 218 234 8 (nil) [0 uses])
+(insn 234 233 235 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 235 234 236 7 (nil) [0 uses])
+(insn 236 235 237 (unspec_volatile [
+            (symbol_ref:SI ("pincfg")  <var_decl 000000000597d120 pincfg>)
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 237 236 238 (unspec_volatile [
+            (const_int 1073809408 [0x40010800])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 238 237 239 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 239 238 212)
+(note 212 239 0 NOTE_INSN_DELETED)
+
+;; Function lcd_is_busy (lcd_is_busy, funcdef_no=5, decl_uid=5637, cgraph_uid=5, symbol_order=6)
+
+verify found no changes in insn with uid = 15.
+verify found no changes in insn with uid = 26.
+verify found no changes in insn with uid = 37.
+verify found no changes in insn with uid = 48.
+verify found no changes in insn with uid = 59.
+verify found no changes in insn with uid = 70.
+verify found no changes in insn with uid = 81.
+verify found no changes in insn with uid = 92.
+verify found no changes in insn with uid = 96.
+verify found no changes in insn with uid = 100.
+verify found no changes in insn with uid = 101.
+verify found no changes in insn with uid = 105.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+deleting insn with uid = 7.
+deleting insn with uid = 11.
+Splitting with gen_split_86
+deleting insn with uid = 18.
+deleting insn with uid = 22.
+Splitting with gen_split_86
+deleting insn with uid = 29.
+deleting insn with uid = 33.
+Splitting with gen_split_86
+deleting insn with uid = 40.
+deleting insn with uid = 44.
+Splitting with gen_split_86
+deleting insn with uid = 51.
+deleting insn with uid = 55.
+Splitting with gen_split_86
+deleting insn with uid = 62.
+deleting insn with uid = 66.
+Splitting with gen_split_86
+deleting insn with uid = 73.
+deleting insn with uid = 77.
+Splitting with gen_split_86
+deleting insn with uid = 84.
+deleting insn with uid = 88.
+Splitting with gen_split_86
+Splitting with gen_split_86
+Splitting with gen_split_86
+Splitting with gen_split_86
+;; SImode fixup for i5; addr 6, range (0,1018): `pincfg'
+;; SImode fixup for i9; addr 16, range (0,1018): `pincfg'
+;; SImode fixup for i13; addr 24, range (0,1018): `pincfg'
+;; SImode fixup for i14; addr 28, range (0,1018): 0x40010800
+;; SImode fixup for i16; addr 36, range (0,1018): `pincfg'
+;; SImode fixup for i20; addr 46, range (0,1018): `pincfg'
+;; SImode fixup for i24; addr 54, range (0,1018): `pincfg'
+;; SImode fixup for i25; addr 58, range (0,1018): 0x40010800
+;; SImode fixup for i27; addr 66, range (0,1018): `pincfg'
+;; SImode fixup for i31; addr 76, range (0,1018): `pincfg'
+;; SImode fixup for i35; addr 84, range (0,1018): `pincfg'
+;; SImode fixup for i36; addr 88, range (0,1018): 0x40010800
+;; SImode fixup for i38; addr 96, range (0,1018): `pincfg'
+;; SImode fixup for i42; addr 106, range (0,1018): `pincfg'
+;; SImode fixup for i46; addr 114, range (0,1018): `pincfg'
+;; SImode fixup for i47; addr 118, range (0,1018): 0x40010800
+;; SImode fixup for i49; addr 126, range (0,1018): `pincfg'
+;; SImode fixup for i53; addr 136, range (0,1018): `pincfg'
+;; SImode fixup for i57; addr 144, range (0,1018): `pincfg'
+;; SImode fixup for i58; addr 148, range (0,1018): 0x40010800
+;; SImode fixup for i60; addr 156, range (0,1018): `pincfg'
+;; SImode fixup for i64; addr 166, range (0,1018): `pincfg'
+;; SImode fixup for i68; addr 174, range (0,1018): `pincfg'
+;; SImode fixup for i69; addr 178, range (0,1018): 0x40010800
+;; SImode fixup for i71; addr 186, range (0,1018): `pincfg'
+;; SImode fixup for i75; addr 196, range (0,1018): `pincfg'
+;; SImode fixup for i79; addr 204, range (0,1018): `pincfg'
+;; SImode fixup for i80; addr 208, range (0,1018): 0x40010800
+;; SImode fixup for i82; addr 216, range (0,1018): `pincfg'
+;; SImode fixup for i86; addr 226, range (0,1018): `pincfg'
+;; SImode fixup for i90; addr 234, range (0,1018): `pincfg'
+;; SImode fixup for i91; addr 238, range (0,1018): 0x40010800
+;; SImode fixup for i95; addr 250, range (0,1018): 0x40010800
+;; SImode fixup for i99; addr 262, range (0,1018): 0x40010800
+;; SImode fixup for i104; addr 278, range (0,1018): 0x40010800
+;; Emitting minipool after insn 126; address 290; align 4 (bytes)
+;;  Offset 0, min -65536, max 1024 `pincfg'
+;;  Offset 4, min -65536, max 1046 0x40010800
+
+
+lcd_is_busy
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={24d,11u} r1={24d,11u} r2={32d,19u} r3={29d,16u} r7={3d,3u} r12={25d} r13={3d,21u} r14={13d,2u} r15={13d} r16={12d} r17={12d} r18={12d} r19={12d} r20={12d} r21={12d} r22={12d} r23={12d} r24={12d} r25={12d} r26={12d} r27={12d} r28={12d} r29={12d} r30={12d} r31={12d} r32={12d} r33={12d} r34={12d} r35={12d} r36={12d} r37={12d} r38={12d} r39={12d} r40={12d} r41={12d} r42={12d} r43={12d} r44={12d} r45={12d} r46={12d} r47={12d} r48={12d} r49={12d} r50={12d} r51={12d} r52={12d} r53={12d} r54={12d} r55={12d} r56={12d} r57={12d} r58={12d} r59={12d} r60={12d} r61={12d} r62={12d} r63={12d} r64={12d} r65={12d} r66={12d} r67={12d} r68={12d} r69={12d} r70={12d} r71={12d} r72={12d} r73={12d} r74={12d} r75={12d} r76={12d} r77={12d} r78={12d} r79={12d} r80={12d} r81={12d} r82={12d} r83={12d} r84={12d} r85={12d} r86={12d} r87={12d} r88={12d} r89={12d} r90={12d} r91={12d} r92={12d} r93={12d} r94={12d} r95={12d} r96={12d} r97={12d} r98={12d} r99={12d} r100={12d} r101={12d} r102={1d,1u} 
+;;    total ref usage 1283{1199d,84u,0e} in 89{77 regular + 12 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 121 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 121 3 122 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":86 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [4  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 122 121 123 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":86 4 {*arm_addsi3}
+     (nil))
+(note 123 122 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 123 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (set (reg/f:SI 3 r3 [110])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":88 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 6 5 8 2 (parallel [
+            (set (reg:SI 2 r2 [112])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":88 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 8 6 9 2 (set (mem/c:HI (reg/f:SI 3 r3 [110]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [111])) "../HAL_driver/LCD_driver/lcd.c":88 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 3 r3 [113])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":89 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 10 9 12 2 (parallel [
+            (set (reg:SI 2 r2 [114])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":89 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 12 10 13 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [113])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [115])) "../HAL_driver/LCD_driver/lcd.c":89 192 {*arm_movqi_insn}
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":90 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 140)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":90 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 15 14 16 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":90 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 16 15 17 2 (set (reg/f:SI 3 r3 [116])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":91 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 17 16 19 2 (parallel [
+            (set (reg:SI 2 r2 [118])
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":91 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 19 17 20 2 (set (mem/c:HI (reg/f:SI 3 r3 [116]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [117])) "../HAL_driver/LCD_driver/lcd.c":91 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 20 19 21 2 (set (reg/f:SI 3 r3 [119])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":92 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 21 20 23 2 (parallel [
+            (set (reg:SI 2 r2 [120])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":92 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 23 21 24 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [119])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [121])) "../HAL_driver/LCD_driver/lcd.c":92 192 {*arm_movqi_insn}
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":93 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 140)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":93 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 26 25 27 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":93 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 27 26 28 2 (set (reg/f:SI 3 r3 [122])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":94 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 28 27 30 2 (parallel [
+            (set (reg:SI 2 r2 [124])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":94 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 30 28 31 2 (set (mem/c:HI (reg/f:SI 3 r3 [122]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [123])) "../HAL_driver/LCD_driver/lcd.c":94 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 31 30 32 2 (set (reg/f:SI 3 r3 [125])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":95 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 32 31 34 2 (parallel [
+            (set (reg:SI 2 r2 [126])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":95 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 34 32 35 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [125])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [127])) "../HAL_driver/LCD_driver/lcd.c":95 192 {*arm_movqi_insn}
+     (nil))
+(insn 35 34 36 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":96 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 36 35 37 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 140)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":96 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 37 36 38 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":96 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 38 37 39 2 (set (reg/f:SI 3 r3 [128])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":97 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 39 38 41 2 (parallel [
+            (set (reg:SI 2 r2 [130])
+                (const_int 8 [0x8]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":97 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 41 39 42 2 (set (mem/c:HI (reg/f:SI 3 r3 [128]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [129])) "../HAL_driver/LCD_driver/lcd.c":97 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 42 41 43 2 (set (reg/f:SI 3 r3 [131])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":98 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 43 42 45 2 (parallel [
+            (set (reg:SI 2 r2 [132])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":98 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 45 43 46 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [131])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [133])) "../HAL_driver/LCD_driver/lcd.c":98 192 {*arm_movqi_insn}
+     (nil))
+(insn 46 45 47 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":99 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 47 46 48 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 140)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":99 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 48 47 49 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":99 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 49 48 50 2 (set (reg/f:SI 3 r3 [134])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":100 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 50 49 52 2 (parallel [
+            (set (reg:SI 2 r2 [136])
+                (const_int 16 [0x10]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":100 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 52 50 53 2 (set (mem/c:HI (reg/f:SI 3 r3 [134]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [135])) "../HAL_driver/LCD_driver/lcd.c":100 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 53 52 54 2 (set (reg/f:SI 3 r3 [137])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":101 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 54 53 56 2 (parallel [
+            (set (reg:SI 2 r2 [138])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":101 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 56 54 57 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [137])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [139])) "../HAL_driver/LCD_driver/lcd.c":101 192 {*arm_movqi_insn}
+     (nil))
+(insn 57 56 58 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":102 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 58 57 59 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 140)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":102 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 59 58 60 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":102 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 60 59 61 2 (set (reg/f:SI 3 r3 [140])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":103 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 61 60 63 2 (parallel [
+            (set (reg:SI 2 r2 [142])
+                (const_int 32 [0x20]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":103 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 63 61 64 2 (set (mem/c:HI (reg/f:SI 3 r3 [140]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [141])) "../HAL_driver/LCD_driver/lcd.c":103 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 64 63 65 2 (set (reg/f:SI 3 r3 [143])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":104 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 65 64 67 2 (parallel [
+            (set (reg:SI 2 r2 [144])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":104 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 67 65 68 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [143])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [145])) "../HAL_driver/LCD_driver/lcd.c":104 192 {*arm_movqi_insn}
+     (nil))
+(insn 68 67 69 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":105 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 69 68 70 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 140)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":105 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 70 69 71 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":105 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 71 70 72 2 (set (reg/f:SI 3 r3 [146])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":106 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 72 71 74 2 (parallel [
+            (set (reg:SI 2 r2 [148])
+                (const_int 64 [0x40]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":106 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 74 72 75 2 (set (mem/c:HI (reg/f:SI 3 r3 [146]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [147])) "../HAL_driver/LCD_driver/lcd.c":106 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 75 74 76 2 (set (reg/f:SI 3 r3 [149])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":107 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 76 75 78 2 (parallel [
+            (set (reg:SI 2 r2 [150])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":107 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 78 76 79 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [149])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [151])) "../HAL_driver/LCD_driver/lcd.c":107 192 {*arm_movqi_insn}
+     (nil))
+(insn 79 78 80 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":108 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 80 79 81 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 140)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":108 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 81 80 82 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":108 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 82 81 83 2 (set (reg/f:SI 3 r3 [152])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":109 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 83 82 85 2 (parallel [
+            (set (reg:SI 2 r2 [154])
+                (const_int 128 [0x80]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":109 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 85 83 86 2 (set (mem/c:HI (reg/f:SI 3 r3 [152]) [2 pincfg.GPIO_pin_number+0 S2 A16])
+        (reg:HI 2 r2 [153])) "../HAL_driver/LCD_driver/lcd.c":109 880 {*thumb2_movhi_insn}
+     (nil))
+(insn 86 85 87 2 (set (reg/f:SI 3 r3 [155])
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":110 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 87 86 89 2 (parallel [
+            (set (reg:SI 2 r2 [156])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":110 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 89 87 90 2 (set (mem/c:QI (plus:SI (reg/f:SI 3 r3 [155])
+                (const_int 2 [0x2])) [0 pincfg.GPIO_mode+0 S1 A16])
+        (reg:QI 2 r2 [157])) "../HAL_driver/LCD_driver/lcd.c":110 192 {*arm_movqi_insn}
+     (nil))
+(insn 90 89 91 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 140) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":111 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 91 90 92 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 140)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":111 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 92 91 93 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_Init") [flags 0x41]  <function_decl 000000000594e300 MCAL_GPIO_Init>) [0 MCAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":111 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 93 92 94 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":113 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 94 93 95 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":113 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 95 94 96 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 140)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":113 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 96 95 97 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":113 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 97 96 98 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":115 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 98 97 99 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":115 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 99 98 100 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 140)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":115 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 100 99 101 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":115 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(call_insn 101 100 102 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_kick") [flags 0x3]  <function_decl 000000000594ec00 lcd_kick>) [0 lcd_kick S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":116 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 102 101 103 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":151 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 103 102 104 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":151 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 104 103 105 2 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 140)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":151 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 105 104 108 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":151 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 108 105 124 2 (const_int 0 [0]) "../HAL_driver/LCD_driver/lcd.c":152 236 {nop}
+     (nil))
+(note 124 108 125 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 125 124 126 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../HAL_driver/LCD_driver/lcd.c":152 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (nil))
+ -> return)
+(barrier 126 125 138)
+(code_label 138 126 139 11 (nil) [0 uses])
+(insn 139 138 140 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 140 139 141 10 (nil) [0 uses])
+(insn 141 140 142 (unspec_volatile [
+            (symbol_ref:SI ("pincfg")  <var_decl 000000000597d120 pincfg>)
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 142 141 143 (unspec_volatile [
+            (const_int 1073809408 [0x40010800])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 143 142 144 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 144 143 120)
+(note 120 144 0 NOTE_INSN_DELETED)
+
+;; Function lcd_kick (lcd_kick, funcdef_no=6, decl_uid=5639, cgraph_uid=6, symbol_order=7)
+
+verify found no changes in insn with uid = 8.
+verify found no changes in insn with uid = 10.
+verify found no changes in insn with uid = 14.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+Splitting with gen_split_86
+Splitting with gen_split_86
+;; SImode fixup for i7; addr 10, range (0,1018): 0x40010800
+;; SImode fixup for i13; addr 28, range (0,1018): 0x40010800
+;; Emitting minipool after insn 26; address 40; align 4 (bytes)
+;;  Offset 0, min -65536, max 1028 0x40010800
+
+
+lcd_kick
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={7d,3u} r1={6d,2u} r2={6d,2u} r3={4d} r7={3d,3u} r12={7d} r13={3d,12u} r14={4d,2u} r15={4d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r32={3d} r33={3d} r34={3d} r35={3d} r36={3d} r37={3d} r38={3d} r39={3d} r40={3d} r41={3d} r42={3d} r43={3d} r44={3d} r45={3d} r46={3d} r47={3d} r48={3d} r49={3d} r50={3d} r51={3d} r52={3d} r53={3d} r54={3d} r55={3d} r56={3d} r57={3d} r58={3d} r59={3d} r60={3d} r61={3d} r62={3d} r63={3d} r64={3d} r65={3d} r66={3d} r67={3d} r68={3d} r69={3d} r70={3d} r71={3d} r72={3d} r73={3d} r74={3d} r75={3d} r76={3d} r77={3d} r78={3d} r79={3d} r80={3d} r81={3d} r82={3d} r83={3d} r84={3d} r85={3d} r86={3d} r87={3d} r88={3d} r89={3d} r90={3d} r91={3d} r92={3d} r93={3d} r94={3d} r95={3d} r96={3d} r97={3d} r98={3d} r99={3d} r100={3d} r101={3d} r102={1d,1u} 
+;;    total ref usage 328{303d,25u,0e} in 14{11 regular + 3 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 21 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 21 3 22 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":153 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [4  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 22 21 23 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":153 4 {*arm_addsi3}
+     (nil))
+(note 23 22 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 23 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":155 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 6 5 7 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":155 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 31) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":155 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 8 7 9 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":155 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 9 8 10 2 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 50 [0x32]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":156 916 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 10 9 11 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("wait_ms") [flags 0x3]  <function_decl 0000000005982400 wait_ms>) [0 wait_ms S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":156 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 11 10 12 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":158 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 12 11 13 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":158 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 31) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":158 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 14 13 17 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":158 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 17 14 24 2 (const_int 0 [0]) "../HAL_driver/LCD_driver/lcd.c":159 236 {nop}
+     (nil))
+(note 24 17 25 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 25 24 26 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../HAL_driver/LCD_driver/lcd.c":159 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (nil))
+ -> return)
+(barrier 26 25 29)
+(code_label 29 26 30 14 (nil) [0 uses])
+(insn 30 29 31 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 31 30 32 13 (nil) [0 uses])
+(insn 32 31 33 (unspec_volatile [
+            (const_int 1073809408 [0x40010800])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 33 32 34 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 34 33 20)
+(note 20 34 0 NOTE_INSN_DELETED)
+
+;; Function lcd_send_command (lcd_send_command, funcdef_no=7, decl_uid=5641, cgraph_uid=7, symbol_order=8)
+
+verify found no changes in insn with uid = 13.
+verify found no changes in insn with uid = 17.
+verify found no changes in insn with uid = 21.
+verify found no changes in insn with uid = 22.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+deleting insn with uid = 3.
+deleting insn with uid = 9.
+Splitting with gen_split_86
+Splitting with gen_split_86
+Splitting with gen_split_86
+;; SImode fixup for i12; addr 24, range (0,1018): 0x40010800
+;; SImode fixup for i16; addr 36, range (0,1018): 0x40010800
+;; SImode fixup for i20; addr 48, range (0,1018): 0x40010800
+;; Emitting minipool after insn 41; address 68; align 4 (bytes)
+;;  Offset 0, min -65536, max 1042 0x40010800
+
+
+lcd_send_command
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={8d,4u} r1={8d,3u} r2={7d,2u} r3={8d,3u} r7={4d,8u} r12={9d} r13={5d,18u} r14={5d,2u} r15={5d} r16={4d} r17={4d} r18={4d} r19={4d} r20={4d} r21={4d} r22={4d} r23={4d} r24={4d} r25={4d} r26={4d} r27={4d} r28={4d} r29={4d} r30={4d} r31={4d} r32={4d} r33={4d} r34={4d} r35={4d} r36={4d} r37={4d} r38={4d} r39={4d} r40={4d} r41={4d} r42={4d} r43={4d} r44={4d} r45={4d} r46={4d} r47={4d} r48={4d} r49={4d} r50={4d} r51={4d} r52={4d} r53={4d} r54={4d} r55={4d} r56={4d} r57={4d} r58={4d} r59={4d} r60={4d} r61={4d} r62={4d} r63={4d} r64={4d} r65={4d} r66={4d} r67={4d} r68={4d} r69={4d} r70={4d} r71={4d} r72={4d} r73={4d} r74={4d} r75={4d} r76={4d} r77={4d} r78={4d} r79={4d} r80={4d} r81={4d} r82={4d} r83={4d} r84={4d} r85={4d} r86={4d} r87={4d} r88={4d} r89={4d} r90={4d} r91={4d} r92={4d} r93={4d} r94={4d} r95={4d} r96={4d} r97={4d} r98={4d} r99={4d} r100={4d} r101={4d} r102={1d,1u} 
+;;    total ref usage 445{404d,41u,0e} in 26{22 regular + 4 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 30 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 30 6 31 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":160 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [4  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 31 30 32 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -8 [0xfffffffffffffff8]))) "../HAL_driver/LCD_driver/lcd.c":160 4 {*arm_addsi3}
+     (nil))
+(insn 32 31 33 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../HAL_driver/LCD_driver/lcd.c":160 304 {stack_tie}
+     (nil))
+(insn/f 33 32 34 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":160 4 {*arm_addsi3}
+     (nil))
+(note 34 33 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 34 4 2 (set (reg:SI 3 r3 [111])
+        (reg:SI 0 r0 [ command ])) "../HAL_driver/LCD_driver/lcd.c":160 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 4 2 5 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 7 [0x7])) [0 command+0 S1 A8])
+        (reg:QI 3 r3 [112])) "../HAL_driver/LCD_driver/lcd.c":160 192 {*arm_movqi_insn}
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 10 2 (set (reg:SI 3 r3 [114])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 7 [0x7])) [0 command+0 S1 A8]))) "../HAL_driver/LCD_driver/lcd.c":164 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 10 8 11 2 (set (reg:SI 3 r3 [orig:110 _1 ] [110])
+        (zero_extend:SI (reg:HI 3 r3 [113]))) "../HAL_driver/LCD_driver/lcd.c":164 905 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [orig:110 _1 ] [110])) "../HAL_driver/LCD_driver/lcd.c":164 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 47) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":164 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 13 12 14 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PORT") [flags 0x41]  <function_decl 000000000594e800 MCAL_GPIO_WRITE_PORT>) [0 MCAL_GPIO_WRITE_PORT S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":164 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:HI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 14 13 15 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":166 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":166 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 47) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":166 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 17 16 18 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":166 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 18 17 19 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":167 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 19 18 20 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":167 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 47) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":167 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 21 20 22 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":167 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(call_insn 22 21 25 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_kick") [flags 0x3]  <function_decl 000000000594ec00 lcd_kick>) [0 lcd_kick S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":168 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 25 22 35 2 (const_int 0 [0]) "../HAL_driver/LCD_driver/lcd.c":180 236 {nop}
+     (nil))
+(note 35 25 36 2 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 36 35 37 2 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":180 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])))
+        (nil)))
+(insn 37 36 38 2 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../HAL_driver/LCD_driver/lcd.c":180 230 {blockage}
+     (nil))
+(insn/f 38 37 39 2 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../HAL_driver/LCD_driver/lcd.c":180 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(insn 39 38 40 2 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../HAL_driver/LCD_driver/lcd.c":180 322 {force_register_use}
+     (nil))
+(jump_insn 40 39 41 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../HAL_driver/LCD_driver/lcd.c":180 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (nil))
+ -> return)
+(barrier 41 40 45)
+(code_label 45 41 46 17 (nil) [0 uses])
+(insn 46 45 47 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 47 46 48 16 (nil) [0 uses])
+(insn 48 47 49 (unspec_volatile [
+            (const_int 1073809408 [0x40010800])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 49 48 50 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 50 49 29)
+(note 29 50 0 NOTE_INSN_DELETED)
+
+;; Function lcd_send_char (lcd_send_char, funcdef_no=8, decl_uid=5643, cgraph_uid=8, symbol_order=9)
+
+verify found no changes in insn with uid = 13.
+verify found no changes in insn with uid = 17.
+verify found no changes in insn with uid = 21.
+verify found no changes in insn with uid = 22.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+deleting insn with uid = 3.
+deleting insn with uid = 9.
+Splitting with gen_split_86
+Splitting with gen_split_86
+Splitting with gen_split_86
+;; SImode fixup for i12; addr 24, range (0,1018): 0x40010800
+;; SImode fixup for i16; addr 36, range (0,1018): 0x40010800
+;; SImode fixup for i20; addr 48, range (0,1018): 0x40010800
+;; Emitting minipool after insn 41; address 68; align 4 (bytes)
+;;  Offset 0, min -65536, max 1042 0x40010800
+
+
+lcd_send_char
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={8d,4u} r1={8d,3u} r2={7d,2u} r3={8d,3u} r7={4d,8u} r12={9d} r13={5d,18u} r14={5d,2u} r15={5d} r16={4d} r17={4d} r18={4d} r19={4d} r20={4d} r21={4d} r22={4d} r23={4d} r24={4d} r25={4d} r26={4d} r27={4d} r28={4d} r29={4d} r30={4d} r31={4d} r32={4d} r33={4d} r34={4d} r35={4d} r36={4d} r37={4d} r38={4d} r39={4d} r40={4d} r41={4d} r42={4d} r43={4d} r44={4d} r45={4d} r46={4d} r47={4d} r48={4d} r49={4d} r50={4d} r51={4d} r52={4d} r53={4d} r54={4d} r55={4d} r56={4d} r57={4d} r58={4d} r59={4d} r60={4d} r61={4d} r62={4d} r63={4d} r64={4d} r65={4d} r66={4d} r67={4d} r68={4d} r69={4d} r70={4d} r71={4d} r72={4d} r73={4d} r74={4d} r75={4d} r76={4d} r77={4d} r78={4d} r79={4d} r80={4d} r81={4d} r82={4d} r83={4d} r84={4d} r85={4d} r86={4d} r87={4d} r88={4d} r89={4d} r90={4d} r91={4d} r92={4d} r93={4d} r94={4d} r95={4d} r96={4d} r97={4d} r98={4d} r99={4d} r100={4d} r101={4d} r102={1d,1u} 
+;;    total ref usage 445{404d,41u,0e} in 26{22 regular + 4 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 30 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 30 6 31 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":181 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [4  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 31 30 32 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -8 [0xfffffffffffffff8]))) "../HAL_driver/LCD_driver/lcd.c":181 4 {*arm_addsi3}
+     (nil))
+(insn 32 31 33 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../HAL_driver/LCD_driver/lcd.c":181 304 {stack_tie}
+     (nil))
+(insn/f 33 32 34 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":181 4 {*arm_addsi3}
+     (nil))
+(note 34 33 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 34 4 2 (set (reg:SI 3 r3 [111])
+        (reg:SI 0 r0 [ character ])) "../HAL_driver/LCD_driver/lcd.c":181 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 4 2 5 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 7 [0x7])) [0 character+0 S1 A8])
+        (reg:QI 3 r3 [112])) "../HAL_driver/LCD_driver/lcd.c":181 192 {*arm_movqi_insn}
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(insn 8 5 10 2 (set (reg:SI 3 r3 [114])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 7 [0x7])) [0 character+0 S1 A8]))) "../HAL_driver/LCD_driver/lcd.c":185 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 10 8 11 2 (set (reg:SI 3 r3 [orig:110 _1 ] [110])
+        (zero_extend:SI (reg:HI 3 r3 [113]))) "../HAL_driver/LCD_driver/lcd.c":185 905 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 1 r1)
+        (reg:SI 3 r3 [orig:110 _1 ] [110])) "../HAL_driver/LCD_driver/lcd.c":185 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 47) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":185 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 13 12 14 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PORT") [flags 0x41]  <function_decl 000000000594e800 MCAL_GPIO_WRITE_PORT>) [0 MCAL_GPIO_WRITE_PORT S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":185 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:HI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 14 13 15 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":187 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 15 14 16 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":187 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 47) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":187 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 17 16 18 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":187 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 18 17 19 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":189 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 19 18 20 2 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":189 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 0 r0)
+        (mem:SI (label_ref 47) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":189 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 21 20 22 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("MCAL_GPIO_WRITE_PIN") [flags 0x41]  <function_decl 000000000594e700 MCAL_GPIO_WRITE_PIN>) [0 MCAL_GPIO_WRITE_PIN S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":189 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (expr_list:QI (use (reg:SI 2 r2))
+                    (nil))))))
+(call_insn 22 21 25 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_kick") [flags 0x3]  <function_decl 000000000594ec00 lcd_kick>) [0 lcd_kick S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":192 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 25 22 35 2 (const_int 0 [0]) "../HAL_driver/LCD_driver/lcd.c":206 236 {nop}
+     (nil))
+(note 35 25 36 2 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 36 35 37 2 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":206 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])))
+        (nil)))
+(insn 37 36 38 2 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../HAL_driver/LCD_driver/lcd.c":206 230 {blockage}
+     (nil))
+(insn/f 38 37 39 2 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../HAL_driver/LCD_driver/lcd.c":206 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(insn 39 38 40 2 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../HAL_driver/LCD_driver/lcd.c":206 322 {force_register_use}
+     (nil))
+(jump_insn 40 39 41 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../HAL_driver/LCD_driver/lcd.c":206 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (nil))
+ -> return)
+(barrier 41 40 45)
+(code_label 45 41 46 20 (nil) [0 uses])
+(insn 46 45 47 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 47 46 48 19 (nil) [0 uses])
+(insn 48 47 49 (unspec_volatile [
+            (const_int 1073809408 [0x40010800])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 49 48 50 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 50 49 29)
+(note 29 50 0 NOTE_INSN_DELETED)
+
+;; Function lcd_send_string (lcd_send_string, funcdef_no=9, decl_uid=5645, cgraph_uid=9, symbol_order=10)
+
+verify found no changes in insn with uid = 19.
+verify found no changes in insn with uid = 26.
+verify found no changes in insn with uid = 40.
+verify found no changes in insn with uid = 43.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 10 n_edges 13 count 16 (  1.6)
+
+
+lcd_send_string
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={8d,4u} r1={7d,2u} r2={6d,1u} r3={16d,12u} r7={4d,24u} r12={9d} r13={5d,25u} r14={5d,2u} r15={5d} r16={4d} r17={4d} r18={4d} r19={4d} r20={4d} r21={4d} r22={4d} r23={4d} r24={4d} r25={4d} r26={4d} r27={4d} r28={4d} r29={4d} r30={4d} r31={4d} r32={4d} r33={4d} r34={4d} r35={4d} r36={4d} r37={4d} r38={4d} r39={4d} r40={4d} r41={4d} r42={4d} r43={4d} r44={4d} r45={4d} r46={4d} r47={4d} r48={4d} r49={4d} r50={4d} r51={4d} r52={4d} r53={4d} r54={4d} r55={4d} r56={4d} r57={4d} r58={4d} r59={4d} r60={4d} r61={4d} r62={4d} r63={4d} r64={4d} r65={4d} r66={4d} r67={4d} r68={4d} r69={4d} r70={4d} r71={4d} r72={4d} r73={4d} r74={4d} r75={4d} r76={4d} r77={4d} r78={4d} r79={4d} r80={4d} r81={4d} r82={4d} r83={4d} r84={4d} r85={4d} r86={4d} r87={4d} r88={4d} r89={4d} r90={4d} r91={4d} r92={4d} r93={4d} r94={4d} r95={4d} r96={4d} r97={4d} r98={4d} r99={4d} r100={8d,4u} r101={4d} r102={1d,1u} 
+;;    total ref usage 489{414d,75u,0e} in 46{42 regular + 4 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 62 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 62 4 63 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":207 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [4  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 63 62 64 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -16 [0xfffffffffffffff0]))) "../HAL_driver/LCD_driver/lcd.c":207 4 {*arm_addsi3}
+     (nil))
+(insn 64 63 65 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../HAL_driver/LCD_driver/lcd.c":207 304 {stack_tie}
+     (nil))
+(insn/f 65 64 66 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":207 4 {*arm_addsi3}
+     (nil))
+(note 66 65 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 66 3 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 string+0 S4 A32])
+        (reg:SI 0 r0 [ string ])) "../HAL_driver/LCD_driver/lcd.c":207 878 {*thumb2_movsi_insn}
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (parallel [
+            (set (reg:SI 3 r3 [113])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":210 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 7 6 57 2 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [3 count+0 S4 A32])
+        (reg:SI 3 r3 [113])) "../HAL_driver/LCD_driver/lcd.c":210 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 57 7 58 2 (set (pc)
+        (label_ref 46)) "../HAL_driver/LCD_driver/lcd.c":211 214 {*arm_jump}
+     (nil)
+ -> 46)
+(barrier 58 57 50)
+(code_label 50 58 10 3 25 (nil) [1 uses])
+(note 10 50 11 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 11 10 12 3 (set (reg:SI 3 r3 [115])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [3 count+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":213 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 12 11 13 3 (parallel [
+            (set (reg:SI 3 r3 [114])
+                (plus:SI (reg:SI 3 r3 [115])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":213 917 {*thumb2_addsi_short}
+     (nil))
+(insn 13 12 14 3 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [3 count+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../HAL_driver/LCD_driver/lcd.c":213 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 14 13 15 3 (set (reg/f:SI 3 r3 [orig:110 string.0_1 ] [110])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 string+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":214 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 15 14 16 3 (parallel [
+            (set (reg:SI 2 r2 [116])
+                (plus:SI (reg/f:SI 3 r3 [orig:110 string.0_1 ] [110])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":214 917 {*thumb2_addsi_short}
+     (nil))
+(insn 16 15 17 3 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 string+0 S4 A32])
+        (reg:SI 2 r2 [116])) "../HAL_driver/LCD_driver/lcd.c":214 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 17 16 18 3 (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+        (zero_extend:SI (mem:QI (reg/f:SI 3 r3 [orig:110 string.0_1 ] [110]) [0 *string.0_1+0 S1 A8]))) "../HAL_driver/LCD_driver/lcd.c":214 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 18 17 19 3 (set (reg:SI 0 r0)
+        (reg:SI 3 r3 [orig:111 _2 ] [111])) "../HAL_driver/LCD_driver/lcd.c":214 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 19 18 20 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_send_char") [flags 0x3]  <function_decl 000000000594ee00 lcd_send_char>) [0 lcd_send_char S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":214 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 20 19 21 3 (set (reg:SI 3 r3 [117])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [3 count+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":215 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 21 20 22 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [117])
+            (const_int 16 [0x10]))) "../HAL_driver/LCD_driver/lcd.c":215 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 22 21 23 3 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 29)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":215 204 {arm_cond_branch}
+     (nil)
+ -> 29)
+(note 23 22 24 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 25 4 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":217 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 25 24 26 4 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":217 916 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 26 25 59 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_GotoXY") [flags 0x3]  <function_decl 0000000005982100 lcd_GotoXY>) [0 lcd_GotoXY S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":217 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(jump_insn 59 26 60 4 (set (pc)
+        (label_ref 46)) 214 {*arm_jump}
+     (nil)
+ -> 46)
+(barrier 60 59 29)
+(code_label 29 60 30 5 23 (nil) [1 uses])
+(note 30 29 31 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 31 30 32 5 (set (reg:SI 3 r3 [118])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [3 count+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":219 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 32 31 33 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [118])
+            (const_int 32 [0x20]))) "../HAL_driver/LCD_driver/lcd.c":219 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 33 32 34 5 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 38)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":219 204 {arm_cond_branch}
+     (nil)
+ -> 38)
+(note 34 33 35 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 6 (set (reg:SI 3 r3 [119])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [3 count+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":219 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 36 35 37 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [119])
+            (const_int 33 [0x21]))) "../HAL_driver/LCD_driver/lcd.c":219 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 37 36 38 6 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 46)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":219 204 {arm_cond_branch}
+     (nil)
+ -> 46)
+(code_label 38 37 39 7 24 (nil) [1 uses])
+(note 39 38 40 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(call_insn 40 39 41 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_clear_screen") [flags 0x3]  <function_decl 0000000005982000 lcd_clear_screen>) [0 lcd_clear_screen S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":221 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 41 40 42 7 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":222 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 42 41 43 7 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":222 916 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 43 42 44 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_GotoXY") [flags 0x3]  <function_decl 0000000005982100 lcd_GotoXY>) [0 lcd_GotoXY S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":222 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 44 43 45 7 (parallel [
+            (set (reg:SI 3 r3 [120])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":223 916 {*thumb2_movsi_shortim}
+     (nil))
+(insn 45 44 46 7 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 12 [0xc])) [3 count+0 S4 A32])
+        (reg:SI 3 r3 [120])) "../HAL_driver/LCD_driver/lcd.c":223 878 {*thumb2_movsi_insn}
+     (nil))
+(code_label 46 45 47 8 22 (nil) [3 uses])
+(note 47 46 48 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 48 47 49 8 (set (reg/f:SI 3 r3 [121])
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [5 string+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":211 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 49 48 51 8 (set (reg:SI 3 r3 [orig:112 _3 ] [112])
+        (zero_extend:SI (mem:QI (reg/f:SI 3 r3 [121]) [0 *string_4+0 S1 A8]))) "../HAL_driver/LCD_driver/lcd.c":211 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 51 49 52 8 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:112 _3 ] [112])
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":211 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 52 51 53 8 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 50)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":211 204 {arm_cond_branch}
+     (nil)
+ -> 50)
+(note 53 52 56 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 56 53 67 9 (const_int 0 [0]) "../HAL_driver/LCD_driver/lcd.c":228 236 {nop}
+     (nil))
+(note 67 56 68 9 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 68 67 69 9 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":228 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 16 [0x10])))
+        (nil)))
+(insn 69 68 70 9 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../HAL_driver/LCD_driver/lcd.c":228 230 {blockage}
+     (nil))
+(insn/f 70 69 71 9 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../HAL_driver/LCD_driver/lcd.c":228 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(insn 71 70 72 9 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../HAL_driver/LCD_driver/lcd.c":228 322 {force_register_use}
+     (nil))
+(jump_insn 72 71 73 9 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../HAL_driver/LCD_driver/lcd.c":228 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (nil))
+ -> return)
+(barrier 73 72 61)
+(note 61 73 0 NOTE_INSN_DELETED)
+
+;; Function lcd_clear_screen (lcd_clear_screen, funcdef_no=10, decl_uid=5648, cgraph_uid=10, symbol_order=11)
+
+verify found no changes in insn with uid = 6.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+
+
+lcd_clear_screen
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={3d,1u} r1={2d} r2={2d} r3={2d} r7={3d,3u} r12={3d} r13={3d,10u} r14={2d,2u} r15={2d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r32={1d} r33={1d} r34={1d} r35={1d} r36={1d} r37={1d} r38={1d} r39={1d} r40={1d} r41={1d} r42={1d} r43={1d} r44={1d} r45={1d} r46={1d} r47={1d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,1u} 
+;;    total ref usage 126{109d,17u,0e} in 6{5 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 11 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 11 3 12 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":230 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [4  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 12 11 13 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":230 4 {*arm_addsi3}
+     (nil))
+(note 13 12 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 13 5 2 NOTE_INSN_FUNCTION_BEG)
+(insn 5 2 6 2 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":231 916 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 6 5 9 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_send_command") [flags 0x3]  <function_decl 000000000594ed00 lcd_send_command>) [0 lcd_send_command S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":231 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 9 6 14 2 (const_int 0 [0]) "../HAL_driver/LCD_driver/lcd.c":233 236 {nop}
+     (nil))
+(note 14 9 15 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 15 14 16 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../HAL_driver/LCD_driver/lcd.c":233 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (nil))
+ -> return)
+(barrier 16 15 10)
+(note 10 16 0 NOTE_INSN_DELETED)
+
+;; Function lcd_GotoXY (lcd_GotoXY, funcdef_no=11, decl_uid=5651, cgraph_uid=11, symbol_order=12)
+
+verify found no changes in insn with uid = 23.
+verify found no changes in insn with uid = 42.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 9 n_edges 12 count 9 (    1)
+deleting insn with uid = 3.
+
+
+lcd_GotoXY
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={5d,3u} r1={3d,1u} r2={4d,1u} r3={15d,12u} r7={4d,20u} r12={5d} r13={5d,22u} r14={3d,2u} r15={3d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r32={2d} r33={2d} r34={2d} r35={2d} r36={2d} r37={2d} r38={2d} r39={2d} r40={2d} r41={2d} r42={2d} r43={2d} r44={2d} r45={2d} r46={2d} r47={2d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={6d,4u} r101={2d} r102={1d,1u} 
+;;    total ref usage 290{224d,66u,0e} in 38{36 regular + 2 call} insns.
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 55 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 55 9 56 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":234 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [4  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 56 55 57 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -8 [0xfffffffffffffff8]))) "../HAL_driver/LCD_driver/lcd.c":234 4 {*arm_addsi3}
+     (nil))
+(insn 57 56 58 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../HAL_driver/LCD_driver/lcd.c":234 304 {stack_tie}
+     (nil))
+(insn/f 58 57 59 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":234 4 {*arm_addsi3}
+     (nil))
+(note 59 58 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 59 5 2 (set (reg:SI 3 r3 [112])
+        (reg:SI 0 r0 [ line ])) "../HAL_driver/LCD_driver/lcd.c":234 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 5 2 4 2 (set (reg:SI 2 r2 [114])
+        (reg:SI 1 r1 [ position ])) "../HAL_driver/LCD_driver/lcd.c":234 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 4 5 6 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 7 [0x7])) [0 line+0 S1 A8])
+        (reg:QI 3 r3 [113])) "../HAL_driver/LCD_driver/lcd.c":234 192 {*arm_movqi_insn}
+     (nil))
+(insn 6 4 7 2 (set (reg:QI 3 r3 [115])
+        (reg:QI 2 r2 [114])) "../HAL_driver/LCD_driver/lcd.c":234 192 {*arm_movqi_insn}
+     (nil))
+(insn 7 6 8 2 (set (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [0 position+0 S1 A8])
+        (reg:QI 3 r3 [115])) "../HAL_driver/LCD_driver/lcd.c":234 192 {*arm_movqi_insn}
+     (nil))
+(note 8 7 11 2 NOTE_INSN_FUNCTION_BEG)
+(insn 11 8 12 2 (set (reg:SI 3 r3 [116])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 7 [0x7])) [0 line+0 S1 A8]))) "../HAL_driver/LCD_driver/lcd.c":235 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 12 11 13 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [116])
+            (const_int 1 [0x1]))) "../HAL_driver/LCD_driver/lcd.c":235 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":235 204 {arm_cond_branch}
+     (nil)
+ -> 28)
+(note 14 13 15 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 3 (set (reg:SI 3 r3 [117])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 6 [0x6])) [0 position+0 S1 A8]))) "../HAL_driver/LCD_driver/lcd.c":237 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 16 15 17 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [117])
+            (const_int 15 [0xf]))) "../HAL_driver/LCD_driver/lcd.c":237 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 17 16 18 3 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 52)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":237 204 {arm_cond_branch}
+     (nil)
+ -> 52)
+(note 18 17 19 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 19 18 20 4 (set (reg:QI 3 r3 [118])
+        (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [0 position+0 S1 A8])) "../HAL_driver/LCD_driver/lcd.c":239 192 {*arm_movqi_insn}
+     (nil))
+(insn 20 19 21 4 (parallel [
+            (set (reg:SI 3 r3 [119])
+                (plus:SI (reg:SI 3 r3 [118])
+                    (const_int -128 [0xffffffffffffff80])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":239 917 {*thumb2_addsi_short}
+     (nil))
+(insn 21 20 22 4 (set (reg:SI 3 r3 [orig:110 _1 ] [110])
+        (zero_extend:SI (reg:QI 3 r3 [119]))) "../HAL_driver/LCD_driver/lcd.c":239 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 22 21 23 4 (set (reg:SI 0 r0)
+        (reg:SI 3 r3 [orig:110 _1 ] [110])) "../HAL_driver/LCD_driver/lcd.c":239 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 23 22 47 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_send_command") [flags 0x3]  <function_decl 000000000594ed00 lcd_send_command>) [0 lcd_send_command S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":239 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(jump_insn 47 23 48 4 (set (pc)
+        (label_ref:SI 52)) "../HAL_driver/LCD_driver/lcd.c":249 214 {*arm_jump}
+     (nil)
+ -> 52)
+(barrier 48 47 28)
+(code_label 28 48 29 5 28 (nil) [1 uses])
+(note 29 28 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 30 29 31 5 (set (reg:SI 3 r3 [120])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 7 [0x7])) [0 line+0 S1 A8]))) "../HAL_driver/LCD_driver/lcd.c":242 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 31 30 32 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [120])
+            (const_int 2 [0x2]))) "../HAL_driver/LCD_driver/lcd.c":242 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 32 31 33 5 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 52)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":242 204 {arm_cond_branch}
+     (nil)
+ -> 52)
+(note 33 32 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 34 33 35 6 (set (reg:SI 3 r3 [121])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                    (const_int 6 [0x6])) [0 position+0 S1 A8]))) "../HAL_driver/LCD_driver/lcd.c":244 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 35 34 36 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [121])
+            (const_int 15 [0xf]))) "../HAL_driver/LCD_driver/lcd.c":244 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 36 35 37 6 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 52)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":244 204 {arm_cond_branch}
+     (nil)
+ -> 52)
+(note 37 36 38 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 38 37 39 7 (set (reg:QI 3 r3 [122])
+        (mem/c:QI (plus:SI (reg/f:SI 7 r7)
+                (const_int 6 [0x6])) [0 position+0 S1 A8])) "../HAL_driver/LCD_driver/lcd.c":246 192 {*arm_movqi_insn}
+     (nil))
+(insn 39 38 40 7 (parallel [
+            (set (reg:SI 3 r3 [123])
+                (plus:SI (reg:SI 3 r3 [122])
+                    (const_int -64 [0xffffffffffffffc0])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":246 917 {*thumb2_addsi_short}
+     (nil))
+(insn 40 39 41 7 (set (reg:SI 3 r3 [orig:111 _2 ] [111])
+        (zero_extend:SI (reg:QI 3 r3 [123]))) "../HAL_driver/LCD_driver/lcd.c":246 906 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 41 40 42 7 (set (reg:SI 0 r0)
+        (reg:SI 3 r3 [orig:111 _2 ] [111])) "../HAL_driver/LCD_driver/lcd.c":246 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 42 41 52 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_send_command") [flags 0x3]  <function_decl 000000000594ed00 lcd_send_command>) [0 lcd_send_command S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":246 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(code_label 52 42 51 8 31 (nil) [4 uses])
+(note 51 52 53 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 53 51 60 8 (const_int 0 [0]) "../HAL_driver/LCD_driver/lcd.c":249 236 {nop}
+     (nil))
+(note 60 53 61 8 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 61 60 62 8 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":249 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 8 [0x8])))
+        (nil)))
+(insn 62 61 63 8 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../HAL_driver/LCD_driver/lcd.c":249 230 {blockage}
+     (nil))
+(insn/f 63 62 64 8 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../HAL_driver/LCD_driver/lcd.c":249 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(insn 64 63 65 8 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../HAL_driver/LCD_driver/lcd.c":249 322 {force_register_use}
+     (nil))
+(jump_insn 65 64 66 8 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../HAL_driver/LCD_driver/lcd.c":249 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (nil))
+ -> return)
+(barrier 66 65 54)
+(note 54 66 0 NOTE_INSN_DELETED)
+
+;; Function lcd_display_number (lcd_display_number, funcdef_no=12, decl_uid=5653, cgraph_uid=12, symbol_order=13)
+
+verify found no changes in insn with uid = 10.
+verify found no changes in insn with uid = 13.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+;; SImode fixup for i8; addr 22, range (0,1018): `*.LC0'
+;; Emitting minipool after insn 29; address 50; align 4 (bytes)
+;;  Offset 0, min -65536, max 1040 `*.LC0'
+
+
+lcd_display_number
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={5d,3u} r1={4d,1u} r2={4d,1u} r3={5d,2u} r7={4d,10u} r12={5d} r13={5d,16u} r14={3d,2u} r15={3d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r32={2d} r33={2d} r34={2d} r35={2d} r36={2d} r37={2d} r38={2d} r39={2d} r40={2d} r41={2d} r42={2d} r43={2d} r44={2d} r45={2d} r46={2d} r47={2d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={2d} r101={2d} r102={1d,1u} 
+;;    total ref usage 247{211d,36u,0e} in 19{17 regular + 2 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 18 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 18 4 19 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg/f:SI 7 r7)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":250 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [4  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 19 18 20 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -16 [0xfffffffffffffff0]))) "../HAL_driver/LCD_driver/lcd.c":250 4 {*arm_addsi3}
+     (nil))
+(insn 20 19 21 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../HAL_driver/LCD_driver/lcd.c":250 304 {stack_tie}
+     (nil))
+(insn/f 21 20 22 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":250 4 {*arm_addsi3}
+     (nil))
+(note 22 21 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 22 3 2 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [3 num+0 S4 A32])
+        (reg:SI 0 r0 [ num ])) "../HAL_driver/LCD_driver/lcd.c":250 878 {*thumb2_movsi_insn}
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(insn 6 3 7 2 (set (reg:SI 3 r3 [110])
+        (plus:SI (reg/f:SI 7 r7)
+            (const_int 8 [0x8]))) "../HAL_driver/LCD_driver/lcd.c":252 4 {*arm_addsi3}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 2 r2)
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [3 num+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":252 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 1 r1)
+        (mem:SI (label_ref 32) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":252 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 0 r0)
+        (reg:SI 3 r3 [110])) "../HAL_driver/LCD_driver/lcd.c":252 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 10 9 11 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("sprintf") [flags 0x41]  <function_decl 0000000005614100 sprintf>) [0 __builtin_sprintf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":252 220 {*call_value_symbol}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (nil))))))
+(insn 11 10 12 2 (set (reg:SI 3 r3 [111])
+        (plus:SI (reg/f:SI 7 r7)
+            (const_int 8 [0x8]))) "../HAL_driver/LCD_driver/lcd.c":253 4 {*arm_addsi3}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 0 r0)
+        (reg:SI 3 r3 [111])) "../HAL_driver/LCD_driver/lcd.c":253 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 13 12 16 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_send_string") [flags 0x3]  <function_decl 000000000594ef00 lcd_send_string>) [0 lcd_send_string S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":253 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 16 13 23 2 (const_int 0 [0]) "../HAL_driver/LCD_driver/lcd.c":254 236 {nop}
+     (nil))
+(note 23 16 24 2 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 24 23 25 2 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 16 [0x10])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":254 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 16 [0x10])))
+        (nil)))
+(insn 25 24 26 2 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../HAL_driver/LCD_driver/lcd.c":254 230 {blockage}
+     (nil))
+(insn/f 26 25 27 2 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../HAL_driver/LCD_driver/lcd.c":254 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(insn 27 26 28 2 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../HAL_driver/LCD_driver/lcd.c":254 322 {force_register_use}
+     (nil))
+(jump_insn 28 27 29 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../HAL_driver/LCD_driver/lcd.c":254 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (nil))
+ -> return)
+(barrier 29 28 30)
+(code_label 30 29 31 34 (nil) [0 uses])
+(insn 31 30 32 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 32 31 33 33 (nil) [0 uses])
+(insn 33 32 34 (unspec_volatile [
+            (symbol_ref/f:SI ("*.LC0") [flags 0x2]  <var_decl 00000000059c35a0 *.LC0>)
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 34 33 35 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 35 34 17)
+(note 17 35 0 NOTE_INSN_DELETED)
+
+;; Function lcd_display_real_number (lcd_display_real_number, funcdef_no=13, decl_uid=5655, cgraph_uid=13, symbol_order=14)
+
+verify found no changes in insn with uid = 8.
+verify found no changes in insn with uid = 27.
+verify found no changes in insn with uid = 46.
+verify found no changes in insn with uid = 50.
+verify found no changes in insn with uid = 54.
+verify found no changes in insn with uid = 58.
+verify found no changes in insn with uid = 63.
+verify found no changes in insn with uid = 67.
+verify found no changes in insn with uid = 77.
+verify found no changes in insn with uid = 80.
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 9 n_edges 10 count 9 (    1)
+Splitting with gen_split_68
+scanning new insn with uid = 109.
+scanning new insn with uid = 110.
+deleting insn with uid = 6.
+deleting insn with uid = 6.
+Splitting with gen_split_68
+scanning new insn with uid = 111.
+scanning new insn with uid = 112.
+deleting insn with uid = 25.
+deleting insn with uid = 25.
+Splitting with gen_split_80
+scanning new insn with uid = 113.
+scanning new insn with uid = 114.
+deleting insn with uid = 45.
+deleting insn with uid = 45.
+Splitting with gen_split_91
+scanning new insn with uid = 115.
+deleting insn with uid = 61.
+Splitting with gen_split_86
+deleting insn with uid = 61.
+;; SImode fixup for i16; addr 46, range (0,1018): `*.LC1'
+;; SImode fixup for i21; addr 54, range (0,1018): `*.LC2'
+;; SImode fixup for i115; addr 176, range (0,1018): 0x461c4000
+;; SImode fixup for i75; addr 226, range (0,1018): `*.LC3'
+;; Emitting minipool after insn 108; address 252; align 4 (bytes)
+;;  Offset 0, min -65536, max 1064 `*.LC1'
+;;  Offset 4, min -65536, max 1072 `*.LC2'
+;;  Offset 8, min -65536, max 1194 0x461c4000
+;;  Offset 12, min -65536, max 1244 `*.LC3'
+
+
+lcd_display_real_number
+
+Dataflow summary:
+;;  invalidated by call 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 32 [s16] 33 [s17] 34 [s18] 35 [s19] 36 [s20] 37 [s21] 38 [s22] 39 [s23] 40 [s24] 41 [s25] 42 [s26] 43 [s27] 44 [s28] 45 [s29] 46 [s30] 47 [s31] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 102 [sfp]
+;;  exit block uses 	 4 [r4] 5 [r5] 7 [r7] 13 [sp] 14 [lr] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={21d,19u} r1={17d,7u} r2={14d,3u} r3={27d,15u} r4={4d,3u} r5={4d,3u} r7={4d,32u} r12={21d} r13={5d,34u} r14={11d,2u} r15={11d} r16={10d} r17={10d} r18={10d} r19={10d} r20={10d} r21={10d} r22={10d} r23={10d} r24={10d} r25={10d} r26={10d} r27={10d} r28={10d} r29={10d} r30={10d} r31={10d} r32={10d} r33={10d} r34={10d} r35={10d} r36={10d} r37={10d} r38={10d} r39={10d} r40={10d} r41={10d} r42={10d} r43={10d} r44={10d} r45={10d} r46={10d} r47={10d} r48={10d} r49={10d} r50={10d} r51={10d} r52={10d} r53={10d} r54={10d} r55={10d} r56={10d} r57={10d} r58={10d} r59={10d} r60={10d} r61={10d} r62={10d} r63={10d} r64={10d} r65={10d} r66={10d} r67={10d} r68={10d} r69={10d} r70={10d} r71={10d} r72={10d} r73={10d} r74={10d} r75={10d} r76={10d} r77={10d} r78={10d} r79={10d} r80={10d} r81={10d} r82={10d} r83={10d} r84={10d} r85={10d} r86={10d} r87={10d} r88={10d} r89={10d} r90={10d} r91={10d} r92={10d} r93={10d} r94={10d} r95={10d} r96={10d} r97={10d} r98={10d} r99={10d} r100={12d,2u} r101={10d} r102={1d,1u,5e} 
+;;    total ref usage 1128{1002d,121u,5e} in 69{59 regular + 10 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 97 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 97 4 98 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -16 [0xfffffffffffffff0]))) [4  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 5 r5))
+            (use (reg/f:SI 7 r7))
+            (use (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":255 303 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -16 [0xfffffffffffffff0])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg:SI 4 r4))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [4  S4 A32])
+                    (reg:SI 5 r5))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 8 [0x8])) [4  S4 A32])
+                    (reg/f:SI 7 r7))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 12 [0xc])) [4  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn/f 98 97 99 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -56 [0xffffffffffffffc8]))) "../HAL_driver/LCD_driver/lcd.c":255 4 {*arm_addsi3}
+     (nil))
+(insn 99 98 100 2 (set (mem:BLK (scratch) [0  A8])
+        (unspec:BLK [
+                (reg/f:SI 13 sp)
+                (reg/f:SI 7 r7)
+            ] UNSPEC_PRLG_STK)) "../HAL_driver/LCD_driver/lcd.c":255 304 {stack_tie}
+     (nil))
+(insn/f 100 99 101 2 (set (reg/f:SI 7 r7)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 8 [0x8]))) "../HAL_driver/LCD_driver/lcd.c":255 4 {*arm_addsi3}
+     (nil))
+(note 101 100 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 101 3 2 (set (mem/c:DF (reg/f:SI 7 r7) [7 number+0 S8 A64])
+        (reg:DF 0 r0 [ number ])) "../HAL_driver/LCD_driver/lcd.c":255 195 {*movdf_soft_insn}
+     (nil))
+(note 3 2 109 2 NOTE_INSN_FUNCTION_BEG)
+(insn 109 3 110 2 (set (reg:SI 2 r2)
+        (const_int 0 [0])) "../HAL_driver/LCD_driver/lcd.c":257 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 110 109 7 2 (set (reg:SI 3 r3 [+4 ])
+        (const_int 0 [0])) "../HAL_driver/LCD_driver/lcd.c":257 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 7 110 8 2 (set (reg:DF 0 r0)
+        (mem/c:DF (reg/f:SI 7 r7) [7 number+0 S8 A64])) "../HAL_driver/LCD_driver/lcd.c":257 195 {*movdf_soft_insn}
+     (nil))
+(call_insn/u 8 7 9 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__aeabi_dcmplt") [flags 0x41]) [0  S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":257 220 {*call_value_symbol}
+     (expr_list:REG_EH_REGION (const_int -2147483648 [0xffffffff80000000])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list (use (reg:DF 2 r2))
+            (expr_list (use (reg:DF 0 r0))
+                (nil)))))
+(insn 9 8 10 2 (set (reg:SI 3 r3 [114])
+        (reg:SI 0 r0)) "../HAL_driver/LCD_driver/lcd.c":257 878 {*thumb2_movsi_insn}
+     (expr_list:REG_EQUAL (lt:SI (mem/c:DF (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -48 [0xffffffffffffffd0])) [7 number+0 S8 A64])
+            (const_double:DF 0.0 [0x0.0p+0]))
+        (nil)))
+(insn 10 9 11 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [114])
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":257 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 11 10 15 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 90)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":257 204 {arm_cond_branch}
+     (nil)
+ -> 90)
+(note 15 11 16 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 16 15 91 3 (set (reg/f:SI 3 r3 [orig:112 iftmp.1_3 ] [112])
+        (mem:SI (label_ref 119) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":257 878 {*thumb2_movsi_insn}
+     (nil))
+(jump_insn 91 16 92 3 (set (pc)
+        (label_ref 22)) 214 {*arm_jump}
+     (nil)
+ -> 22)
+(barrier 92 91 90)
+(code_label 90 92 20 4 44 (nil) [1 uses])
+(note 20 90 21 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 4 (set (reg/f:SI 3 r3 [orig:112 iftmp.1_3 ] [112])
+        (mem:SI (const:SI (plus:SI (label_ref 119)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":257 878 {*thumb2_movsi_insn}
+     (nil))
+(code_label 22 21 23 5 38 (nil) [1 uses])
+(note 23 22 24 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 24 23 111 5 (set (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 44 [0x2c])) [5 tmpsign+0 S4 A32])
+        (reg/f:SI 3 r3 [orig:112 iftmp.1_3 ] [112])) "../HAL_driver/LCD_driver/lcd.c":257 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 111 24 112 5 (set (reg:SI 2 r2)
+        (const_int 0 [0])) "../HAL_driver/LCD_driver/lcd.c":258 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 112 111 26 5 (set (reg:SI 3 r3 [+4 ])
+        (const_int 0 [0])) "../HAL_driver/LCD_driver/lcd.c":258 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 26 112 27 5 (set (reg:DF 0 r0)
+        (mem/c:DF (reg/f:SI 7 r7) [7 number+0 S8 A64])) "../HAL_driver/LCD_driver/lcd.c":258 195 {*movdf_soft_insn}
+     (nil))
+(call_insn/u 27 26 28 5 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__aeabi_dcmplt") [flags 0x41]) [0  S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":258 220 {*call_value_symbol}
+     (expr_list:REG_EH_REGION (const_int -2147483648 [0xffffffff80000000])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list (use (reg:DF 2 r2))
+            (expr_list (use (reg:DF 0 r0))
+                (nil)))))
+(insn 28 27 29 5 (set (reg:SI 3 r3 [115])
+        (reg:SI 0 r0)) "../HAL_driver/LCD_driver/lcd.c":258 878 {*thumb2_movsi_insn}
+     (expr_list:REG_EQUAL (lt:SI (mem/c:DF (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -48 [0xffffffffffffffd0])) [7 number+0 S8 A64])
+            (const_double:DF 0.0 [0x0.0p+0]))
+        (nil)))
+(insn 29 28 30 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [115])
+            (const_int 0 [0]))) "../HAL_driver/LCD_driver/lcd.c":258 196 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 30 29 34 5 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 93)
+            (pc))) "../HAL_driver/LCD_driver/lcd.c":258 204 {arm_cond_branch}
+     (nil)
+ -> 93)
+(note 34 30 35 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 35 34 36 6 (set (reg:SI 4 r4 [orig:113 iftmp.2_4 ] [113])
+        (mem/c:SI (reg/f:SI 7 r7) [7 number+0 S4 A64])) "../HAL_driver/LCD_driver/lcd.c":258 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 36 35 37 6 (set (reg:SI 3 r3 [116])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 4 [0x4])) [7 number+4 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":258 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 37 36 94 6 (set (reg:SI 5 r5 [ iftmp.2_4+4 ])
+        (xor:SI (reg:SI 3 r3 [116])
+            (const_int -2147483648 [0xffffffff80000000]))) "../HAL_driver/LCD_driver/lcd.c":258 111 {*arm_xorsi3}
+     (nil))
+(jump_insn 94 37 95 6 (set (pc)
+        (label_ref 43)) 214 {*arm_jump}
+     (nil)
+ -> 43)
+(barrier 95 94 93)
+(code_label 93 95 41 7 45 (nil) [1 uses])
+(note 41 93 42 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 7 (set (reg:DF 4 r4 [orig:113 iftmp.2_4 ] [113])
+        (mem/c:DF (reg/f:SI 7 r7) [7 number+0 S8 A64])) "../HAL_driver/LCD_driver/lcd.c":258 195 {*movdf_soft_insn}
+     (nil))
+(code_label 43 42 44 8 41 (nil) [1 uses])
+(note 44 43 113 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 113 44 114 8 (set (reg:SI 0 r0)
+        (reg:SI 4 r4 [orig:113 iftmp.2_4 ] [113])) "../HAL_driver/LCD_driver/lcd.c":258 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 114 113 46 8 (set (reg:SI 1 r1 [+4 ])
+        (reg:SI 5 r5 [ iftmp.2_4+4 ])) "../HAL_driver/LCD_driver/lcd.c":258 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn/u 46 114 47 8 (parallel [
+            (set (reg:SF 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__aeabi_d2f") [flags 0x41]) [0  S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":258 220 {*call_value_symbol}
+     (expr_list:REG_EH_REGION (const_int -2147483648 [0xffffffff80000000])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list (use (reg:DF 0 r0))
+            (nil))))
+(insn 47 46 48 8 (set (reg:SF 3 r3 [117])
+        (reg:SF 0 r0)) "../HAL_driver/LCD_driver/lcd.c":258 194 {*arm_movsf_soft_insn}
+     (nil))
+(insn 48 47 49 8 (set (mem/c:SF (plus:SI (reg/f:SI 7 r7)
+                (const_int 40 [0x28])) [6 tempvalue+0 S4 A32])
+        (reg:SF 3 r3 [117])) "../HAL_driver/LCD_driver/lcd.c":258 194 {*arm_movsf_soft_insn}
+     (nil))
+(insn 49 48 50 8 (set (reg:SF 0 r0)
+        (mem/c:SF (plus:SI (reg/f:SI 7 r7)
+                (const_int 40 [0x28])) [6 tempvalue+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":260 194 {*arm_movsf_soft_insn}
+     (nil))
+(call_insn/u 50 49 51 8 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__aeabi_f2iz") [flags 0x41]) [0  S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":260 220 {*call_value_symbol}
+     (expr_list:REG_EH_REGION (const_int -2147483648 [0xffffffff80000000])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list (use (reg:SF 0 r0))
+            (nil))))
+(insn 51 50 52 8 (set (reg:SI 3 r3 [118])
+        (reg:SI 0 r0)) "../HAL_driver/LCD_driver/lcd.c":260 878 {*thumb2_movsi_insn}
+     (expr_list:REG_EQUAL (fix:SI (mem/c:SF (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -8 [0xfffffffffffffff8])) [6 tempvalue+0 S4 A32]))
+        (nil)))
+(insn 52 51 53 8 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 36 [0x24])) [3 tmpint1+0 S4 A32])
+        (reg:SI 3 r3 [118])) "../HAL_driver/LCD_driver/lcd.c":260 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 53 52 54 8 (set (reg:SI 0 r0)
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 36 [0x24])) [3 tmpint1+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":261 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn/u 54 53 55 8 (parallel [
+            (set (reg:SF 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__aeabi_i2f") [flags 0x41]) [0  S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":261 220 {*call_value_symbol}
+     (expr_list:REG_EH_REGION (const_int -2147483648 [0xffffffff80000000])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list (use (reg:SI 0 r0))
+            (nil))))
+(insn 55 54 56 8 (set (reg:SF 3 r3 [orig:110 _1 ] [110])
+        (reg:SF 0 r0)) "../HAL_driver/LCD_driver/lcd.c":261 194 {*arm_movsf_soft_insn}
+     (expr_list:REG_EQUAL (float:SF (mem/c:SI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -12 [0xfffffffffffffff4])) [3 tmpint1+0 S4 A32]))
+        (nil)))
+(insn 56 55 57 8 (set (reg:SF 1 r1)
+        (reg:SF 3 r3 [orig:110 _1 ] [110])) "../HAL_driver/LCD_driver/lcd.c":261 194 {*arm_movsf_soft_insn}
+     (nil))
+(insn 57 56 58 8 (set (reg:SF 0 r0)
+        (mem/c:SF (plus:SI (reg/f:SI 7 r7)
+                (const_int 40 [0x28])) [6 tempvalue+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":261 194 {*arm_movsf_soft_insn}
+     (nil))
+(call_insn/u 58 57 59 8 (parallel [
+            (set (reg:SF 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__aeabi_fsub") [flags 0x41]) [0  S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":261 220 {*call_value_symbol}
+     (expr_list:REG_EH_REGION (const_int -2147483648 [0xffffffff80000000])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list (use (reg:SF 1 r1))
+            (expr_list (use (reg:SF 0 r0))
+                (nil)))))
+(insn 59 58 60 8 (set (reg:SF 3 r3 [119])
+        (reg:SF 0 r0)) "../HAL_driver/LCD_driver/lcd.c":261 194 {*arm_movsf_soft_insn}
+     (nil))
+(insn 60 59 115 8 (set (mem/c:SF (plus:SI (reg/f:SI 7 r7)
+                (const_int 32 [0x20])) [6 tmpfrac+0 S4 A32])
+        (reg:SF 3 r3 [119])) "../HAL_driver/LCD_driver/lcd.c":261 194 {*arm_movsf_soft_insn}
+     (nil))
+(insn 115 60 62 8 (set (reg:SI 1 r1)
+        (mem:SI (const:SI (plus:SI (label_ref 119)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":262 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 62 115 63 8 (set (reg:SF 0 r0)
+        (mem/c:SF (plus:SI (reg/f:SI 7 r7)
+                (const_int 32 [0x20])) [6 tmpfrac+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":262 194 {*arm_movsf_soft_insn}
+     (nil))
+(call_insn/u 63 62 64 8 (parallel [
+            (set (reg:SF 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__aeabi_fmul") [flags 0x41]) [0  S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":262 220 {*call_value_symbol}
+     (expr_list:REG_EH_REGION (const_int -2147483648 [0xffffffff80000000])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list (use (reg:SF 1 r1))
+            (expr_list (use (reg:SF 0 r0))
+                (nil)))))
+(insn 64 63 66 8 (set (reg:SF 3 r3 [120])
+        (reg:SF 0 r0)) "../HAL_driver/LCD_driver/lcd.c":262 194 {*arm_movsf_soft_insn}
+     (expr_list:REG_EQUAL (mult:SF (mem/c:SF (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -16 [0xfffffffffffffff0])) [6 tmpfrac+0 S4 A32])
+            (const_double:SF 1.0e+4 [0x0.9c4p+14]))
+        (nil)))
+(insn 66 64 67 8 (set (reg:SF 0 r0)
+        (reg:SF 3 r3 [orig:111 _2 ] [111])) "../HAL_driver/LCD_driver/lcd.c":262 194 {*arm_movsf_soft_insn}
+     (nil))
+(call_insn/u 67 66 68 8 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__aeabi_f2iz") [flags 0x41]) [0  S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":262 220 {*call_value_symbol}
+     (expr_list:REG_EH_REGION (const_int -2147483648 [0xffffffff80000000])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list (use (reg:SF 0 r0))
+            (nil))))
+(insn 68 67 69 8 (set (reg:SI 3 r3 [121])
+        (reg:SI 0 r0)) "../HAL_driver/LCD_driver/lcd.c":262 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 69 68 70 8 (set (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 28 [0x1c])) [3 tmpint2+0 S4 A32])
+        (reg:SI 3 r3 [121])) "../HAL_driver/LCD_driver/lcd.c":262 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 70 69 71 8 (set (reg:SI 0 r0 [122])
+        (plus:SI (reg/f:SI 7 r7)
+            (const_int 12 [0xc]))) "../HAL_driver/LCD_driver/lcd.c":264 4 {*arm_addsi3}
+     (nil))
+(insn 71 70 72 8 (set (reg:SI 3 r3 [123])
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 28 [0x1c])) [3 tmpint2+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":264 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 72 71 73 8 (set (mem:SI (reg/f:SI 13 sp) [0  S4 A32])
+        (reg:SI 3 r3 [123])) "../HAL_driver/LCD_driver/lcd.c":264 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 73 72 74 8 (set (reg:SI 3 r3)
+        (mem/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 36 [0x24])) [3 tmpint1+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":264 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 74 73 75 8 (set (reg:SI 2 r2)
+        (mem/f/c:SI (plus:SI (reg/f:SI 7 r7)
+                (const_int 44 [0x2c])) [5 tmpsign+0 S4 A32])) "../HAL_driver/LCD_driver/lcd.c":264 878 {*thumb2_movsi_insn}
+     (nil))
+(insn 75 74 77 8 (set (reg:SI 1 r1)
+        (mem:SI (const:SI (plus:SI (label_ref 119)
+                    (const_int 12 [0xc]))) [0  S4 A32])) "../HAL_driver/LCD_driver/lcd.c":264 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 77 75 78 8 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("sprintf") [flags 0x41]  <function_decl 0000000005614100 sprintf>) [0 __builtin_sprintf S4 A32])
+                    (const_int 8 [0x8])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":264 220 {*call_value_symbol}
+     (expr_list:REG_EH_REGION (const_int 0 [0])
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (expr_list:SI (use (mem:SI (reg/f:SI 13 sp) [0  S4 A32]))
+                            (nil))))))))
+(insn 78 77 79 8 (set (reg:SI 3 r3 [124])
+        (plus:SI (reg/f:SI 7 r7)
+            (const_int 12 [0xc]))) "../HAL_driver/LCD_driver/lcd.c":265 4 {*arm_addsi3}
+     (nil))
+(insn 79 78 80 8 (set (reg:SI 0 r0)
+        (reg:SI 3 r3 [124])) "../HAL_driver/LCD_driver/lcd.c":265 878 {*thumb2_movsi_insn}
+     (nil))
+(call_insn 80 79 89 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("lcd_send_string") [flags 0x3]  <function_decl 000000000594ef00 lcd_send_string>) [0 lcd_send_string S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../HAL_driver/LCD_driver/lcd.c":265 219 {*call_symbol}
+     (nil)
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 89 80 102 8 (const_int 0 [0]) "../HAL_driver/LCD_driver/lcd.c":266 236 {nop}
+     (nil))
+(note 102 89 103 8 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 103 102 104 8 (parallel [
+            (set (reg/f:SI 7 r7)
+                (plus:SI (reg/f:SI 7 r7)
+                    (const_int 48 [0x30])))
+            (clobber (reg:CC 100 cc))
+        ]) "../HAL_driver/LCD_driver/lcd.c":266 917 {*thumb2_addsi_short}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 7 r7)
+            (plus:SI (reg/f:SI 7 r7)
+                (const_int 48 [0x30])))
+        (nil)))
+(insn 104 103 105 8 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../HAL_driver/LCD_driver/lcd.c":266 230 {blockage}
+     (nil))
+(insn/f 105 104 106 8 (set (reg/f:SI 13 sp)
+        (reg/f:SI 7 r7)) "../HAL_driver/LCD_driver/lcd.c":266 878 {*thumb2_movsi_insn}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (reg/f:SI 7 r7))
+        (nil)))
+(insn 106 105 107 8 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../HAL_driver/LCD_driver/lcd.c":266 322 {force_register_use}
+     (nil))
+(jump_insn 107 106 108 8 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 16 [0x10])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+            (set/f (reg/f:SI 7 r7)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [4  S4 A32]))
+        ]) "../HAL_driver/LCD_driver/lcd.c":266 306 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_CFA_RESTORE (reg/f:SI 7 r7)
+        (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+            (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                (nil))))
+ -> return)
+(barrier 108 107 117)
+(code_label 117 108 118 47 (nil) [0 uses])
+(insn 118 117 119 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 119 118 120 46 (nil) [0 uses])
+(insn 120 119 121 (unspec_volatile [
+            (symbol_ref/f:SI ("*.LC1") [flags 0x2]  <var_decl 00000000059c3630 *.LC1>)
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 121 120 122 (unspec_volatile [
+            (symbol_ref/f:SI ("*.LC2") [flags 0x2]  <var_decl 00000000059c36c0 *.LC2>)
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 122 121 123 (unspec_volatile [
+            (const_int 1176256512 [0x461c4000])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 123 122 124 (unspec_volatile [
+            (symbol_ref/f:SI ("*.LC3") [flags 0x2]  <var_decl 00000000059c3750 *.LC3>)
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 124 123 125 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 125 124 96)
+(note 96 125 0 NOTE_INSN_DELETED)
